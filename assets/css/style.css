@@ -36,12 +36,13 @@
 
 .navbar {
   background-color: transparent; /* Set the background color to transparent */
-  border: 2px solid rgba(236, 71, 36, 1); /* Add a solid border with the specified color */
-  border-radius: 30px; /* Set the border-radius to create circular edges */
-  padding: 10px; /* Adjust the padding as needed */
+  border-radius: 100px;
+  border: 2px solid #EC4724; 
+  padding: 1px 10px; /* Adjust the padding as needed */
   display: flex;
   justify-content: center; 
   align-items: center; /* Center the navbar vertically */
+  
 }
 .container {
   display: flex;
@@ -78,11 +79,32 @@
   font-weight: bold; /* Apply bold styling to the active element */
 }
 
-.navbar-nav li:first-child {
-  margin-right: auto; /* Push the first element to the start */
+.navbar-nav li.logo {
+  margin-right: auto; /* Push the logo to the start */
 }
 
-.logo {
-  margin-right: auto;
+.navbar-nav li.logo {
+  margin-right: auto; /* Push the logo to the start */
+}
 
+.navbar-nav li.cart-icon a,
+.navbar-nav li.cart-count a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav li.cart-icon img,
+.navbar-nav li.cart-count img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-nav li.cart-count .item-count {
+  background-color: rgba(236, 71, 36, 1);
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 5px;
 }
