@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center; 
   align-items: center; /* Center the navbar vertically */
-  
+  max-width: 80%;
 }
 .container {
   display: flex;
@@ -91,20 +91,18 @@
 .navbar-nav li.cart-count a {
   display: flex;
   align-items: center;
-}
-
-.navbar-nav li.cart-icon img,
-.navbar-nav li.cart-count img {
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: 60px;
 }
 
 .navbar-nav li.cart-count .item-count {
   background-color: rgba(236, 71, 36, 1);
   color: #fff;
   border-radius: 50%;
-  padding: 4px;
-  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  line-height: 20px;
+  text-align: center;
   font-weight: bold;
   margin-left: 5px;
 }
