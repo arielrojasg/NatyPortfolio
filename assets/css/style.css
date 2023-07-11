@@ -113,9 +113,7 @@
   margin-right: 20px;
 }
 
-ul li:last-of-type {
-  text-align:right;
-}
+
 .bio-title {
   color: var(--negro, #1E1E1E);
   font-family: Oswald;
@@ -336,19 +334,29 @@ ul li:last-of-type {
 
 .columns {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .column {
-  flex: 1;
-  padding: 20px;
+  flex-basis: 33%; /* Adjust the width based on your desired layout */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center; /* Center the content horizontally */
 }
 
-.column img {
-  width: 231.055px;
-  height: 233px;
-  flex-shrink: 0;
+.image-wrapper {
+  display: table-cell;
+  width: 50%;
+  box-sizing: border-box;
+  
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 .column p {
@@ -359,4 +367,87 @@ ul li:last-of-type {
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
+}
+
+.footer{
+  background: var(--negro, #1E1E1E);
+
+}
+
+.footer-title{
+  color: var(--blanco, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147.4%;
+}
+
+.footer-element{
+  color: var(--blanco, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.4%;
+}
+
+.footer-social-title{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.copyright{
+  color: var(--blanco, #FFF);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.footer-column {
+  display: inline-block;
+  width: 33%;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+p {
+  margin-top: 10px;
 }
