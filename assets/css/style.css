@@ -34,6 +34,9 @@
   src: url('../assets/fonts/Oswald-Medium.ttf') format('truetype');
 }
 
+body{
+  margin:0%
+}
 li a {
   color: #000;
   font-size: 20px;
@@ -49,7 +52,13 @@ li a:hover {
 }
 
 li.active a {
-  font-weight: bold; 
+  color: var(--rojo, #EC4724);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; 
 }
 .logo {
   margin-right: auto;
@@ -122,6 +131,7 @@ li.active a {
   display: flex;
   align-items: center;
   margin: 5%;
+  justify-content: center;
 }
 
 .content-container{
@@ -181,7 +191,6 @@ li.active a {
 
 .button:hover{
   background: var(--negro, #000);
-
 }
 
 .scrolling-text {
@@ -202,7 +211,6 @@ li.active a {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 10px;
   text-transform: uppercase; 
   transform: scale(2);
   transition: all 10s ease;
@@ -277,12 +285,14 @@ li.active a {
   text-transform: uppercase;
   margin-left: 11%;
   margin-bottom: -5%;
+  padding-top: 3%;
 }
 
 .columns {
   display: flex;
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 3%;
 }
 
 .step {
@@ -348,9 +358,10 @@ li.active a {
   font-weight: 500;
   line-height: 147.4%;
   text-transform: uppercase;
+  margin-bottom: 5%;
 }
 
-.columns {
+.instagram-columns {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -358,11 +369,13 @@ li.active a {
   margin-top: 20px;
 }
 
-.column {
+.instagram-column {
   flex-basis: 33%; /* Adjust the width based on your desired layout */
   padding: 10px;
   box-sizing: border-box;
-  text-align: center; /* Center the content horizontally */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
 }
 
 .image-wrapper {
@@ -377,7 +390,7 @@ li.active a {
   height: auto;
 }
 
-.column p {
+.instagram-column p {
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: Oswald;
@@ -385,11 +398,24 @@ li.active a {
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20%;
 }
+
+
 
 .footer{
   background: var(--negro, #1E1E1E);
+  justify-content: space-between;
+  display: flex;
+}
 
+.footer-columns{
+  margin-left: 25%;
+  width: 50%;
+  display: flex;
 }
 
 .footer-title{
@@ -413,7 +439,7 @@ li.active a {
 .footer-social-title{
   color: #FFF;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -436,7 +462,7 @@ footer {
 
 .footer-column {
   display: inline-block;
-  width: 33%;
+  width: 50%;
 }
 
 h4 {
@@ -455,6 +481,8 @@ li {
 
 .social-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icons li {
@@ -462,10 +490,19 @@ li {
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
+  
 }
 
 p {
   margin-top: 10px;
+}
+
+.footer-socials{
+  margin-right: 15%;
+  margin-top: -1%;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
 }

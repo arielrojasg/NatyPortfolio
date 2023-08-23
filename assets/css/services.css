@@ -1,0 +1,184 @@
+.brand-impact-section{
+    position: relative;
+    background: var(--fucsia, #F99FF9);
+    height: 600px;
+    justify-content: center;
+    margin-top: -1%;
+    text-align: center;
+    z-index: 1;
+}
+.brand-impact-small-title{
+    padding-top:3.5% ;
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 110.55px */
+    text-transform: uppercase;
+}
+
+.brand-impact-big-title{
+    color: var(--blanco, #FFF);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 147.4%; /* 188.672px */
+    text-transform: uppercase;
+    margin-top: -5%;
+    margin-bottom: -0.5%;
+}
+
+.brand-impact-text{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70%; /* 23.584px */
+}
+
+.brand-impact-button {
+    margin-top: 2%;
+    text-align: center;
+    border-radius: 180px;
+    border-color: transparent;
+    background: var(--negro, #1E1E1E);
+    color: var(--negro, #FFF);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%;
+    text-transform: uppercase;
+    width: 184px;
+    height: 55px;
+    padding: 10px;
+}
+
+.brand-impact-button:hover{
+    background: var(--verde, #FFF);
+    color: var(--negro, #1E1E1E);
+}
+
+.branding-section{
+    background: var(--blanco, #FFF);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.branding-title{
+    color: var(--fucsia, #F99FF9); 
+    text-align: center;
+    font-family: Oswald;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 110.55px */
+    text-transform: uppercase;
+
+}
+.branding-section .columns{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3%;
+    justify-content: center; /* Horizontally center the columns */
+    align-items: center; /* Vertically center the columns */
+}
+
+.branding-step{
+    border-radius: 39px;
+    background-color: var(--fucsia, #F99FF9); 
+    flex-shrink: 0;
+    flex:0;
+    padding: 2%;
+    margin: 1%;
+    
+}
+
+.branding-step .column-title{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 47.168px */
+    text-transform: uppercase;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.branding-step .column-text{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.4%; /* 23.584px */
+    max-width: 305.371px; 
+}
+
+/*social starts */
+.social-section{
+    background: var(--negro, #1E1E1E);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.social-title{
+    color: var(--celeste, #AEBCFB);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 110.55px */
+    text-transform: uppercase;
+}
+.social-section .columns{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3%;
+    justify-content: center; /* Horizontally center the columns */
+    align-items: center; /* Vertically center the columns */
+}
+
+.social-step{
+    border-radius: 39px;
+    background: var(--blanco, #FFF);
+    flex-shrink: 0;
+    flex:0;
+    padding: 2%;
+    margin: 1%;
+}
+
+.social-step .column-title{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.social-step .column-text{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.4%; /* 23.584px */
+    max-width: 305.371px; 
+}
