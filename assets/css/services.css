@@ -182,3 +182,101 @@
     line-height: 147.4%; /* 23.584px */
     max-width: 305.371px; 
 }
+
+.send-info-section{
+    background: var(--Celeste, #AEBCFB);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.send-info-small-title{
+    color: var(--Negro, #1E1E1E);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 47.168px */
+    text-transform: uppercase;
+}
+.send-info-title{
+    color: var(--Negro, #1E1E1E);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 110.55px */
+    text-transform: uppercase;
+    margin-top: -1.5%;
+    margin-bottom: 2%;
+}
+
+#email{
+    width: 499.959px;
+    height: 51px;
+    flex-shrink: 0;
+    background: var(--Blanco, #FFF);
+    color: #D9D9D9;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.4%; /* 23.584px */
+    padding-left: 1.5%;
+}
+
+#send-info-button{
+    margin-left:1.5%;
+    border-radius: 48px;
+    background: var(--Negro, #1E1E1E);
+    color: var(--Blanco, #FFF);
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 29.48px */
+    text-transform: uppercase;
+    width: 197.57px;
+    height: 54.121px;
+    border-color: transparent;
+
+}
+
+#send-info-button:hover{
+    color: var(--Negro, #1E1E1E);
+    background: var(--Blanco, #FFF);
+}
+
+.send-info-line{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.faq-title{
+    color: var(--Celeste, #AEBCFB);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 147.4%; /* 188.672px */
+    text-transform: uppercase;
+}
+.faq-question{
+    color: var(--Negro, #1E1E1E);
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 29.48px */
+    text-transform: uppercase;
+}
+
+.faq-answer{
+    color: var(--Negro, #1E1E1E);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.4%; /* 23.584px */
+}
