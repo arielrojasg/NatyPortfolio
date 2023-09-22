@@ -270,6 +270,14 @@
     font-weight: 500;
     line-height: 147.4%; /* 29.48px */
     text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+}
+.faq-question::after {
+    content: "\00a0+"; /* Use a non-breaking space (\00a0) before the plus sign */
+    color: #000; /* Set the color of the plus sign */
+    font-weight: bold; /* Make the plus sign bold if desired */
+    /* You can adjust other styling properties as needed */
 }
 
 .faq-answer{
@@ -279,4 +287,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 147.4%; /* 23.584px */
+    display: none;
+}
+
+.line{
+    stroke-width: 1px;
+    stroke: #000;
+    width: 755.02px;
+    height: 0px;
+    flex-shrink: 0;
+    border-top: 1px solid #000; /* You can adjust the color and thickness as needed */
 }
