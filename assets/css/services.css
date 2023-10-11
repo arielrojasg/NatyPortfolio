@@ -252,6 +252,10 @@
     margin-bottom: 3%;
 }
 
+.faq-section{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
 .faq-title{
     color: var(--Celeste, #AEBCFB);
     text-align: center;
@@ -265,13 +269,15 @@
 .faq-question{
     color: var(--Negro, #1E1E1E);
     font-family: Oswald;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 500;
     line-height: 147.4%; /* 29.48px */
     text-transform: uppercase;
     cursor: pointer;
     display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .faq-question::after {
     content: "\00a0+"; /* Use a non-breaking space (\00a0) before the plus sign */
@@ -298,3 +304,18 @@
     flex-shrink: 0;
     border-top: 1px solid #000; /* You can adjust the color and thickness as needed */
 }
+.faq-container {
+    display: flex;
+    align-items: start; 
+  }
+  
+  .faq-left {
+    flex: 4; /* Takes 3/10 of available space */
+    align-self: flex-start; 
+  }
+  
+  .faq-right {
+    flex: 7; /* Takes 7/10 of available space */
+  }
+  
+
