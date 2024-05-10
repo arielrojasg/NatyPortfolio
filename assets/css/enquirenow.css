@@ -405,3 +405,8 @@
     height: 36px;
     flex-shrink: 0;
   }
+
+  #enquirenow_form{
+    display: grid;
+    place-items: center;
+  }
