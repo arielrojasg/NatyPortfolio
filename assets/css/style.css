@@ -1,44 +1,44 @@
 @font-face {
   font-family: 'Poppins';
   font-weight: normal;
-  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
   font-weight: bold;
-  src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
   font-weight: 500;
-  src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
   font-weight: 300;
-  src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald';
   font-weight: bold;
-  src: url('../assets/fonts/Oswald-Bold.ttf') format('truetype');
+  src: url('../fonts/Oswald-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald';
   font-weight: 500;
-  src: url('../assets/fonts/Oswald-Medium.ttf') format('truetype');
+  src: url('../fonts/Oswald-Medium.ttf') format('truetype');
 }
 
 body{
   margin:0%
 }
 li a {
-  color: #000;
+  color: #FFFFFF;
   font-size: 20px;
   font-family: Poppins;
   font-weight: 500;
@@ -48,11 +48,11 @@ li a {
 }
 
 li a:hover {
-  color: #EC4724;
+  color: #F99FF9;
 }
 
 li.active a {
-  color: var(--rojo, #EC4724);
+  color: var(--rojo, #F99FF9);
   text-align: center;
   font-family: Poppins;
   font-size: 20px;
@@ -68,11 +68,11 @@ li.active a {
 .navbar {
   background-color: transparent; 
   border-radius: 100px;
-  border: 2px solid #EC4724; 
+  border: 2px solid #F99FF9; 
   padding: 1px 10px; 
-  margin-left: 18%;
+  margin-left: 12%;
   margin-top: 2%;
-  margin-right: 18%;
+  margin-right: 12%;
   height: 60px;
 }
 
@@ -80,6 +80,7 @@ li.active a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1.5%;
 }
 
 .navbar-nav {
@@ -120,7 +121,7 @@ li.active a {
 }
 
 .navbar-right {
-  margin-right: -1.5%;
+  margin-right: 2%;
 }
 
 .navbar-left {
@@ -130,12 +131,13 @@ li.active a {
 .bio {
   display: flex;
   align-items: center;
-  margin: 5%;
+  margin: 2.5%;
   justify-content: center;
 }
 
 .content-container{
   margin-left: 4%;
+  margin-bottom: 5%;
 }
 .image-container {
   margin-right: 20px;
@@ -143,18 +145,28 @@ li.active a {
 
 
 .bio-title {
-  color: var(--negro, #1E1E1E);
-  font-family: Oswald;
+  color: var(--blanco, #FFFFFF);
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 75px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 50%;
+  font-weight: 600;
+  line-height: 25%;
+  text-transform: uppercase;
+}
+
+.bio-title-fucsia {
+  color: var(--fucsia, #F99FF9);
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25%;
   text-transform: uppercase;
 }
 
 .bigger-title {
   color: var(--fucsia, #F99FF9);
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 700;
@@ -164,54 +176,56 @@ li.active a {
 }
 
 .text-box {
-  color: var(--negro, #1E1E1E);
+  color: var(--negro, #FFFFFF);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 147.4%;
   width: 528.166px; 
+  margin-top: -2%;
+  margin-bottom: 6%;
 }
 
 .button {
   border-radius: 180px;
   border-color: transparent;
-  background: var(--rojo, #EC4724);
-  color: var(--blanco, #FFF);
+  background: var(--rojo, #F99FF9);
+  color: var(--negro, #1E1E1E);
   text-align: center;
-  font-family: Oswald;
+  font-family: "Poppins";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
   text-transform: uppercase;
-  width: 184px;
+  width: 50%;
   height: 55px;
   padding: 10px;
 }
 
 .button:hover{
-  background: var(--negro, #000);
+  background: var(--negro, #FFFF);
+  color: var(--negro, #1E1E1E);
 }
 
 .scrolling-text {
   width: 100%;
-  overflow: hidden;
   background: var(--fucsia, #F99FF9);
-  margin-top: 5%;
+  margin-top: 2.5%;
+  overflow: hidden;
 }
 
 .text-container {
   display: inline-block;
   white-space: nowrap;
   animation: RightToLeft 10s infinite linear;
-  overflow: hidden;
   color: var(--negro, #1E1E1E);
   text-align: center;
-  font-family: Oswald;
-  font-size: 20px;
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-weight: 600;
   font-style: normal;
-  font-weight: 500;
+  font-size: 20px;
   text-transform: uppercase; 
   transform: scale(2);
   transition: all 10s ease;
@@ -221,7 +235,7 @@ li.active a {
 .scrolling-content {
   display: inline-block;
   padding-right: 1em;
-  
+  margin-bottom: 10px;
 }
 
 .separator {
@@ -264,7 +278,7 @@ li.active a {
 .oval h2 {
   color: var(--negro, #1E1E1E);
   text-align: center;
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -278,7 +292,7 @@ li.active a {
 
 .process-title {
   color: var(--fucsia, #F99FF9);
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 500;
@@ -303,7 +317,7 @@ li.active a {
 
 .number {
   color: var(--fucsia, #F99FF9);
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 500;
@@ -314,7 +328,7 @@ li.active a {
 
 .column-title {
   color: var(--fucsia, #F99FF9);
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -353,7 +367,7 @@ li.active a {
 .instagram-title {
   color: var(--negro, #1E1E1E);
   text-align: center;
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -394,7 +408,7 @@ li.active a {
 .instagram-column p {
   color: var(--negro, #1E1E1E);
   text-align: center;
-  font-family: Oswald;
+  font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -506,4 +520,48 @@ p {
   width: 50%;
   justify-content: center;
   text-align: center;
+}
+
+#home-body{
+  background-color: #1E1E1E;
+}
+
+.obsessed{
+  background-image: url('../img/Nube\ grande.svg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Makes sure the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  justify-content:center;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.obsessed-title{
+  color: var(--blanco, #1E1E1E);
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 9%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.obsessed-subtitle{
+  color: var(--blanco, #1E1E1E);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.4%;
+  text-transform: uppercase;
+  margin-top: -2%;
+}
+
+#obsessed-titles{
+  margin-top: 8%;
 }
