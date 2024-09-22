@@ -6,5 +6,4 @@ import Instagram from './components/instagram.vue';
 
 createApp(Navbar).mount('#navbar');
 createApp(Home).mount('#home');
-createApp(Instagram).mount('#instagram');
 createApp(Footer).mount('#footer');
