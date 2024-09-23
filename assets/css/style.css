@@ -219,7 +219,7 @@ li.active a {
 .text-container {
   display: inline-block;
   white-space: nowrap;
-  animation: RightToLeft 10s infinite linear;
+  animation: RightToLeft 20s infinite linear;
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
@@ -228,7 +228,6 @@ li.active a {
   font-size: 1.50em;
   text-transform: uppercase; 
   transform: scale(2);
-  transition: all 10s ease;
 
 }
 
@@ -244,11 +243,11 @@ li.active a {
 }
 
 
-@keyframes  RightToLeft {
-  from {
-    transform: translateX(0%);
+@keyframes RightToLeft {
+  0% {
+    transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-50%);
   }
 }
@@ -484,8 +483,8 @@ li {
 }
 
 .social-icons img {
-  width: 2em;
-  height: 2em;  
+  width: 2.50em;
+  height: 2.50em;  
 }
 
 p {
@@ -571,9 +570,24 @@ p {
   line-height: 9%;
   text-transform: uppercase;
   text-align: center;
+  transform: translateY(100%); /* Start off-screen at the bottom */
+  transition: background-size 0.3s ease;
 }
 
+/* Keyframes for sliding up from the bottom */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* Start off-screen at the bottom */
+  }
+  100% {
+    transform: translateY(0); /* End in the original position */
+  }
+}
 
+/* This class will be added via JavaScript to trigger the animation */
+.cloud.animate {
+  animation: slideUp 0.5s ease-out forwards; /* Apply the slide-up animation */
+}
 
 .cloud h2 {
   display: block!important; /* Ensures each h2 appears on its own line */
@@ -582,6 +596,7 @@ p {
 }
 .cloud:hover {
   color: #F99FF9;
+  background-size: 80%;
 }
 
 

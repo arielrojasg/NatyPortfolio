@@ -1,25 +1,42 @@
 <template>
-        <div class="scrolling-text">
-        <div class="text-container">
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        <span class="separator">|</span>
-        <p class="scrolling-content">BOOKING FOR JULY</p>
-        </div>
-    </div>
+<div class="scrolling-text">
+  <div class="text-container">
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <!-- Duplicate Content Starts Here -->
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+    <span class="separator">|</span>
+    <p class="scrolling-content">BOOKING FOR JULY</p>
+  </div>
+</div>
     <div class="bio">
         <div class="image-container">
             <a href="assets/bio.png"><img src="assets/bio.png" alt="Bio Image"></a>
@@ -30,7 +47,7 @@
             <h1 class="bio-title-fucsia">UNFORGETTABLE</h1>
             <h1 class="bio-title-fucsia">EXPERIENCES</h1>
             <p class="text-box">Let’s build a bold, standout brand! I’ll guide you through the design process, offering advice and helping you reach your goals—while making it an enjoyable journey.</p>
-            <button class="button">Let's Get Started</button>
+            <button class="button" onclick="window.location.href='enquirenow.html';">Let's Get Started</button>
         </div>
     </div>
     <section class="obsessed">
@@ -40,22 +57,22 @@
             <p class="obsessed-subtitle">BRANDING, DESIGN AND WEB</p>
         </div>
         <div id="clouds">
-            <div class="cloud">
-                <h2>About</h2>
-            </div>
-            <div class="cloud">
-                <h2>Services</h2>
-            </div>
-            <div class="cloud">
-                <h2>My Work</h2>
-            </div>
-            <div class="cloud">
-                <h2>Shop</h2>
-            </div>
-            <div class="cloud">
-                <h2>Enquire Now</h2>
-            </div>
-        </div>
+    <div class="cloud" onclick="location.href='about.html';">
+        <h2>About</h2>
+    </div>
+    <div class="cloud" onclick="location.href='services.html';">
+        <h2>Services</h2>
+    </div>
+    <div class="cloud" onclick="location.href='mywork.html';">
+        <h2>My Work</h2>
+    </div>
+    <div class="cloud" onclick="location.href='https://itsnvillalobos.gumroad.com/';">
+        <h2>Shop</h2>
+    </div>
+    <div class="cloud" onclick="location.href='enquirenow.html';">
+        <h2>Enquire Now</h2>
+    </div>
+</div>
     </section>
     <section class="services-section">
 		<div class="services-container">
@@ -86,7 +103,7 @@
 			</div>
 		</div>
         <div id="services-button-container">
-            <button class="services-button">Let's Work Together</button>
+            <button class="services-button" onclick="window.location.href='enquirenow.html';">Let's Work Together</button>
         </div>
     </section>
     <section class="loved">
