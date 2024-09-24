@@ -9,13 +9,12 @@
     background-position-x: 50%;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 1000.5px; 
+    height: 52em; 
     margin-bottom: -3%;
     z-index: 0;
     background-color: #FFFF;
 }
 .about-container{
-    margin-top: 5%;
     display: block;
     justify-content:center;
     text-align: center;
@@ -30,45 +29,46 @@
     font-weight: 500;
     line-height: 147.4%; /* 47.168px */
     text-transform: uppercase;
+    padding-top:3%;
 }
 
 .about-bigger-title{
     color: var(--fucsia, #F99FF9);
     text-align: center;
     font-family: "roc-grotesk-condensed", sans-serif;
-    font-size: 128px;
+    font-size: 8em;
     font-style: normal;
     font-weight: 700;
-    line-height: 147.4%; /* 188.672px */
+    line-height: 80.4%; /* 188.672px */
     text-transform: uppercase;
-    margin-top: -2%;
+    margin-top: 0%;
 }
 
 .about-text{
     margin-top: -5%;
     color: var(--negro, #1E1E1E);
-    margin-left: 25%;
+    margin-left: 21%;
     text-align: center;
     font-family: Poppins;
     font-size: 1em;
     font-style: normal;
     font-weight: 300;
-    max-width:50%;
+    max-width:58%;
     line-height: 147.4%; /* 23.584px */
 }
 
 
 .work-together-section{
     position: relative;
-    background: var(--negro, #1E1E1E); 
-    height: 513px;
+    background: var(--negro, #FFFF); 
+    height: 28em;
     justify-content: center;
     margin-top: -4%;
     text-align: center;
     z-index: 1;
 }
 .work-together-title{
-    color: var(--verde, #ECF39E);
+    color: var(--negro, #1E1E1E);
     text-align: center;
     font-family: "roc-grotesk-condensed", sans-serif;
     font-size: 75px;
@@ -82,7 +82,7 @@
 
 .work-together-text{
     text-align: center;
-    color: var(--blanco, #FFF);
+    color: var(--negro, #1E1E1E);
     text-align: center;
     font-family: Poppins;
     font-size: 1em;
@@ -113,3 +113,59 @@
 .work-together-button:hover{
     background: var(--verde, #ECF39E);
   }
+
+  .info-section {
+    background-color: #A1B2FF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of content */
+    gap: 2em;
+  }
+  
+  .info-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: center;
+    flex: 1 1 100%; /* Default to full width */
+  }
+  
+  .info-card.half-height {
+    flex: 1 1 calc(50% - 2em); /* Half height, subtract gap */
+  }
+  
+  @media (min-width: 768px) {
+    .info-section {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  
+    .info-card {
+      flex: 1 1 calc(50% - 2em); /* First two cards take half width each */
+    }
+  
+    .info-card.full-height {
+      flex: 1 1 calc(100% - 2em); /* Third card takes the full height */
+    }
+  
+    .info-card:nth-child(3) {
+      order: -1; /* Move the third card to the first column */
+    }
+  }
+  
+  .info-title {
+    font-size: 2.5em;
+    color: #B9BDFF; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+  
+  .info-description {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+  }
+  
