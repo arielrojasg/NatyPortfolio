@@ -147,7 +147,7 @@ li.active a {
 .bio-title {
   color: var(--blanco, #FFFFFF);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 4.6em;
   font-style: normal;
   font-weight: 600;
   line-height: 25%;
@@ -157,7 +157,7 @@ li.active a {
 .bio-title-fucsia {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 4.6em;
   font-style: normal;
   font-weight: 600;
   line-height: 25%;

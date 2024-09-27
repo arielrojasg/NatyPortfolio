@@ -1,5 +1,12 @@
 <template>
-        <section class="brand-impact-section">
+	<section class="obsessed">
+        <div id="obsessed-titles">
+            <h1 class="obsessed-title">YOU DESERVE TO BE OBSESSED</h1>
+            <h1 class="obsessed-title">WITH YOUR BRAND</h1>
+            <p class="obsessed-subtitle">BRANDING, DESIGN AND WEB</p>
+        </div>
+    </section>
+	<section class="brand-impact-section">
 		<h2 class="brand-impact-small-title">READY TO BOOST YOUR</h2>
 		<h2 class="brand-impact-big-title">BRAND'S IMPACT?</h2>
 		<p class="brand-impact-text">Branding is crucial for businesses as it creates a distinct identity, builds credibility, and fosters customer</p>

@@ -1,3 +1,7 @@
+#services-body{
+    background-color: #1E1E1E;
+}
+
 .brand-impact-section{
     position: relative;
     background: var(--fucsia, #F99FF9);
@@ -255,6 +259,7 @@
 .faq-section{
     margin-top: 7%;
     margin-bottom: 7%;
+    background-color: #FFFF;
 }
 .faq-title{
     color: var(--Celeste, #AEBCFB);
