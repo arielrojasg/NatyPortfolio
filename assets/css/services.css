@@ -2,190 +2,6 @@
     background-color: #1E1E1E;
 }
 
-.brand-impact-section{
-    position: relative;
-    background: var(--fucsia, #F99FF9);
-    height: 600px;
-    justify-content: center;
-    margin-top: -1%;
-    text-align: center;
-    z-index: 1;
-}
-.brand-impact-small-title{
-    padding-top:3.5% ;
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 110.55px */
-    text-transform: uppercase;
-}
-
-.brand-impact-big-title{
-    color: var(--blanco, #FFF);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 147.4%; /* 188.672px */
-    text-transform: uppercase;
-    margin-top: -5%;
-    margin-bottom: -0.5%;
-}
-
-.brand-impact-text{
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 70%; /* 23.584px */
-}
-
-.brand-impact-button {
-    margin-top: 2%;
-    text-align: center;
-    border-radius: 180px;
-    border-color: transparent;
-    background: var(--negro, #1E1E1E);
-    color: var(--negro, #FFF);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%;
-    text-transform: uppercase;
-    width: 184px;
-    height: 55px;
-    padding: 10px;
-}
-
-.brand-impact-button:hover{
-    background: var(--verde, #FFF);
-    color: var(--negro, #1E1E1E);
-}
-
-.branding-section{
-    background: var(--blanco, #FFF);
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
-
-.branding-title{
-    color: var(--fucsia, #F99FF9); 
-    text-align: center;
-    font-family: Oswald;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 110.55px */
-    text-transform: uppercase;
-
-}
-.branding-section .columns{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 3%;
-    justify-content: center; /* Horizontally center the columns */
-    align-items: center; /* Vertically center the columns */
-}
-
-.branding-step{
-    border-radius: 39px;
-    background-color: var(--fucsia, #F99FF9); 
-    flex-shrink: 0;
-    flex:0;
-    padding: 2%;
-    margin: 1%;
-    
-}
-
-.branding-step .column-title{
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 47.168px */
-    text-transform: uppercase;
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.branding-step .column-text{
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 147.4%; /* 23.584px */
-    max-width: 305.371px; 
-}
-
-/*social starts */
-.social-section{
-    background: var(--negro, #1E1E1E);
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
-
-.social-title{
-    color: var(--celeste, #AEBCFB);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 110.55px */
-    text-transform: uppercase;
-}
-.social-section .columns{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 3%;
-    justify-content: center; /* Horizontally center the columns */
-    align-items: center; /* Vertically center the columns */
-}
-
-.social-step{
-    border-radius: 39px;
-    background: var(--blanco, #FFF);
-    flex-shrink: 0;
-    flex:0;
-    padding: 2%;
-    margin: 1%;
-}
-
-.social-step .column-title{
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    text-transform: uppercase;
-    width: 100%;
-}
-
-.social-step .column-text{
-    color: var(--negro, #1E1E1E);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 147.4%; /* 23.584px */
-    max-width: 305.371px; 
-}
 
 .send-info-section{
     background: var(--Celeste, #AEBCFB);
@@ -323,4 +139,331 @@
     flex: 7; /* Takes 7/10 of available space */
   }
   
+#transforming{
+    background-image: url('../img/Nube\ grande.svg');
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 2.5%;
+    padding-bottom: 9%;
+    display: inline-block;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
 
+#transforming-button{
+    border-radius: 48px;
+    background: var(--Negro, #1E1E1E);
+    color: var(--Blanco, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%;
+    text-transform: uppercase;
+    width: 197.57px;
+    height: 54.121px;
+    border-color: transparent;
+}
+
+#transforming-button:hover{
+    background: var(--blanco, #FFFF);
+    color:#1E1E1E
+}
+
+#transforming-titles{
+    margin-top: 10%;
+}
+
+.branding-section {
+    background-color: #FFFF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+    gap: 0em;
+    min-height: 80vh; /* Ensures the section is tall enough to fit content */
+  }
+  
+  .branding-card.half-height {
+    height: 25vh; /* Adjusted height to allow for more content */
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 1.25em;
+
+  }  
+  
+  .branding-card.full-height {
+    height: 62vh; /* This matches the section height minus padding and gap */
+    border-radius: 1.25em;
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    align-content: center;
+  }
+  
+  .branding-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: left;
+  }
+  
+  .branding-title {
+    font-size: 4.6em;
+    color: #F99FF9; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight:600;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  
+  .branding-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    font-family: Poppins;
+    margin-top: -10%;
+    padding-left: 1.2em;
+    padding-right: 1.4em;
+
+  }
+  
+  #branding-left,
+  #branding-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:1%;
+  }
+  
+  @media (min-width: 48em) {
+    .branding-section {
+      align-items: stretch;
+    }
+  
+    #branding-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #branding-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+.colored-text{
+color:#A1B2FF
+}
+
+#branding-half-bg{
+    background-image: url('../img/branding2.png');
+    background-size: cover;
+}
+
+#branding-full-bg{
+    background-image: url('../img/branding.png');
+    background-size: cover;
+}
+
+
+.social-section {
+    background-color: #FFFF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+    gap: 0em;
+    min-height: 80vh; /* Ensures the section is tall enough to fit content */
+  }
+  
+  .social-card.half-height {
+    height: 25vh; /* Adjusted height to allow for more content */
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 1.25em;
+
+  }  
+  
+  .social-card.full-height {
+    height: 62vh; /* This matches the section height minus padding and gap */
+    border-radius: 1.25em;
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    align-content: center;
+  }
+  
+  .social-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: left;
+  }
+  
+  .social-title {
+    font-size: 4.6em;
+    color: #F99FF9; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight:600;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  
+  .social-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    font-family: Poppins;
+    margin-top: -10%;
+    padding-left: 1.2em;
+    padding-right: 1.4em;
+
+  }
+  
+  #social-left,
+  #social-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:1%;
+  }
+  
+  @media (min-width: 48em) {
+    .social-section {
+      align-items: stretch;
+    }
+  
+    #social-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #social-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+#social-half-bg{
+    background-image: url('../img/social2.png');
+    background-size: cover;
+}
+
+#social-full-bg{
+    background-image: url('../img/social.png');
+    background-size: cover;
+}
+
+
+
+.photography-section {
+    background-color: #FFFF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+    gap: 0em;
+    min-height: 80vh; /* Ensures the section is tall enough to fit content */
+  }
+  
+  .photography-card.half-height {
+    height: 25vh; /* Adjusted height to allow for more content */
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 1.25em;
+
+  }  
+  
+  .photography-card.full-height {
+    height: 62vh; /* This matches the section height minus padding and gap */
+    border-radius: 1.25em;
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    align-content: center;
+  }
+  
+  .photography-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: left;
+  }
+  
+  .photography-title {
+    font-size: 4.6em;
+    color: #F99FF9; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight:600;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  
+  .photography-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    font-family: Poppins;
+    margin-top: -10%;
+    padding-left: 1.2em;
+    padding-right: 1.4em;
+
+  }
+  
+  #photography-left,
+  #photography-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:1%;
+  }
+  
+  @media (min-width: 48em) {
+    .photography-section {
+      align-items: stretch;
+    }
+  
+    #photography-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #photography-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+#photography-half-bg{
+    background-image: url('../img/photography2.png');
+    background-size: cover;
+}
+
+#photography-full-bg{
+    background-image: url('../img/photography.png');
+    background-size: cover;
+}

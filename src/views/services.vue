@@ -1,74 +1,57 @@
 <template>
-	<section class="obsessed">
-        <div id="obsessed-titles">
-            <h1 class="obsessed-title">YOU DESERVE TO BE OBSESSED</h1>
-            <h1 class="obsessed-title">WITH YOUR BRAND</h1>
-            <p class="obsessed-subtitle">BRANDING, DESIGN AND WEB</p>
+	<section id="transforming">
+        <div id="transforming-titles">
+            <h1 class="obsessed-title">TRANSFORMING</h1>
+            <h1 class="obsessed-title">VISIONS INTO REALITY</h1>
+            <p class="obsessed-subtitle">EXPLORE OUR CREATIVE SERVICES</p>
         </div>
+		<button id="transforming-button" onclick="window.location.href='enquirenow.html';">GET A QUOTE</button>
     </section>
-	<section class="brand-impact-section">
-		<h2 class="brand-impact-small-title">READY TO BOOST YOUR</h2>
-		<h2 class="brand-impact-big-title">BRAND'S IMPACT?</h2>
-		<p class="brand-impact-text">Branding is crucial for businesses as it creates a distinct identity, builds credibility, and fosters customer</p>
-		<p class="brand-impact-text">loyalty. It communicates the values, personality, and essence of a brand, helping it stand out in a competitive</p>
-		<p class="brand-impact-text">market and forge meaningful connections with its target audience.</p>
-		<button class="brand-impact-button">I'm ready</button>
+	<section class="branding-section">
+    <div id="branding-left">
+      <div class="branding-card half-height">
+        <h2 class="branding-title">BRANDING</h2>
+        <p class="branding-description">
+			Crafting a unique and strategic identity for your business that resonates with your target audience. From logo design to complete brand guidelines, we ensure your brand stands out.
+        </p>
+      </div>
+      <div id="branding-half-bg" class="branding-card half-height">
+      </div>
+    </div>
+    <div id="branding-right">
+      <div id="branding-full-bg" class="branding-card full-height">
+      </div>
+    </div>
 	</section>
-    <section class="branding-section">
-		<h2 class="branding-title">BRANDING PACKAGES</h2>
-		<div class="columns">
-		  <div class="branding-step">
-			<h4 class="column-title">COOL BASIC</h4>
-			<p class="column-text">If you are a small business owner and have a limited budget, this is the package for you! It has the basic essentials for a brand to get started.</p>
-		  </div>
-		  <div class="branding-step">
-			<h4 class="column-title">BRIGHT ESSENTIALS</h4>
-			<p class="column-text">This package takes your business to the next level, and gives a better comprehension of your brand to your target audience. It lets you be prepared for future expansions as long as your business grows!</p>
-		  </div>
-		  <div class="branding-step">
-			<h4 class="column-title">POWER PREMIUM</h4>
-			<p class="column-text">This package is the best if you want your business branding for the long term or the business that wants a refresh. This specific one takes care of all your needs now and for the future! Working on the smallest details for you and your audience.</p>
-		  </div>
+	<section class="social-section">
+		<div id="social-left">
+		<div class="social-card half-height">
+			<h2 class="social-title">SOCIAL MEDIA</h2>
+			<p class="social-description">
+				Elevating your social media presence with engaging content and cohesive visuals. We create strategies and designs that drive engagement and build your online community.
+			</p>
+		</div>
+		<div id="social-half-bg" class="social-card half-height">
+		</div>
+		</div>
+		<div id="social-right">
+		<div id="social-full-bg" class="social-card full-height">
+		</div>
 		</div>
 	</section>
-    <section class="social-section">
-		<h2 class="social-title">SOCIAL MEDIA PACKAGES</h2>
-		<div class="columns">
-		  <div class="social-step">
-			<h4 class="column-title">JUMPSTART</h4>
-			<p class="column-text">This package provides you with a solid foundation to build upon and is perfect for those who are just starting out or have a tight budget.</p>
-		  </div>
-		  <div class="social-step">
-			<h4 class="column-title">FLOURISH</h4>
-			<p class="column-text">For businesses and individuals looking to take their social media presence to the next level. With additional design elements and customization options, this package allows you to increase your audience and engage with your followers.</p>
-		  </div>
-		  <div class="social-step">
-			<h4 class="column-title">EXPERT</h4>
-			<p class="column-text">Perfect for businesses and individuals who need a comprehensive social media design solution. This package provides you with a variety of premium design elements and customization options tailored to your specific needs.</p>
-		  </div>
+	<section class="photography-section">
+		<div id="photography-left">
+		<div class="photography-card half-height">
+			<h2 class="photography-title">PHOTOGRAPHY</h2>
+			<p class="photography-description">
+				Capturing high-quality images that align with your brand’s identity. Whether it's product photography, lifestyle shots, or corporate headshots, we ensure your visuals tell your brand's story.			</p>
 		</div>
-	</section>
-    <section class="process-section">
-		<h2 class="process-title">The Process</h2>
-		<div class="columns">
-		  <div class="step">
-			<h3 class="number">01</h3>
-			<h4 class="column-title">LET'S TALK</h4>
-			<div class="separator"></div>
-			<p class="column-text">Once you've decided that I'm the right designer to help you! Then we will chat about the perfect package for your brand and you're booked in! Next step I'll ask you some questions to know you and your business better.</p>
-		  </div>
-		  <div class="step">
-			<h3 class="number">02</h3>
-			<h4 class="column-title">DESIGN TIME</h4>
-			<div class="separator"></div>
-			<p class="column-text">After working on the brand strategy, the design time begins! We will work as a team to create a conscious, beautiful and valuable brand identity!</p>
-		  </div>
-		  <div class="step">
-			<h3 class="number">03</h3>
-			<h4 class="column-title">LET'S LAUNCH</h4>
-			<div class="separator"></div>
-			<p class="column-text">After the visual identity is approved and we've make sure everything is ok, I'll send you the final files so you can launch the brand. Yay!</p>
-		  </div>
+		<div id="photography-half-bg" class="photography-card half-height">
+		</div>
+		</div>
+		<div id="photography-right">
+		<div id="photography-full-bg" class="photography-card full-height">
+		</div>
 		</div>
 	</section>
 	<section class="send-info-section">
