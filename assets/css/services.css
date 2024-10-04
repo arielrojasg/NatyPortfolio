@@ -2,143 +2,163 @@
     background-color: #1E1E1E;
 }
 
-
 .send-info-section{
-    background: var(--Celeste, #AEBCFB);
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+  background: var(--negro, #1E1E1E);
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 .send-info-small-title{
-    color: var(--Negro, #1E1E1E);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 47.168px */
-    text-transform: uppercase;
+  color: var(--Negro, #FFFF);
+  text-align: center;
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 147.4%; /* 47.168px */
+  text-transform: uppercase;
 }
 .send-info-title{
-    color: var(--Negro, #1E1E1E);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 110.55px */
-    text-transform: uppercase;
-    margin-top: -1.5%;
-    margin-bottom: 2%;
-}
-
-#email{
-    width: 499.959px;
-    height: 51px;
-    flex-shrink: 0;
-    background: var(--Blanco, #FFF);
-    color: #D9D9D9;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 147.4%; /* 23.584px */
-    padding-left: 1.5%;
+  color: var(--Negro, #FFFF);
+  text-align: center;
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0%; /* 110.55px */
+  text-transform: uppercase;
+  margin-bottom: 2%;
 }
 
 #send-info-button{
-    margin-left:1.5%;
-    border-radius: 48px;
-    background: var(--Negro, #1E1E1E);
-    color: var(--Blanco, #FFF);
-    font-family: Oswald;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 29.48px */
-    text-transform: uppercase;
-    width: 197.57px;
-    height: 54.121px;
-    border-color: transparent;
+  background: var(--Negro, #B9BDFF);
+  color: var(--negro, #1E1E1E);
+  margin-top: 2%;
+  margin-left: 2%;
+  border-radius: 180px;
+  border-color: transparent;
+  color: var(--negro, #1E1E1E);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.4%;
+  text-transform: uppercase;
+  width: 15%;
+  height: 55px;
+  padding: 0.625em;
+}
 
+#enquirenowbutton{
+  margin: 0 auto; /* This centers the button */
 }
 
 #send-info-button:hover{
-    color: var(--Negro, #1E1E1E);
-    background: var(--Blanco, #FFF);
+  color: var(--Negro, #1E1E1E);
+  background: var(--Blanco, #FFF);
 }
 
 .send-info-line{
-    text-align: center;
-    margin-bottom: 3%;
+  text-align: center;
+  margin-bottom: 3%;
 }
 
-.faq-section{
-    margin-top: 7%;
-    margin-bottom: 7%;
-    background-color: #FFFF;
-}
-.faq-title{
-    color: var(--Celeste, #AEBCFB);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 147.4%; /* 188.672px */
-    text-transform: uppercase;
-}
-.faq-question{
-    color: var(--Negro, #1E1E1E);
-    font-family: Oswald;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 29.48px */
-    text-transform: uppercase;
-    cursor: pointer;
-    display: block;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-.faq-question::after {
-    content: "\00a0+"; /* Use a non-breaking space (\00a0) before the plus sign */
-    color: #000; /* Set the color of the plus sign */
-    font-weight: bold; /* Make the plus sign bold if desired */
-    /* You can adjust other styling properties as needed */
+#send-info-email {
+  width: 499.959px;
+  height: 51px;
+  flex-shrink: 0;
+  background: var(--Blanco, #FFF);
+  color: #1E1E1E;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.4%;
+  padding-left: 1.5% !important;
+  padding-right: 2px !important;
+  padding:0;
+  border-width: 2px;
 }
 
-.faq-answer{
-    color: var(--Negro, #1E1E1E);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 147.4%; /* 23.584px */
-    display: none;
+.faq-section {
+  margin-top: 7%;
+  padding-bottom: 7%;
+  background-color: #FFFF;
+  display: flex;
+  justify-content: right; /* Centers the container horizontally */
+  align-items: center; /* Centers the container vertically, if needed */
 }
 
-.line{
-    stroke-width: 1px;
-    stroke: #000;
-    width: 755.02px;
-    height: 0px;
-    flex-shrink: 0;
-    border-top: 1px solid #000; /* You can adjust the color and thickness as needed */
-}
 .faq-container {
-    display: flex;
-    align-items: start; 
-  }
-  
-  .faq-left {
-    flex: 4; /* Takes 3/10 of available space */
-    align-self: flex-start; 
-  }
-  
-  .faq-right {
-    flex: 7; /* Takes 7/10 of available space */
-  }
-  
+  width: 100%;
+  max-width: 80%; /* Limit the maximum width of the content */
+  text-align: left; /* Keep text aligned to the left */
+  padding: 0 20px; /* Optional padding for mobile responsiveness */
+}
+
+.faq-title {
+  color: var(--negro, #1E1E1E);
+  text-align: left; /* Ensures the title text is aligned left */
+  font-family: Oswald;
+  font-size: 6.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40%;
+  text-transform: uppercase;
+}
+
+.faq-question {
+  color: var(--Negro, #1E1E1E);
+  font-family: Oswald;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.4%;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: relative;
+  padding-right: 20px;
+  max-width: 88%;
+}
+
+.faq-question::after {
+  content: "+"; /* Plus sign */
+  position: absolute;
+  right: 0; /* Align the plus sign to the far right */
+  top: 50%; /* Vertically center the plus sign */
+  transform: translateY(-50%); /* Adjust to keep it vertically aligned */
+  color: #000;
+  font-weight: bold;
+}
+
+.faq-answer {
+  color: var(--Negro, #1E1E1E);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.4%;
+  display: none;
+  max-width: 80%;
+}
+
+.faq-answer.active{
+  display: block;
+}
+
+.line {
+  stroke-width: 1px;
+  stroke: #000;
+  width: 90%;
+  height: 0px;
+  flex-shrink: 0;
+  border-top: 1px solid #000;
+}
+
+
 #transforming{
     background-image: url('../img/Nube\ grande.svg');
     background-size: auto;
@@ -270,11 +290,15 @@ color:#A1B2FF
 #branding-half-bg{
     background-image: url('../img/branding2.png');
     background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
 }
 
 #branding-full-bg{
     background-image: url('../img/branding.png');
     background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
 }
 
 
@@ -365,11 +389,15 @@ color:#A1B2FF
 #social-half-bg{
     background-image: url('../img/social2.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #social-full-bg{
     background-image: url('../img/social.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -461,9 +489,211 @@ color:#A1B2FF
 #photography-half-bg{
     background-image: url('../img/photography2.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #photography-full-bg{
     background-image: url('../img/photography.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
+.collaterals-section {
+  background-color: #1E1E1E; /* Light purple background */
+  font-family: "roc-grotesk-condensed", sans-serif;
+  color: #1E1E1E;
+  margin: 0;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+  gap: 0em;
+  min-height: 80vh; /* Ensures the section is tall enough to fit content */
+}
+
+.collaterals-card.half-height {
+  height: 25vh; /* Adjusted height to allow for more content */
+  margin: 0.6em;
+  overflow: hidden; /* Prevents overflow of content */
+  border-radius: 1.25em;
+
+}  
+
+.collaterals-card.full-height {
+  height: 62vh; /* This matches the section height minus padding and gap */
+  border-radius: 1.25em;
+  margin: 0.6em;
+  overflow: hidden; /* Prevents overflow of content */
+  align-content: center;
+}
+
+.collaterals-card {
+  background-color: #F99FF9; /* Dark background for the cards */
+  border-radius: 30px; /* Rounded corners */
+  padding: 2em;
+  text-align: left;
+}
+
+.collaterals-title {
+  font-size: 4.6em;
+  color: #1E1E1E; /* Light purple for the titles */
+  text-transform: uppercase;
+  margin-top: 1%;
+  font-weight:600;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.collaterals-description {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #1E1E1E;
+  font-family: Poppins;
+  margin-top: -10%;
+  padding-left: 1.2em;
+  padding-right: 1.4em;
+
+}
+
+#collaterals-left,
+#collaterals-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:1%;
+}
+
+@media (min-width: 48em) {
+  .collaterals-section {
+    align-items: stretch;
+  }
+
+  #collaterals-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #collaterals-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#collaterals-half-bg{
+  background-image: url('../img/collaterals2.png');
+  background-size: cover;
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+#collaterals-full-bg{
+  background-image: url('../img/collaterals.png');
+  background-size: cover;
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+.web-section {
+  background-color: #1E1E1E; /* Light purple background */
+  font-family: "roc-grotesk-condensed", sans-serif;
+  color: #1E1E1E;
+  margin: 0;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+  gap: 0em;
+  min-height: 80vh; /* Ensures the section is tall enough to fit content */
+}
+
+.web-card.half-height {
+  height: 25vh; /* Adjusted height to allow for more content */
+  margin: 0.6em;
+  overflow: hidden; /* Prevents overflow of content */
+  border-radius: 1.25em;
+
+}  
+
+.web-card.full-height {
+  height: 62vh; /* This matches the section height minus padding and gap */
+  border-radius: 1.25em;
+  margin: 0.6em;
+  overflow: hidden; /* Prevents overflow of content */
+  align-content: center;
+}
+
+.web-card {
+  background-color: #F99FF9; /* Dark background for the cards */
+  border-radius: 30px; /* Rounded corners */
+  padding: 2em;
+  text-align: left;
+}
+
+.web-title {
+  font-size: 4.6em;
+  color: #1E1E1E; /* Light purple for the titles */
+  text-transform: uppercase;
+  margin-top: 1%;
+  font-weight:600;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.web-description {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #1E1E1E;
+  font-family: Poppins;
+  margin-top: -10%;
+  padding-left: 1.2em;
+  padding-right: 1.4em;
+
+}
+
+#web-left,
+#web-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:1%;
+}
+
+@media (min-width: 48em) {
+  .web-section {
+    align-items: stretch;
+  }
+
+  #web-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #web-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+#web-half-bg{
+  background-image: url('../img/web2.png');
+  background-size: cover;
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+#web-full-bg{
+  background-image: url('../img/web.png');
+  background-size: cover;
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+

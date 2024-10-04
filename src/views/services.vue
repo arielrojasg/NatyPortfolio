@@ -23,6 +23,22 @@
       </div>
     </div>
 	</section>
+	<section class="collaterals-section">
+		<div id="collaterals-left">
+		<div id="collaterals-full-bg" class="collaterals-card full-height">
+		</div>
+		</div>
+		<div id="collaterals-right">
+		<div class="collaterals-card half-height">
+			<h2 class="collaterals-title">BRAND COLLATERALS</h2>
+			<p class="collaterals-description">
+				Creating essential brand collaterals like business cards, packaging, and promotional materials that maintain brand consistency and enhance your marketing efforts.
+			</p>
+		</div>
+		<div id="collaterals-half-bg" class="collaterals-card half-height">
+		</div>
+		</div>
+	</section>
 	<section class="social-section">
 		<div id="social-left">
 		<div class="social-card half-height">
@@ -36,6 +52,21 @@
 		</div>
 		<div id="social-right">
 		<div id="social-full-bg" class="social-card full-height">
+		</div>
+		</div>
+	</section>
+	<section class="web-section">
+		<div id="web-left">
+		<div id="web-full-bg" class="web-card full-height">
+		</div>
+		</div>
+		<div id="web-right">
+		<div class="web-card half-height">
+			<h2 class="web-title">WEB DESIGN</h2>
+			<p class="web-description">
+				Designing user-friendly, visually stunning websites that reflect your brand's identity. We focus on functionality and aesthetics to provide an exceptional user experience.			</p>
+		</div>
+		<div id="web-half-bg" class="web-card half-height">
 		</div>
 		</div>
 	</section>
@@ -55,19 +86,19 @@
 		</div>
 	</section>
 	<section class="send-info-section">
-		<h4 class="send-info-small-title">GET ACCESS TO MY</h4>
-		<h2 class="send-info-title">SERVICE AND PRICE GUIDE!</h2>
+		<h2 class="send-info-title">GET ACCESS TO MY</h2>
+		<h2 class="send-info-title">SERVICE GUIDE!</h2>
 		<div class="send-info-line">
-			<input type="email" id="email" name="email" placeholder="Email Address">
-			<button id="send-info-button">SEND ME THE INFO</button>
+			<input type="email" id="send-info-email" name="email" placeholder="Email Address">
+			<button id="send-info-button">MORE INFO</button>
 		</div>
 	</section>
 	<section class="faq-section">
 		<div class="faq-container">
-			<div class="faq-left">
+			<div class="faq-top">
 				<h1 class="faq-title">FAQ</h1>
 			</div>
-			<div class="faq-right">
+			<div class="faq-questions">
 				<div class="line"></div>
 				<div class="faq">
 					<div class="faq-question">What is the one concept method?</div>
