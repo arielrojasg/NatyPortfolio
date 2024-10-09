@@ -1,48 +1,47 @@
-.higher-section{
-    position: relative;
-    background: var(--Celeste, #AEBCFB);
-    height: 600px;
-    justify-content: center;
-    margin-top: -1%;
-    text-align: center;
-    z-index: 1;
+#mywork-body{
+    background-color: #1E1E1E;
 }
-.higher-small-title{
+
+
+.celebrating-section{
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 2.5%;
+    display: inline-block;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.celebrating-small-title{
     padding-top:3.5% ;
     color: var(--negro, #1E1E1E);
     text-align: center;
-    font-family: Oswald;
-    font-size: 75px;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    font-size: 4.68em;
     font-style: normal;
     font-weight: 500;
-    line-height: 147.4%; /* 110.55px */
+    line-height: 0%;
     text-transform: uppercase;
 }
 
-.higher-big-title{
-    color: var(--blanco, #FFF);
-    text-align: center;
-    font-family: Oswald;
-    font-size: 128px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 147.4%; /* 188.672px */
-    text-transform: uppercase;
-    margin-top: -5%;
-    margin-bottom: -0.5%;
-}
-
-.higher-text{
+.celebrating-small-title-2{
+    padding-bottom:3% ;
     color: var(--negro, #1E1E1E);
     text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    font-size: 4.68em;
     font-style: normal;
-    font-weight: 400;
-    line-height: 70%; /* 23.584px */
+    font-weight: 500;
+    line-height: 0%;
+    text-transform: uppercase;
 }
 
-.higher-button {
+.celebrating-button {
     margin-top: 2%;
     text-align: center;
     border-radius: 180px;
@@ -50,7 +49,7 @@
     background: var(--negro, #1E1E1E);
     color: var(--negro, #FFF);
     text-align: center;
-    font-family: Oswald;
+    font-family: "roc-grotesk-condensed", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -61,7 +60,7 @@
     padding: 10px;
 }
 
-.higher-button:hover{
+.celebrating-button:hover{
     background: var(--verde, #FFF);
     color: var(--negro, #1E1E1E);
 }
@@ -73,6 +72,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 .project-image{
     width: 638.637px;
     height: 611.017px;
@@ -81,3 +81,318 @@
     background-size: cover;
     background-position: center;
 }
+
+.discover-title{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 300%;
+    text-transform: uppercase;
+    background-color: #F99FF9;
+    margin-top: 3.5%;
+  }  
+
+
+  .portfolio1-section {
+    background-color: #FFFF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 2em;
+    padding-bottom: 0em;
+    display: flex;
+    justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+    gap: 0em;
+    min-height: 80vh; /* Ensures the section is tall enough to fit content */
+  }
+  
+  .portfolio1-card.half-height {
+    height: 50vh; /* Adjusted height to allow for more content */
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 1.25em;
+
+  }  
+  
+  .portfolio1-card.full-height {
+    height: 113vh; /* This matches the section height minus padding and gap */
+    border-radius: 1.25em;
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    align-content: center;
+  }
+  
+  .portfolio1-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: left;
+  }
+  
+  .portfolio1-title {
+    font-size: 4.6em;
+    color: #F99FF9; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight:600;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  
+  .portfolio1-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    font-family: Poppins;
+    margin-top: -10%;
+    padding-left: 1.2em;
+    padding-right: 1.4em;
+
+  }
+  
+  #portfolio1-left,
+  #portfolio1-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:1%;
+  }
+  
+  @media (min-width: 48em) {
+    .portfolio1-section {
+      align-items: stretch;
+    }
+  
+    #portfolio1-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #portfolio1-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+.colored-text{
+color:#A1B2FF
+}
+
+#portfolio1-half-bg{
+    background-image: url('../img/Portfolio03.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+}
+
+#portfolio1-half-bg-up{
+    background-image: url('../img/Portfolio02.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+}
+
+#portfolio1-full-bg{
+    background-image: url('../img/Portfolio01.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+}
+
+.portfolio2-section {
+    background-color: #FFFF; /* Light purple background */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    color: #1E1E1E;
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    justify-content: space-between; /* Ensure the left and right sections are spaced apart */
+    gap: 0em;
+    min-height: 80vh; /* Ensures the section is tall enough to fit content */
+  }
+  
+  .portfolio2-card.half-height {
+    height: 50vh; /* Adjusted height to allow for more content */
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 1.25em;
+  
+  }  
+  
+  .portfolio2-card.full-height {
+    height: 113vh; /* This matches the section height minus padding and gap */
+    border-radius: 1.25em;
+    margin: 0.6em;
+    overflow: hidden; /* Prevents overflow of content */
+    align-content: center;
+  }
+  
+  .portfolio2-card {
+    background-color: #1E1E1E; /* Dark background for the cards */
+    border-radius: 30px; /* Rounded corners */
+    padding: 2em;
+    text-align: left;
+  }
+  
+  .portfolio2-title {
+    font-size: 4.6em;
+    color: #1E1E1E; /* Light purple for the titles */
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight:600;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+  
+  .portfolio2-description {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #1E1E1E;
+    font-family: Poppins;
+    margin-top: -10%;
+    padding-left: 1.2em;
+    padding-right: 1.4em;
+  
+  }
+  
+  #portfolio2-left,
+  #portfolio2-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1%;
+  }
+  
+  @media (min-width: 48em) {
+    .portfolio2-section {
+      align-items: stretch;
+    }
+  
+    #portfolio2-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #portfolio2-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  #portfolio2-half-bg{
+    background-image: url('../img/Portfolio05.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }  
+  #portfolio2-half-bg-up{
+    background-image: url('../img/Portfolio04.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+  
+  #portfolio2-full-bg{
+    background-image: url('../img/Portfolio0.png');
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+  }
+
+
+  .work-together-section{
+    position: relative;
+    background: var(--negro, #FFFF); 
+    height: 27em;
+    justify-content: center;
+    margin-top: -6%;
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 10%;
+}
+.work-together-title{
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    font-size: 4.6em;
+    margin-bottom: 1%;
+    padding-top: 3%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%; /* 110.55px */
+    text-transform: uppercase;
+}
+
+.work-together-text{
+    text-align: center;
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50.4%; /* 23.584px */
+}
+
+.work-together-button {
+    margin-top: 2%;
+    border-radius: 180px;
+    border-color: transparent;
+    background: var(--rojo, #F99FF9);
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%;
+    text-transform: uppercase;
+    width: 20%;
+    height: 55px;
+    padding: 0.625em;
+  }
+
+.work-together-button:hover{
+    background: var(--negro, #1E1E1E);
+    color: var(--blanco, #FFFF);
+  }
+
+.work-together-button-1 {
+    margin-top:2%;
+    border-radius: 180px;
+    border-color: transparent;
+    background: var(--rojo, #F99FF9);
+    color: var(--negro, #1E1E1E);
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.4%;
+    text-transform: uppercase;
+    width: 20%;
+    height: 55px;
+    padding: 0.625em;
+  }
+
+.work-together-button-1:hover{
+    background: var(--negro, #1E1E1E);
+    color: var(--blanco, #FFFF);
+  }
+
+  #work-together-button-area{
+    padding-top: 3%;
+    background-color: #1E1E1E;
+  }

@@ -61,7 +61,7 @@
 .work-together-section{
     position: relative;
     background: var(--negro, #FFFF); 
-    height: 28em;
+    height: 27em;
     justify-content: center;
     margin-top: -6%;
     text-align: center;
@@ -72,7 +72,7 @@
     text-align: center;
     font-family: "roc-grotesk-condensed", sans-serif;
     font-size: 4.6em;
-    margin-bottom: 1.5%;
+    margin-bottom: 1%;
     padding-top: 5%;
     font-style: normal;
     font-weight: 500;

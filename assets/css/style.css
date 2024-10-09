@@ -521,7 +521,7 @@ p {
 .obsessed-title{
   color: var(--blanco, #1E1E1E);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 4.68em;
   font-style: normal;
   font-weight: 600;
   line-height: 9%;
@@ -620,6 +620,7 @@ p {
   background-color: #F99FF9;
   padding-top: 1.5%;
 }
+
 .services-question{
   color: var(--Negro, #1E1E1E);
   font-family: "Poppins";
