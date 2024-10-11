@@ -317,7 +317,7 @@ color:#A1B2FF
     background: var(--negro, #FFFF); 
     height: 27em;
     justify-content: center;
-    margin-top: -6%;
+    margin-top: 0%;
     text-align: center;
     z-index: 1;
     padding-bottom: 10%;
@@ -370,7 +370,8 @@ color:#A1B2FF
   }
 
 .work-together-button-1 {
-    margin-top:2%;
+    margin-top:1.5%;
+    margin-bottom:1.5%;
     border-radius: 180px;
     border-color: transparent;
     background: var(--rojo, #F99FF9);
@@ -388,11 +389,13 @@ color:#A1B2FF
   }
 
 .work-together-button-1:hover{
-    background: var(--negro, #1E1E1E);
-    color: var(--blanco, #FFFF);
+    background: var(--blanco, #FFF);
+    color: var(--negro, #1E1E1E);
   }
 
   #work-together-button-area{
-    padding-top: 3%;
+    padding-top: 0%;
     background-color: #1E1E1E;
+    justify-content: center; /* Center the button horizontally (optional if needed) */
+    align-items: center; /* Center the button vertically */
   }

@@ -33,7 +33,7 @@
 	</section>
 	<section class="work-together-section">
 		<div id="work-together-button-area">
-			<button class="work-together-button-1">WATCH AT BEHANCE</button>
+			<button class="work-together-button-1">VIEW ON BEHANCE</button>
 		</div>
 		<h2 class="work-together-title">WANT ME TO WORK TOGETHER?</h2>
 		<p class="work-together-text">If you're ready to start a new dream project, click the button</p>
