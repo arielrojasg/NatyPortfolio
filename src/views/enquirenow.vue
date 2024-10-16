@@ -93,56 +93,57 @@
 		
 			<label class="enquirenow_label" for="budget">What's your budget for this project? ($USD) *</label>
 			<input type="text" id="budget" name="budget" placeholder="Your Budget in USD">
-		
+	
 			<label class="enquirenow_label">How did you hear about me? *</label>
-<div class="form-group-checkbox">
-    <label class ="enquirenow_label" for="instagram">
-        <input type="checkbox" id="instagram" name="source">
-        Instagram
-    </label>
+			<div class="form-group-checkbox">
+				<label class ="enquirenow_label" for="instagram">
+					<input type="checkbox" id="instagram" name="source">
+					Instagram
+				</label>
 
-    <label class ="enquirenow_label" for="linkedin">
-        <input type="checkbox" id="linkedin" name="source">
-        LinkedIn
-    </label>
+				<label class ="enquirenow_label" for="linkedin">
+					<input type="checkbox" id="linkedin" name="source">
+					LinkedIn
+				</label>
 
-    <label class ="enquirenow_label" for="behance">
-        <input type="checkbox" id="behance" name="source">
-        Behance
-    </label>
+				<label class ="enquirenow_label" for="behance">
+					<input type="checkbox" id="behance" name="source">
+					Behance
+				</label>
 
-    <label class ="enquirenow_label" for="referral">
-        <input type="checkbox" id="referral" name="source">
-        Client Referral
-    </label>
-</div>
-
+				<label class ="enquirenow_label" for="referral">
+					<input type="checkbox" id="referral" name="source">
+					Client Referral
+				</label>
+			</div>
 			<label class="enquirenow_label" for="additionalInfo">Anything else you want me to know?</label>
 			<textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional information..."></textarea>
-			
+
+			<p class="note-text">
+    			<strong>NOTE:</strong> PLEASE CHECK YOUR JUNK/SPAM FOLDER IN CASE MY RESPONSE TO YOUR INQUIRY ENDS UP THERE!
+			</p>
 
 			<div class="button-container">
-				<button type="submit" id="enquirenowbutton">Send</button>
+				<button type="submit" id="enquirenowbutton">Send me the info</button>
 			</div>
 		</form>
-		
 	</section>
-	
-	<section class="send-info-section">
-		<h4 class="send-info-small-title">GET ACCESS TO MY</h4>
-		<h2 class="send-info-title">SERVICE AND PRICE GUIDE!</h2>
-		<div class="send-info-line">
-			<input type="email" id="send-info-email" name="email" placeholder="Email Address">
-			<button id="send-info-button">SEND ME THE INFO</button>
+	<section class="join-forces-section">
+		<div class="join-forces-left">
+			<h2 class="join-forces-title">
+				INTERESTED IN<br>JOINING FORCES?
+			</h2>
+		</div>
+		<div class="join-forces-right">
+			<p class="join-forces-text">
+				For collaborations or any other inquiries, you can contact me directly via email:
+			</p>
+			<p class="join-forces-email">
+				<strong>nvillalobosc29@gmail.com</strong>
+			</p>
 		</div>
 	</section>
-    <section class="join-forces-section">
-        <h4 class="join-forces-small-title">INTERESTED IN</h4>
-		<h2 class="join-forces-title">JOINING FORCES?</h2>
-		<p class="join-forces-text">Are you a sponsor who wanna collaborate with me?</p>
-		<p class="join-forces-text">Click the button below to contact me.</p>
-		<button class="join-forces-button">Join Forces</button>
-	</section>
+	<section id="blank"></section>
 </template>
 
 <script>

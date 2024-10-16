@@ -39,7 +39,7 @@ body{
 }
 .element a {
   color: #FFFFFF;
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-family: Poppins;
   font-weight: 500;
   text-decoration: none;
@@ -55,25 +55,25 @@ li.active a {
   color: var(--rojo, #F99FF9);
   text-align: center;
   font-family: Poppins;
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal; 
 }
 .logo {
   margin-right: auto;
-  margin-left: 0.625em; 
+  margin-left: 0.69vw; 
 }
 
 .navbar {
   background-color: transparent; 
-  border-radius: 100px;
-  border: 2px solid #F99FF9; 
-  padding: 1px 0.625em; 
+  border-radius: 6.94vw;
+  border: 0.14vw solid #F99FF9; 
+  padding: 0.07vw 0.69vw; 
   margin-left: 12%;
   margin-top: 2%;
   margin-right: 12%;
-  height: 60px;
+  height: 4.17vw;
 }
 
 .container {
@@ -104,17 +104,17 @@ li.active a {
 }
 
 .navbar-nav li {
-  margin: 0 0.625em;
+  margin: 0 0.69vw;
 }
 
 
 .item-count {
-  padding: 2px 5px;
+  padding: 0.14vw 0.35vw;
   border-radius: 50%;
   background-color: rgba(236, 71, 36, 1);
   color: #fff;
-  width: 50px;
-  line-height: 56px;
+  width: 3.47vw;
+  line-height: 3.89vw;
   text-align: center;
   font-weight: normal;
   font-family: Poppins;
@@ -140,14 +140,14 @@ li.active a {
   margin-bottom: 5%;
 }
 .image-container {
-  margin-right: 1.25em;
+  margin-right: 1.39vw;
 }
 
 
 .bio-title {
   color: var(--blanco, #FFFFFF);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 4.6em;
+  font-size: 5.11vw;
   font-style: normal;
   font-weight: 600;
   line-height: 25%;
@@ -157,7 +157,7 @@ li.active a {
 .bio-title-fucsia {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 4.6em;
+  font-size: 5.11vw;
   font-style: normal;
   font-weight: 600;
   line-height: 25%;
@@ -167,7 +167,7 @@ li.active a {
 .bigger-title {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 128px;
+  font-size: 8.89vw;
   font-style: normal;
   font-weight: 700;
   line-height: 0%;
@@ -178,30 +178,30 @@ li.active a {
 .text-box {
   color: var(--negro, #FFFFFF);
   font-family: Poppins;
-  font-size: 1em;
+  font-size: 1.11vw;
   font-style: normal;
   font-weight: 400;
   line-height: 147.4%;
-  width: 528.166px; 
+  width: 36.68vw; 
   margin-top: -2%;
   margin-bottom: 6%;
 }
 
 .button {
-  border-radius: 180px;
+  border-radius: 12.50vw;
   border-color: transparent;
   background: var(--rojo, #F99FF9);
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "Poppins";
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
   text-transform: uppercase;
   width: 50%;
-  height: 55px;
-  padding: 0.625em;
+  height: 3.82vw;
+  padding: 0.69vw;
 }
 
 .button:hover{
@@ -225,7 +225,7 @@ li.active a {
   font-family: "roc-grotesk-condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.50em;
+  font-size: 1.67vw;
   text-transform: uppercase; 
   transform: scale(2);
 
@@ -233,13 +233,13 @@ li.active a {
 
 .scrolling-content {
   display: inline-block;
-  padding-right: 1em;
-  padding-left: 1em;
-  margin-bottom: 0.625em;
+  padding-right: 1.11vw;
+  padding-left: 1.11vw;
+  margin-bottom: 0.69vw;
 }
 
 .separator {
-  padding: 0 0.5em; /* Adjust the spacing around the separator */
+  padding: 0 0.56vw; /* Adjust the spacing around the separator */
 }
 
 
@@ -259,7 +259,7 @@ li.active a {
 .process-title {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 5.21vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -278,13 +278,13 @@ li.active a {
 
 .step {
   flex: 1;
-  padding: 1.25em;
+  padding: 1.39vw;
 }
 
 .number {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 5.21vw;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
@@ -295,32 +295,32 @@ li.active a {
 .column-title {
   color: var(--fucsia, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 32px;
+  font-size: 2.22vw;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
   display: flex;
-  width: 201.096px;
-  height: 46.79px;
+  width: 13.96vw;
+  height: 3.25vw;
   flex-direction: column;
   flex-shrink: 0;
 }
 
 .separator {
   background: #F99FF9;
-  width: 330.348px;
-  height: 2px; 
+  width: 22.94vw;
+  height: 0.14vw; 
 }
 
 .column-text {
   color: var(--blanco, #FFF);
   font-family: Poppins;
-  font-size: 1em;
+  font-size: 1.11vw;
   font-style: normal;
   font-weight: 400;
   display: flex;
-  width: 327.453px;
-  height: 157.756px;
+  width: 22.74vw;
+  height: 10.96vw;
   flex-direction: column;
   flex-shrink: 0;
 }
@@ -335,7 +335,7 @@ li.active a {
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 32px;
+  font-size: 2.22vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -348,12 +348,12 @@ li.active a {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 1.25em;
+  margin-top: 1.39vw;
 }
 
 .instagram-column {
   flex-basis: 33%; /* Adjust the width based on your desired layout */
-  padding: 0.625em;
+  padding: 0.69vw;
   box-sizing: border-box;
   display: flex;
   justify-content: center; /* Horizontal centering */
@@ -376,7 +376,7 @@ li.active a {
   color: var(--negro, #FFFF);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 24px;
+  font-size: 1.67vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -403,7 +403,7 @@ li.active a {
 .footer-title a{
   color: var(--blanco, #FFF);
   font-family: Poppins;
-  font-size: 0.85em;
+  font-size: 0.94vw;
   font-style: normal;
   font-weight: 700;
   line-height: 147.4%;
@@ -413,7 +413,7 @@ li.active a {
 .footer-element a{
   color: var(--blanco, #FFF);
   font-family: Poppins;
-  font-size: 0.85em;
+  font-size: 0.94vw;
   font-style: normal;
   font-weight: 400;
   line-height: 147.4%;
@@ -431,7 +431,7 @@ li.active a {
 .footer-social-title{
   color: #FFF;
   font-family: Poppins;
-  font-size: 22px;
+  font-size: 1.53vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -441,7 +441,7 @@ li.active a {
 .copyright{
   color: var(--blanco, #FFF);
   font-family: Poppins;
-  font-size: 1em;
+  font-size: 1.11vw;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -450,7 +450,7 @@ li.active a {
 
 footer {
   background-color: #f9f9f9;
-  padding: 1.25em;
+  padding: 1.39vw;
 }
 
 .footer-column {
@@ -459,7 +459,7 @@ footer {
 }
 
 h4 {
-  margin-bottom: 0.625em;
+  margin-bottom: 0.69vw;
 }
 
 ul {
@@ -469,7 +469,7 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 0.35vw;
 }
 
 .social-icons {
@@ -479,16 +479,16 @@ li {
 }
 
 .social-icons li {
-  margin-right: 0.625em;
+  margin-right: 0.69vw;
 }
 
 .social-icons img {
-  width: 2.50em;
-  height: 2.50em;  
+  width: 2.78vw;
+  height: 2.78vw;  
 }
 
 p {
-  margin-top: 0.625em;
+  margin-top: 0.69vw;
 }
 
 .footer-socials{
@@ -521,7 +521,7 @@ p {
 .obsessed-title{
   color: var(--blanco, #1E1E1E);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 4.68em;
+  font-size: 5.20vw;
   font-style: normal;
   font-weight: 600;
   line-height: 9%;
@@ -533,7 +533,7 @@ p {
   color: var(--blanco, #1E1E1E);
   text-align: center;
   font-family: "Poppins";
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -558,14 +558,14 @@ p {
   background-size:contain;
   background-position: center;
   width: 25%;
-  height: 10em;
+  height: 14vw;
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center;
   color: #FFFFFF;
   font-family: "roc-grotesk-condensed", sans-serif;
   font-style: normal;
-  font-size: 1.25em;
+  font-size: 1.30vw;
   font-weight: 600;
   line-height: 9%;
   text-transform: uppercase;
@@ -594,12 +594,11 @@ p {
   margin: 0!important;      /* Reset margin if needed */
   padding: 0!important;    
 }
+
 .cloud:hover {
   color: #F99FF9;
   background-size: 80%;
 }
-
-
 
 .services-section{
   margin-top: -10% !important;
@@ -612,7 +611,7 @@ p {
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 4.5em;
+  font-size: 5.00vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -624,7 +623,7 @@ p {
 .services-question{
   color: var(--Negro, #1E1E1E);
   font-family: "Poppins";
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
@@ -642,12 +641,12 @@ p {
 
 .line{
   display: inline-block;
-  stroke-width: 1px;
+  stroke-width: 0.07vw;
   stroke: #000;
   width: 50%;
-  height: 0px;
+  height: 0.00vw;
   flex-shrink: 0;
-  border-top: 2px solid #000; /* You can adjust the color and thickness as needed */
+  border-top: 0.14vw solid #000; /* You can adjust the color and thickness as needed */
 }
 .services-container {
   display: block;
@@ -667,20 +666,20 @@ p {
 }
 
 .services-button {
-  border-radius: 180px;
+  border-radius: 12.50vw;
   border-color: transparent;
   background: var(--rojo, #F99FF9);
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "Poppins";
-  font-size: 1.25em;
+  font-size: 1.39vw;
   font-style: normal;
   font-weight: 500;
   line-height: 147.4%;
   text-transform: uppercase;
   width: 20%;
-  height: 55px;
-  padding: 0.625em;
+  height: 3.82vw;
+  padding: 0.69vw;
   display: inline-block;
 }
 
@@ -704,12 +703,12 @@ p {
 }
 
 #loved-titles{
-  padding-top: 5em;
+  padding-top: 5.56vw;
 }
 .loved-title{
   color: var(--blanco, #F99FF9);
   font-family: "roc-grotesk-condensed", sans-serif;
-  font-size: 75px;
+  font-size: 5.21vw;
   font-style: normal;
   font-weight: 600;
   line-height: 9%;
@@ -721,21 +720,21 @@ p {
   align-content: center;
   font-family: 'Poppins';
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.11vw;
 }
 
 #testimony-1{
   background-image: url('../img/Testimonial\ 01.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 40%;
-    padding: 5%;
-    box-sizing: border-box;
-    text-align: center;
-    line-break: auto;
-    margin-left: 18%;
-    padding-top: 2.5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40%;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+  line-break: auto;
+  margin-left: 18%;
+  padding-top: 2.5%;
 }
 
 #testimony-2{

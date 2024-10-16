@@ -45,7 +45,7 @@
     <h2 class="work-together-title">WANT ME TO WORK TOGETHER?</h2>
     <p class="work-together-text">If you're ready to start a new dream project, click the button</p>
     <p class="work-together-text">below to fill my enquiry form so we can work together!</p>
-    <button class="work-together-button">Let's Get Started</button>
+    <button class="work-together-button" onclick="window.location.href='enquirenow.html';">Let's Get Started</button>
   </section>
   <section class="send-info-section">
 		<h2 class="send-info-title">GET ACCESS TO MY</h2>
