@@ -1,6 +1,6 @@
 <template>
     <section class="instagram-section">
-		<h2 class="instagram-title">Follow my journey on Instagram</h2>
+		<h2 class="instagram-title">{{ $t('instagram.title') }}</h2>
 		<div class="instagram-columns">
 		  <div class="instagram-column">
 			<div class="image-wrapper">

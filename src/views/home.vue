@@ -1,138 +1,140 @@
 <template>
-<div class="scrolling-text">
-  <div class="text-container">
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <!-- Duplicate Content Starts Here -->
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-    <span class="separator">|</span>
-    <p class="scrolling-content">BOOKING FOR JULY</p>
-  </div>
-</div>
+    <div class="scrolling-text">
+      <div class="text-container">
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+        <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+        <span class="separator">|</span>
+      </div>
+    </div>
+  
     <div class="bio">
-        <div class="image-container">
-            <a href="assets/bio.png"><img src="assets/bio.png" alt="Bio Image"></a>
-        </div>
-        <div class="content-container">
-            <h1 class="bio-title">TRANSFORMING</h1>
-            <h1 class="bio-title">BRANDS INTO</h1>
-            <h1 class="bio-title-fucsia">UNFORGETTABLE</h1>
-            <h1 class="bio-title-fucsia">EXPERIENCES</h1>
-            <p class="text-box">Let’s build a bold, standout brand! I’ll guide you through the design process, offering advice and helping you reach your goals—while making it an enjoyable journey.</p>
-            <button class="button" onclick="window.location.href='enquirenow.html';">Let's Get Started</button>
-        </div>
+      <div class="image-container">
+        <a href="assets/bio.png">
+          <img src="assets/bio.png" alt="Bio Image">
+        </a>
+      </div>
+      <div class="content-container">
+        <h1 class="bio-title">{{ $t('home.transforming_brands') }}</h1>
+        <h1 class="bio-title">{{ $t('home.brands_into') }}</h1>
+        <h1 class="bio-title-fucsia">{{ $t('home.unforgettable') }}</h1>
+        <h1 class="bio-title-fucsia">{{ $t('home.experiences') }}</h1>
+        <p class="text-box">{{ $t('home.text_box') }}</p>
+        <button class="button" @click="goToPage('enquirenow.html')">{{ $t('home.lets_get_started') }}</button>
+      </div>
     </div>
+  
     <section class="obsessed">
-        <div id="obsessed-titles">
-            <h1 class="obsessed-title">YOU DESERVE TO BE OBSESSED</h1>
-            <h1 class="obsessed-title">WITH YOUR BRAND</h1>
-            <p class="obsessed-subtitle">BRANDING, DESIGN AND WEB</p>
+      <div id="obsessed-titles">
+        <h1 class="obsessed-title">{{ $t('home.obsessed_title_1') }}</h1>
+        <h1 class="obsessed-title">{{ $t('home.obsessed_title_2') }}</h1>
+        <p class="obsessed-subtitle">{{ $t('home.obsessed_subtitle') }}</p>
+      </div>
+      <div id="clouds">
+        <div class="cloud" @click="goToPage('about.html')">
+          <h2>{{ $t('home.about') }}</h2>
         </div>
-        <div id="clouds">
-    <div class="cloud" onclick="location.href='about.html';">
-        <h2>About</h2>
-    </div>
-    <div class="cloud" onclick="location.href='services.html';">
-        <h2>Services</h2>
-    </div>
-    <div class="cloud" onclick="location.href='mywork.html';">
-        <h2>My Work</h2>
-    </div>
-    <div class="cloud" onclick="location.href='https://itsnvillalobos.gumroad.com/';">
-        <h2>Shop</h2>
-    </div>
-    <div class="cloud" onclick="location.href='enquirenow.html';">
-        <h2>Enquire Now</h2>
-    </div>
-</div>
+        <div class="cloud" @click="goToPage('services.html')">
+          <h2>{{ $t('home.services') }}</h2>
+        </div>
+        <div class="cloud" @click="goToPage('mywork.html')">
+          <h2>{{ $t('home.my_work') }}</h2>
+        </div>
+        <div class="cloud" @click="goToPage('https://itsnvillalobos.gumroad.com/')">
+          <h2>{{ $t('home.shop') }}</h2>
+        </div>
+        <div class="cloud" @click="goToPage('enquirenow.html')">
+          <h2>{{ $t('home.enquire_now') }}</h2>
+        </div>
+      </div>
     </section>
+  
     <section class="services-section">
-		<div class="services-container">
-			<div id="services-title-line">
-				<h1 class="services-title">services</h1>
-			</div>
-			<div id="services-columns">
-				<div class="services">
-					<div class="services-question">Branding</div>
-				</div>
-				<div class="line"></div>
-				<div class="services">
-					<div class="services-question">Brand Collaterals</div>
-				</div>
-					<div class="line"></div>
-				<div class="services">
-					<div class="services-question">Social Media Management</div>
-				</div>
-				<div class="line"></div>
-				<div class="services">
-					<div class="services-question">Web Design and Development</div>
-				</div>
-				<div class="line"></div>
-				<div class="services">
-					<div class="services-question">Photography</div>
-				</div>
-				<div class="line"></div>
-			</div>
-		</div>
-        <div id="services-button-container">
-            <button class="services-button" onclick="window.location.href='enquirenow.html';">Let's Work Together</button>
+      <div class="services-container">
+        <div id="services-title-line">
+          <h1 class="services-title">{{ $t('home.services_title') }}</h1>
         </div>
+        <div id="services-columns">
+          <div class="services">
+            <div class="services-question">{{ $t('home.branding') }}</div>
+          </div>
+          <div class="line"></div>
+          <div class="services">
+            <div class="services-question">{{ $t('home.brand_collaterals') }}</div>
+          </div>
+          <div class="line"></div>
+          <div class="services">
+            <div class="services-question">{{ $t('home.social_media_management') }}</div>
+          </div>
+          <div class="line"></div>
+          <div class="services">
+            <div class="services-question">{{ $t('home.web_design') }}</div>
+          </div>
+          <div class="line"></div>
+          <div class="services">
+            <div class="services-question">{{ $t('home.photography') }}</div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div id="services-button-container">
+        <button class="services-button" @click="goToPage('enquirenow.html')">{{ $t('home.lets_work_together') }}</button>
+      </div>
     </section>
+  
     <section class="loved">
-        <div id="loved-titles">
-            <h1 class="loved-title">WHY THEY LOVED</h1>
-            <h1 class="loved-title">WORKING WITH ME</h1>
+      <div id="loved-titles">
+        <h1 class="loved-title">{{ $t('home.why_they_loved') }}</h1>
+        <h1 class="loved-title">{{ $t('home.working_with_me') }}</h1>
+      </div>
+      <div id="testimonies">
+        <div id="testimony-1">
+          <p>{{ $t('home.testimony_1') }}</p>
+          <h3>{{ $t('home.testimony_1_name') }}</h3>
         </div>
-        <div id="testimonies">
-            <div id="testimony-1">
-                <p>I loved the entire process from start to finish, from the Zoom meeting to the final delivery of the project.
-You showed so much dedication to the project, researching the brand, what we do, and why we do it. Plus, every design you created for us was filled with creativity.</p>
-                <h3>WENDY, MOKA</h3>
-            </div>            
-            <div id="testimony-2">
-                <p>Natalia is an excellent designer, creative, and extremely professional. She helped us build a brand from scratch exactly how we imagined it. I hope to work with Natalia again in the future.</p>
-                <h3>ANDREA, LA IMPRENCIA</h3>
-            </div>            
-            <div id="testimony-3">
-                <p>I am very pleased to have had the opportunity to work with you. The quality of your work is incredible; you delivered a polished and professional design that exceeded our expectations. You were exceptionally attentive to detail.
-                    Regarding deadlines, you met the agreed dates and even completed tasks ahead of schedule. Communication has been smooth and effective; you respond to inquiries promptly and have kept us updated throughout the progress of the project.</p>
-                <h3>LORENA, LOREN'S</h3>
-            </div>
+        <div id="testimony-2">
+          <p>{{ $t('home.testimony_2') }}</p>
+          <h3>{{ $t('home.testimony_2_name') }}</h3>
         </div>
+        <div id="testimony-3">
+          <p>{{ $t('home.testimony_3') }}</p>
+          <h3>{{ $t('home.testimony_3_name') }}</h3>
+        </div>
+      </div>
     </section>
-
-</template>
-
-<script>
-export default {
-  name: 'Home',
-};
-</script>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Home',
+    methods: {
+      goToPage(url) {
+        window.location.href = url;
+      }
+    }
+  };
+  </script>
+  

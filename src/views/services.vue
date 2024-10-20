@@ -1,148 +1,142 @@
 <template>
 	<section id="transforming">
-        <div id="transforming-titles">
-            <h1 class="obsessed-title">TRANSFORMING</h1>
-            <h1 class="obsessed-title">VISIONS INTO REALITY</h1>
-            <p class="obsessed-subtitle">EXPLORE OUR CREATIVE SERVICES</p>
-        </div>
-		<button id="transforming-button" onclick="window.location.href='enquirenow.html';">GET A QUOTE</button>
-    </section>
+	  <div id="transforming-titles">
+		<h1 class="obsessed-title">{{ $t('services.transforming_title_1') }}</h1>
+		<h1 class="obsessed-title">{{ $t('services.transforming_title_2') }}</h1>
+		<p class="obsessed-subtitle">{{ $t('services.explore_services') }}</p>
+	  </div>
+	  <button id="transforming-button" @click="goToPage('enquirenow.html')">{{ $t('services.get_quote') }}</button>
+	</section>
+  
 	<section class="branding-section">
-    <div id="branding-left">
-      <div class="branding-card half-height">
-        <h2 class="branding-title">BRANDING</h2>
-        <p class="branding-description">
-			Crafting a unique and strategic identity for your business that resonates with your target audience. From logo design to complete brand guidelines, we ensure your brand stands out.
-        </p>
-      </div>
-      <div id="branding-half-bg" class="branding-card half-height">
-      </div>
-    </div>
-    <div id="branding-right">
-      <div id="branding-full-bg" class="branding-card full-height">
-      </div>
-    </div>
+	  <div id="branding-left">
+		<div class="branding-card half-height">
+		  <h2 class="branding-title">{{ $t('services.branding_title') }}</h2>
+		  <p class="branding-description">{{ $t('services.branding_description') }}</p>
+		</div>
+		<div id="branding-half-bg" class="branding-card half-height"></div>
+	  </div>
+	  <div id="branding-right">
+		<div id="branding-full-bg" class="branding-card full-height"></div>
+	  </div>
 	</section>
+  
 	<section class="collaterals-section">
-		<div id="collaterals-left">
-		<div id="collaterals-full-bg" class="collaterals-card full-height">
-		</div>
-		</div>
-		<div id="collaterals-right">
+	  <div id="collaterals-left">
+		<div id="collaterals-full-bg" class="collaterals-card full-height"></div>
+	  </div>
+	  <div id="collaterals-right">
 		<div class="collaterals-card half-height">
-			<h2 class="collaterals-title">BRAND COLLATERALS</h2>
-			<p class="collaterals-description">
-				Creating essential brand collaterals like business cards, packaging, and promotional materials that maintain brand consistency and enhance your marketing efforts.
-			</p>
+		  <h2 class="collaterals-title">{{ $t('services.collaterals_title') }}</h2>
+		  <p class="collaterals-description">{{ $t('services.collaterals_description') }}</p>
 		</div>
-		<div id="collaterals-half-bg" class="collaterals-card half-height">
-		</div>
-		</div>
+		<div id="collaterals-half-bg" class="collaterals-card half-height"></div>
+	  </div>
 	</section>
+  
 	<section class="social-section">
-		<div id="social-left">
+	  <div id="social-left">
 		<div class="social-card half-height">
-			<h2 class="social-title">SOCIAL MEDIA</h2>
-			<p class="social-description">
-				Elevating your social media presence with engaging content and cohesive visuals. We create strategies and designs that drive engagement and build your online community.
-			</p>
+		  <h2 class="social-title">{{ $t('services.social_title') }}</h2>
+		  <p class="social-description">{{ $t('services.social_description') }}</p>
 		</div>
-		<div id="social-half-bg" class="social-card half-height">
-		</div>
-		</div>
-		<div id="social-right">
-		<div id="social-full-bg" class="social-card full-height">
-		</div>
-		</div>
+		<div id="social-half-bg" class="social-card half-height"></div>
+	  </div>
+	  <div id="social-right">
+		<div id="social-full-bg" class="social-card full-height"></div>
+	  </div>
 	</section>
+  
 	<section class="web-section">
-		<div id="web-left">
-		<div id="web-full-bg" class="web-card full-height">
-		</div>
-		</div>
-		<div id="web-right">
+	  <div id="web-left">
+		<div id="web-full-bg" class="web-card full-height"></div>
+	  </div>
+	  <div id="web-right">
 		<div class="web-card half-height">
-			<h2 class="web-title">WEB DESIGN</h2>
-			<p class="web-description">
-				Designing user-friendly, visually stunning websites that reflect your brand's identity. We focus on functionality and aesthetics to provide an exceptional user experience.			</p>
+		  <h2 class="web-title">{{ $t('services.web_title') }}</h2>
+		  <p class="web-description">{{ $t('services.web_description') }}</p>
 		</div>
-		<div id="web-half-bg" class="web-card half-height">
-		</div>
-		</div>
+		<div id="web-half-bg" class="web-card half-height"></div>
+	  </div>
 	</section>
+  
 	<section class="photography-section">
-		<div id="photography-left">
+	  <div id="photography-left">
 		<div class="photography-card half-height">
-			<h2 class="photography-title">PHOTOGRAPHY</h2>
-			<p class="photography-description">
-				Capturing high-quality images that align with your brand’s identity. Whether it's product photography, lifestyle shots, or corporate headshots, we ensure your visuals tell your brand's story.			</p>
+		  <h2 class="photography-title">{{ $t('services.photography_title') }}</h2>
+		  <p class="photography-description">{{ $t('services.photography_description') }}</p>
 		</div>
-		<div id="photography-half-bg" class="photography-card half-height">
-		</div>
-		</div>
-		<div id="photography-right">
-		<div id="photography-full-bg" class="photography-card full-height">
-		</div>
-		</div>
+		<div id="photography-half-bg" class="photography-card half-height"></div>
+	  </div>
+	  <div id="photography-right">
+		<div id="photography-full-bg" class="photography-card full-height"></div>
+	  </div>
 	</section>
+  
 	<section class="send-info-section">
-		<h2 class="send-info-title">GET ACCESS TO MY</h2>
-		<h2 class="send-info-title">SERVICE GUIDE!</h2>
-		<div class="send-info-line">
-			<input type="email" id="send-info-email" name="email" placeholder="Email Address">
-			<button id="send-info-button">MORE INFO</button>
-		</div>
+	  <h2 class="send-info-title">{{ $t('services.send_info_title_1') }}</h2>
+	  <h2 class="send-info-title">{{ $t('services.send_info_title_2') }}</h2>
+	  <div class="send-info-line">
+		<input type="email" id="send-info-email" name="email" :placeholder="$t('services.send_info_placeholder')">
+		<button id="send-info-button">{{ $t('services.send_info_button') }}</button>
+	  </div>
 	</section>
+  
 	<section class="faq-section">
-		<div class="faq-container">
-			<div class="faq-top">
-				<h1 class="faq-title">FAQ</h1>
-			</div>
-			<div class="faq-questions">
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">What is the one concept method?</div>
-					<div class="faq-answer">The One Concept Method is an approach where I focus all my time and energy on creating a single, powerful design concept for your brand. This method ensures a clear direction, allowing us to perfect and refine it to best represent your brand's vision and values.</div>
-				</div>
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">If I already have a logo, can I hire a branding or social media package?</div>
-					<div class="faq-answer">Each project is developed with great passion, aiming to represent your brand's vision and values in the best possible way. For this reason, I ask clients who already have a logo to go through a rebranding process, allowing us to create a graphic identity tailored to your target audience.</div>
-				</div>
-					<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">How can I work with you on designing my brand?</div>
-					<div class="faq-answer">You can contact me through the contact form on my website to discuss your branding needs and goals. Together, we will create a personalized design strategy.</div>
-				</div>
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">How long does the design process take?</div>
-					<div class="faq-answer">The time required to complete a design project may vary depending on its complexity. We will work together to establish a realistic timeline and meet your deadlines.</div>
-				</div>
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">Are there payment plans available?</div>
-					<div class="faq-answer">I am well aware that your brand design is an investment, therefore, the total amount is divided into two payments: 50% upfront to secure your spot, and the remaining 50% upon delivery of the final files.</div>
-				</div>
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">Do you offer any other services besides social media and branding?</div>
-					<div class="faq-answer">Yes, I can also assist you with creating additional brand elements, such as business cards, corporate stationery, packaging, website design, social media templates, product photography, brand GIFs, and more.</div>
-				</div>
-				<div class="line"></div>
-				<div class="faq">
-					<div class="faq-question">What i don't do</div>
-					<div class="faq-answer">Just a logo.
-						Brand design without strategy.
-						I don't work hastily; I take the necessary time to ensure that I deliver quality results.</div>
-				</div>
-				<div class="line"></div>
-			</div>
+	  <div class="faq-container">
+		<div class="faq-top">
+		  <h1 class="faq-title">{{ $t('services.faq_title') }}</h1>
 		</div>
+		<div class="faq-questions">
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_1') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_1') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_2') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_2') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_3') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_3') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_4') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_4') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_5') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_5') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_6') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_6') }}</div>
+		  </div>
+		  <div class="line"></div>
+		  <div class="faq">
+			<div class="faq-question">{{ $t('services.faq_question_7') }}</div>
+			<div class="faq-answer">{{ $t('services.faq_answer_7') }}</div>
+		  </div>
+		  <div class="line"></div>
+		</div>
+	  </div>
 	</section>
-</template>
-<script>
-export default {
-  name: 'Services',
-};
-</script>
+  </template>
+  
+  <script>
+  export default {
+	name: 'Services',
+	methods: {
+	  goToPage(url) {
+		window.location.href = url;
+	  }
+	}
+  };
+  </script>
+  

@@ -60,6 +60,11 @@ li.active a {
   font-weight: 500;
   line-height: normal; 
 }
+
+.navbar-nav .active {
+  color: #F99FF9; /* Pink color for the active link */
+}
+
 .logo {
   margin-right: auto;
   margin-left: 0.69vw; 

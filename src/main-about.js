@@ -3,7 +3,19 @@ import Navbar from './components/navbar.vue';
 import About from './views/about.vue';
 import Footer from './components/footer.vue';
 import Instagram from './components/instagram.vue';
+import { i18n } from './main'; // Import i18n instance from main.js
 
-createApp(Navbar).mount('#navbar');
-createApp(About).mount('#about');
-createApp(Footer).mount('#footer');
+// Initialize Navbar with i18n
+const navbarApp = createApp(Navbar);
+navbarApp.use(i18n);
+navbarApp.mount('#navbar');
+
+// Initialize About with i18n
+const aboutApp = createApp(About);
+aboutApp.use(i18n);
+aboutApp.mount('#about');
+
+// Initialize Footer with i18n
+const footerApp = createApp(Footer);
+footerApp.use(i18n);
+footerApp.mount('#footer');

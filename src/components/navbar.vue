@@ -1,22 +1,45 @@
 <template>
-<nav class="navbar">
+  <nav class="navbar">
     <div class="container">
       <div class="navbar-left">
         <ul class="navbar-nav">
-          <li class="logo"><a href="index.html"><img src="assets/img/Logo Nat.webp" alt="logo" width="60px"></a></li>
+          <li class="logo">
+            <a href="index.html">
+              <img src="assets/img/Logo Nat.webp" alt="logo" width="60px">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="navbar-center">
-        <ul class="navbar-nav">
-        </ul>
+        <ul class="navbar-nav"></ul>
       </div>
       <div class="navbar-right">
         <ul class="navbar-nav">
-            <li class="element"><a href="about.html">About</a></li>
-            <li class="element"><a href="services.html">Services</a></li>
-            <li class="element"><a href="mywork.html">My Work</a></li>
-            <li class="element"><a href="https://itsnvillalobos.gumroad.com/">Shop</a></li>
-            <li class="element"><a href="enquirenow.html">Enquire Now</a></li>
+          <li class="element">
+            <a :class="{ active: currentPage === 'about' }" href="about.html">
+              {{ $t('navbar.about') }}
+            </a>
+          </li>
+          <li class="element">
+            <a :class="{ active: currentPage === 'services' }" href="services.html">
+              {{ $t('navbar.services') }}
+            </a>
+          </li>
+          <li class="element">
+            <a :class="{ active: currentPage === 'mywork' }" href="mywork.html">
+              {{ $t('navbar.mywork') }}
+            </a>
+          </li>
+          <li class="element">
+            <a href="https://itsnvillalobos.gumroad.com/">
+              {{ $t('navbar.shop') }}
+            </a>
+          </li>
+          <li class="element">
+            <a :class="{ active: currentPage === 'enquirenow' }" href="enquirenow.html">
+              {{ $t('navbar.enquire_now') }}
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -26,5 +49,10 @@
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      currentPage: window.location.pathname.split("/").pop().split(".")[0] // Extracts the current page name from URL
+    };
+  }
 };
 </script>
