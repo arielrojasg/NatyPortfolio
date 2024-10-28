@@ -34,6 +34,7 @@
   src: url('../fonts/Oswald-Medium.ttf') format('truetype');
 }
 
+
 body{
   margin:0%
 }
@@ -63,6 +64,11 @@ li.active a {
 
 .navbar-nav .active {
   color: #F99FF9; /* Pink color for the active link */
+}
+
+.navbar-hamburger {
+  display: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -783,4 +789,65 @@ p {
   width: 10%;  
   align-content: center;
   margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .text-container {
+    font-size: 5vw;
+  }
+
+  .navbar{
+    border: none;
+    height: 12vw;
+  }
+
+  .navbar-nav li {
+    margin: 0 -10vw;
+    margin-top: 3%;
+    padding-left: 10%;  
+  }
+
+  .navbar-left img {
+    width: 20%;
+  }
+
+  .navbar-right ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #1E1E1E;
+    width: 100%;
+    top: 5vw;
+  }
+
+  .navbar-hamburger {
+    display: block;
+    margin: 0 -10vw;
+    margin-top: 2%;
+    padding-right: 10%;
+  }
+
+  .navbar-hamburger img{
+    width: 10vw !important; /* Ensure the width is enforced */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .navbar-right{
+    display: flex;
+    justify-content: flex-end; /* Align hamburger to the right */
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-right.open ul {
+    display: block; /* Show navigation links when hamburger is clicked */
+  }
+
+  .navbar-left {
+    flex: 1;
+  }
+
+  .navbar-right {
+    flex: 1;
+  }
 }

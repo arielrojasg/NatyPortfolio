@@ -165,7 +165,7 @@
   color: #FFFFFF;
   font-family: Poppins;
   margin-top: -10%;
-  padding-left: 1.33vw;
+  padding-left: 0.33vw;
   padding-right: 1.56vw;
 
 }
@@ -224,7 +224,7 @@
   font-size: 5.21vw;
   font-style: normal;
   font-weight: 600;
-  line-height: 0%; /* 7.68vw */
+  line-height: 7%; /* 7.68vw */
   text-transform: uppercase;
   margin-bottom: 2%;
 }

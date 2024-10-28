@@ -7,29 +7,23 @@
     </div>
   </div>
   <section class="info-section">
-    <div id="info-left">
-      <div class="info-card half-height">
-        <h2 class="info-title">{{ $t('about.what_i_do') }}</h2>
-        <p class="info-description">
-          {{ $t('about.what_i_do_description') }}
-        </p>
-      </div>
-      <div class="info-card half-height">
-        <h2 class="info-title">{{ $t('about.why_i_do_it') }}</h2>
-        <p class="info-description">
-          {{ $t('about.why_i_do_it_description') }}
-        </p>
-      </div>
+  <div id="info-left">
+    <div class="info-card half-height">
+      <h2 class="info-title">{{ $t('about.what_i_do') }}</h2>
+      <p class="info-description" v-html="$t('about.what_i_do_description')"></p>
     </div>
-    <div id="info-right">
-      <div class="info-card full-height">
-        <h2 class="info-title">{{ $t('about.how_i_do_it') }}</h2>
-        <p class="info-description">
-          {{ $t('about.how_i_do_it_description') }}
-        </p>
-      </div>
+    <div class="info-card half-height">
+      <h2 class="info-title">{{ $t('about.why_i_do_it') }}</h2>
+      <p class="info-description" v-html="$t('about.why_i_do_it_description')"></p>
     </div>
-  </section>
+  </div>
+  <div id="info-right">
+    <div class="info-card full-height">
+      <h2 class="info-title">{{ $t('about.how_i_do_it') }}</h2>
+      <p class="info-description" v-html="$t('about.how_i_do_it_description')"></p>
+    </div>
+  </div>
+</section>
   <section class="work-together-section">
     <h2 class="work-together-title">{{ $t('about.work_together_title') }}</h2>
     <p class="work-together-text">{{ $t('about.work_together_text_1') }}</p>

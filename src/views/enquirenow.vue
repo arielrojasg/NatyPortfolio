@@ -18,6 +18,7 @@
         <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
         <span class="separator">|</span>
         <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
+		<span class="separator">|</span>
         <p class="scrolling-content">{{ $t('home.booking_july') }}</p>
         <span class="separator">|</span>
         <p class="scrolling-content">{{ $t('home.booking_july') }}</p>

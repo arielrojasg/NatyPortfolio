@@ -106,7 +106,6 @@
   display: flex;
   justify-content: space-between; /* Ensure the left and right sections are spaced apart */
   gap: 0.00vw;
-  min-height: 80vh; /* Ensures the section is tall enough to fit content */
 }
 
 .portfolio1-card.half-height {
@@ -216,7 +215,6 @@ color:#A1B2FF
   display: flex;
   justify-content: space-between; /* Ensure the left and right sections are spaced apart */
   gap: 0.00vw;
-  min-height: 80vh; /* Ensures the section is tall enough to fit content */
 }
 
 .portfolio2-card.half-height {
@@ -398,4 +396,58 @@ color:#A1B2FF
   background-color: #1E1E1E;
   justify-content: center; /* Center the button horizontally (optional if needed) */
   align-items: center; /* Center the button vertically */
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio1-card.half-height {
+    height: 50vw;
+    margin: 0.67vw;
+    overflow: hidden;
+    border-radius: 1.39vw;
+  }
+  .portfolio1-card.full-height {
+    height: 106vw;
+    border-radius: 1.39vw;
+    margin: 0;
+    overflow: hidden;
+    align-content: center;
+  }
+
+  .portfolio2-card.full-height {
+    height: 106vw;
+    border-radius: 1.39vw;
+    margin: 0;
+    overflow: hidden;
+    align-content: center;
+  }
+  .portfolio2-card.half-height {
+    height: 50vw;
+    margin: 0.67vw;
+    overflow: hidden;
+    border-radius: 1.39vw;
+  }
+  .celebrating-small-title, .celebrating-small-title-2 {
+    font-size: 7vw;
+  }
+
+  .discover-title {
+    font-size: 3.5vw;
+  }
+
+  .work-together-section{
+    height: 40vw;
+  }
+  .work-together-button, .work-together-button-1 {
+    font-size: 3.5vw;
+    width: 50%;
+    height: 7vw;
+  }
+  .work-together-title {
+    padding-top: 0%;
+    font-size: 7vw;
+  }
+  .work-together-text {
+    font-size: 3vw;
+
+  }
 }
