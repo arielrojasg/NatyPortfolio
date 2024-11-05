@@ -44,8 +44,7 @@
 		<button class="work-together-button-1" @click="goToPage('https://www.behance.net/nataliavillalo2#')">{{ $t('mywork.view_on_behance') }}</button>
 	  </div>
 	  <h2 class="work-together-title">{{ $t('mywork.want_to_work_together') }}</h2>
-	  <p class="work-together-text">{{ $t('mywork.ready_to_start_project_1') }}</p>
-	  <p class="work-together-text">{{ $t('mywork.ready_to_start_project_2') }}</p>
+	  <p class="work-together-text">{{ $t('mywork.ready_to_start_project_1') }} {{ $t('mywork.ready_to_start_project_2') }}</p>
 	  <button class="work-together-button" @click="goToPage('enquirenow.html')">{{ $t('mywork.get_started') }}</button>
 	</section>
   </template>

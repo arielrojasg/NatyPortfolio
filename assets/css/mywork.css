@@ -313,7 +313,7 @@ color:#A1B2FF
 .work-together-section{
   position: relative;
   background: var(--negro, #FFFF); 
-  height: 30.00vw;
+  height: 47vw;
   justify-content: center;
   margin-top: 0%;
   text-align: center;
@@ -341,7 +341,11 @@ color:#A1B2FF
   font-size: 1.11vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 50.4%; /* 1.64vw */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: normal;
+  line-height: 150%;
 }
 
 .work-together-button {
@@ -427,27 +431,52 @@ color:#A1B2FF
     border-radius: 1.39vw;
   }
   .celebrating-small-title, .celebrating-small-title-2 {
-    font-size: 7vw;
+    font-size: 7.5vw;
+    line-height: 20%;
   }
+
+  #discover-title-line{
+    background-color: #F99FF9;
+  }
+
 
   .discover-title {
     font-size: 3.5vw;
+    width: 50%; /* Adjust this to control where the line breaks */
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    line-height: 130%;
+    padding: 1.5%;
   }
 
   .work-together-section{
-    height: 40vw;
+    height: 50vw;
   }
   .work-together-button, .work-together-button-1 {
     font-size: 3.5vw;
     width: 50%;
-    height: 7vw;
+    height: 7.5vw;
   }
   .work-together-title {
-    padding-top: 0%;
-    font-size: 7vw;
+    font-size: 7.5vw;
+    padding-top: 2vw;
+    margin-top: 0%;
   }
   .work-together-text {
-    font-size: 3vw;
-
+    font-size: 3.5vw;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    line-height: 130%;
+    padding: 1.5%;
+    margin-bottom: 0%;
   }
+
+  #work-together-button-area{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
 }

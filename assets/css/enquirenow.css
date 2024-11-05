@@ -50,6 +50,7 @@
     border-top: 0.07vw solid #FFFFFF; /* White line between the two sections */
     width: 100%;
     margin: 1.39vw 0;
+    color:#FFFFFF
 }
 
 
@@ -470,3 +471,87 @@ margin-left: 1%;
     margin: 1.39vw 0; /* Optional margin for spacing */
 }
 
+@media screen and (max-width: 768px) {
+    #photo{
+        height: 70vw;
+    }
+
+    .join-forces-title, .brand-impact-title{
+        font-size: 7vw;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .join-forces-text, .join-forces-email, .brand-impact-text, .brand-impact-description{
+        font-size: 3.5vw;
+        margin: 0 auto;
+        margin-top:3%
+    }
+
+    .join-forces-section, .brand-impact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    .brand-impact-left,
+    .brand-impact-right {
+        width: 85%; /* Make each section take the full width */
+        text-align: center; /* Center-align text if needed */
+    }
+
+    .join-forces-left, .join-forces-right {
+        width: 105%; /* Make each section take the full width */
+        text-align: center; /* Center-align text if needed */
+    }
+
+    .join-forces-left, .brand-impact-left{
+        margin-top: 5%;
+    }
+    .join-forces-right, .brand-impact-right{
+        margin-bottom: 9%;
+    }
+
+    .brand-impact-line {
+      margin: 0 auto;
+      margin-top: 3%;
+      margin-bottom:3%;
+    }
+      
+
+    form{
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    .enquirenow_label {
+        font-size: 3.5vw;
+    }
+
+   input[type="text"], input[type="email"], textarea {
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .form-group-checkbox input[type="checkbox"] {
+        width: 5vw;
+        height: 5vw;
+    }
+    
+    input[type="text"], input[type="email"] {
+        height: 7vw;
+    }
+
+    .note-text {
+        font-size: 2.9vw;
+    }
+
+    #enquirenow_form{
+        padding-bottom: 10%;
+    }
+    #enquirenowbutton{
+        font-size: 3.5vw;
+        width: 50%;
+        height: 7.5vw;    
+    }
+}

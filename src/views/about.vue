@@ -26,12 +26,11 @@
 </section>
   <section class="work-together-section">
     <h2 class="work-together-title">{{ $t('about.work_together_title') }}</h2>
-    <p class="work-together-text">{{ $t('about.work_together_text_1') }}</p>
-    <p class="work-together-text">{{ $t('about.work_together_text_2') }}</p>
+    <p class="work-together-text">{{ $t('about.work_together_text_1') }} {{ $t('about.work_together_text_2') }}</p>
     <button class="work-together-button" @click="goToPage('enquirenow.html')">{{ $t('about.work_together_button') }}</button>
   </section>
   <section class="send-info-section">
-    <h2 class="send-info-title">{{ $t('about.send_info_title_1') }}</h2>
+    <h2 class="send-info-title">{{ $t('about.send_info_title_1') }} </h2>
     <h2 class="send-info-title">{{ $t('about.send_info_title_2') }}</h2>
     <div class="send-info-line">
       <input type="email" id="send-info-email" name="email" :placeholder="$t('about.send_info_placeholder')">

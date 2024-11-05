@@ -850,4 +850,50 @@ p {
   .navbar-right {
     flex: 1;
   }
+
+  .footer-img-column{
+    display:none;
+  }
+
+  .footer-columns{
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    padding: 1em 0; /* Adds some padding for visual spacing */
+  }
+
+  .footer-socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers the content within footer-socials */
+      text-align: center; /* Ensures text inside is centered */
+      width: 100%; /* Ensures it takes the full width of the footer */
+      margin-top: 0%;
+      margin-bottom: 0%;
+      margin-left: 0%;
+      padding-top: 3%;
+  }
+
+  .footer-socials .social-icons {
+    display: flex;
+    gap: 0.5em; /* Adds space between icons */
+    justify-content: center; /* Centers the icons */
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-socials .copyright {
+    margin-top: 1em; /* Adds space above the copyright text */
+    font-size: 0.9em;
+    width: 100%; /* Ensures it takes full width */
+    text-align: center; /* Centers the text inside */
+  }
+  .social-icons img {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
 }
