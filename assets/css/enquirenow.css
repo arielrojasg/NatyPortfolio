@@ -476,6 +476,10 @@ margin-left: 1%;
         height: 70vw;
     }
 
+    #photo-section{
+        margin-top: 0%;
+    }
+
     .join-forces-title, .brand-impact-title{
         font-size: 7vw;
         margin: 0 auto;

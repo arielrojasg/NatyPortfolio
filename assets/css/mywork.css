@@ -440,6 +440,9 @@ color:#A1B2FF
   }
 
 
+  .celebrating-section{
+    margin-top: 0%;
+  }
   .discover-title {
     font-size: 3.5vw;
     width: 50%; /* Adjust this to control where the line breaks */

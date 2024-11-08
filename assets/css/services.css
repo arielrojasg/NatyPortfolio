@@ -703,3 +703,20 @@ background-position: center; /* Centers the background image */
 background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  #transforming{
+    margin-top: 0%;
+  }
+  .obsessed-title{
+    font-size: 7.5vw;
+  }
+  .obsessed-subtitle{
+    font-size: 3.5vw;
+  }
+
+  #transforming-button{
+    font-size: 3.5vw;
+    width: 50%;
+    height: 7.5vw;    
+  }
+}

@@ -62,8 +62,8 @@ li.active a {
   line-height: normal; 
 }
 
-.navbar-nav .active {
-  color: #F99FF9; /* Pink color for the active link */
+.navbar-nav:hover {
+  color: #FFFF; /* Pink color for the active link */
 }
 
 .navbar-hamburger {
@@ -85,6 +85,10 @@ li.active a {
   margin-top: 2%;
   margin-right: 12%;
   height: 4.17vw;
+}
+
+.divider{
+  display: none;
 }
 
 .container {
@@ -792,31 +796,101 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
+  .element a{
+    font-family: "Poppins";
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70%;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 0%;
+  }
+  
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar-right.open {
+    width: 100%;
+    z-index: 1000;
+    height: 5.4vh;
+  }
+
+  .logo {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: auto;
+    position: relative; /* Ensure consistent placement */
+    top: 0; /* Set to zero to avoid shifting */
+  }
+
+  .navbar-right.open + .navbar-left {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-left img {
+    width: 10vw; 
+  }
+
+  .navbar-right .navbar-nav li {
+    list-style: none;
+    margin: 1.25em 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-right .navbar-nav li a {
+    text-decoration: none;
+    font-size: 6vw;
+    font-weight: 500;
+    color: #1E1E1E;
+  }
+
+  #enquire-button {
+    background-color: #1E1E1E;
+    color: #F99FF9 !important;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    margin: auto;
+    width: 45%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
   .text-container {
     font-size: 5vw;
+  }
+
+  #navbar{
+    position: sticky;
+    top: 0; /* Adjusts the offset from the top, can be any value like '10px' */
+    z-index: 1000; /* Ensures the navbar stays above other elements */
+    background-color: #1E1E1E;
+    padding-top: 1%;
+    padding-bottom: 3%;
   }
 
   .navbar{
     border: none;
     height: 12vw;
+    position: sticky;
+    top: 0; /* Adjusts the offset from the top, can be any value like '10px' */
+    z-index: 1000; /* Ensures the navbar stays above other elements */
   }
 
   .navbar-nav li {
-    margin: 0 -10vw;
+    margin: 0 -4vw;
     margin-top: 3%;
-    padding-left: 10%;  
-  }
-
-  .navbar-left img {
-    width: 20%;
   }
 
   .navbar-right ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 0;
-    background-color: #1E1E1E;
+    right: 9vw;
     width: 100%;
     top: 5vw;
   }
@@ -824,32 +898,40 @@ p {
   .navbar-hamburger {
     display: block;
     margin: 0 -10vw;
-    margin-top: 2%;
     padding-right: 10%;
   }
 
-  .navbar-hamburger img{
-    width: 10vw !important; /* Ensure the width is enforced */
-    height: auto; /* Maintain aspect ratio */
+  #hamburger {
+    width: 10vw;
+    height: auto;
+  }
+  
+  #close {
+    width: 8vw;
+    height: auto;
+    padding-right: 1.5vw;
   }
 
   .navbar-right{
     display: flex;
-    justify-content: flex-end; /* Align hamburger to the right */
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
   }
+
   .navbar-right.open ul {
-    display: block; /* Show navigation links when hamburger is clicked */
-  }
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(249, 159, 249, 0.96); 
+    position: fixed;
+    top: 18.2vw;
+    left: 0;
+    height: 100vh;
+   }
 
-  .navbar-left {
-    flex: 1;
-  }
-
-  .navbar-right {
-    flex: 1;
-  }
 
   .footer-img-column{
     display:none;
@@ -892,8 +974,22 @@ p {
     width: 100%; /* Ensures it takes full width */
     text-align: center; /* Centers the text inside */
   }
+
   .social-icons img {
     width: 6.5vw;
     height: 6.5vw;
   }
+  body.lock-scroll {
+    overflow: hidden;
+  }
+
+  .divider{
+    display: inline-block;
+    stroke-width: 0.07vw;
+    stroke: #000;
+    width: 100%;
+    flex-shrink: 0;
+    border-top: 0.75vw solid #000;
+  }
+  
 }
