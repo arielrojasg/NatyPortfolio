@@ -1,7 +1,7 @@
 <template>
 	<section id="transforming">
 	  <div id="transforming-titles">
-		<h1 class="obsessed-title">{{ $t('services.transforming_title_1') }}</h1>
+		<h1 id="obsessed-title-1" class="obsessed-title">{{ $t('services.transforming_title_1') }}</h1>
 		<h1 class="obsessed-title">{{ $t('services.transforming_title_2') }}</h1>
 		<p class="obsessed-subtitle">{{ $t('services.explore_services') }}</p>
 	  </div>

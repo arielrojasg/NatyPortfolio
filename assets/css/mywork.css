@@ -313,7 +313,6 @@ color:#A1B2FF
 .work-together-section{
   position: relative;
   background: var(--negro, #FFFF); 
-  height: 47vw;
   justify-content: center;
   margin-top: 0%;
   text-align: center;
@@ -445,7 +444,7 @@ color:#A1B2FF
   }
   .discover-title {
     font-size: 3.5vw;
-    width: 50%; /* Adjust this to control where the line breaks */
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     white-space: normal;
@@ -454,7 +453,7 @@ color:#A1B2FF
   }
 
   .work-together-section{
-    height: 50vw;
+    height: 60vw;
   }
   .work-together-button, .work-together-button-1 {
     font-size: 3.5vw;
@@ -463,8 +462,11 @@ color:#A1B2FF
   }
   .work-together-title {
     font-size: 7.5vw;
-    padding-top: 2vw;
-    margin-top: 0%;
+    padding-top: 4vw;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    line-height: 110%;
   }
   .work-together-text {
     font-size: 3.5vw;

@@ -2,3 +2,40 @@
     padding: 0.5% !important;
     background-color: #FFFF;
 }
+
+@media screen and (max-width: 768px) {
+    .bio {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .image-container {
+        order: 2; /* Place it after the content-container */
+    }
+    
+    .content-container {
+        order: 1; /* Place it on top of the image-container */
+    }
+    
+    .text-box{
+        width: 60%;
+    }
+    
+    .services-button, .button {
+        font-size: 3.5vw;
+        width: 50%;
+        height: 7.5vw;
+    }
+    a img{
+        max-width: 100%;
+    }
+
+    .services-title, .bio-title, .bio-title-fucsia, .obsessed-title {
+        font-size: 7.5vw;
+    }
+    
+    .services-question, .text-box, .obsessed-subtitle {
+        font-size: 3.5vw;
+    }
+
+}

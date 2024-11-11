@@ -239,9 +239,9 @@ margin-bottom: 0.4%;
   font-size: 5.11vw;
   color: #F99FF9; /* Light purple for the titles */
   text-transform: uppercase;
-  margin-top: 1%;
+  margin-top: 0.05%;
   font-weight:600;
-  padding-left: 0.33vw;
+  padding-left: 1.33vw;
   padding-right: 0.33vw;
 }
 
@@ -343,9 +343,9 @@ color:#A1B2FF
   font-size: 5.11vw;
   color: #F99FF9; /* Light purple for the titles */
   text-transform: uppercase;
-  margin-top: 1%;
+  margin-top: 0.05%;
   font-weight:600;
-  padding-left: 0.33vw;
+  padding-left: 1.33vw;
   padding-right: 0.33vw;
 }
 
@@ -444,9 +444,9 @@ color:#A1B2FF
   font-size: 5.11vw;
   color: #F99FF9; /* Light purple for the titles */
   text-transform: uppercase;
-  margin-top: 1%;
+  margin-top: 0.05%;
   font-weight:600;
-  padding-left: 0.33vw;
+  padding-left: 1.33vw;
   padding-right: 0.33vw;
 }
 
@@ -544,9 +544,9 @@ text-align: left;
 font-size: 5.11vw;
 color: #1E1E1E; /* Light purple for the titles */
 text-transform: uppercase;
-margin-top: 1%;
+margin-top: 0.05%;
 font-weight:600;
-padding-left: 0.33vw;
+padding-left: 1.33vw;
 padding-right: 0.33vw;
 }
 
@@ -643,9 +643,9 @@ text-align: left;
 font-size: 5.11vw;
 color: #1E1E1E; /* Light purple for the titles */
 text-transform: uppercase;
-margin-top: 1%;
+margin-top: 0.05%;
 font-weight:600;
-padding-left: 0.33vw;
+padding-left: 1.33vw;
 padding-right: 0.33vw;
 }
 
@@ -704,19 +704,217 @@ background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 768px) {
+  .social-section, .photography-section, .branding-section {
+    flex-direction: column; /* Stack sections vertically */
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap to the next line */
+    gap: 0vw;
+    padding: 5vw;
+    min-height: 0vh;
+}
+
+  #social-left, #social-right, #photography-left, #photography-right, #branding-left, #branding-right {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0% !important;
+  }
+
+
+  .social-title, .photography-title, .branding-title {
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+    font-size: 7.5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .social-description, .photography-description, .branding-description{
+    font-size: 3.5vw;
+    line-height: 5.5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  #social-full-bg,#photography-full-bg, #branding-full-bg{
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+    border-top-left-radius: 0vw;
+    border-top-right-radius: 0vw;
+
+  }
+
+  .social-card.half-height, .photography-card.half-height, .branding-card.half-height{
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    margin-bottom: -1.75%;
+  }
+
+  .photography-card.full-height, .social-card.full-height, .branding-card.full-height {
+    height: 25vh;
+  }
+
+  .collaterals-section, .web-section {
+    flex-direction: column; /* Stack sections vertically */
+    display: flex;
+    flex-wrap: wrap; /* Allows elements to wrap to the next line */
+    gap: 0vw;
+    padding: 5vw;
+    min-height: 0vh;
+  }
+
+  #collaterals-right, #collaterals-left, #web-right, #web-left {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0% !important;
+  }
+
+  .collaterals-title, .web-title {
+  padding-bottom: 2vw;
+  padding-top: 3vw;
+  font-size: 7.5vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  }
+
+  .collaterals-description, .web-description {
+  font-size: 3.5vw;
+  line-height: 5.5vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  }
+
+  #collaterals-full-bg, #web-full-bg {
+  border-bottom-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+  border-top-left-radius: 0vw;
+  border-top-right-radius: 0vw;
+  }
+
+  .collaterals-card.half-height, .web-card.half-height {
+  border-top-left-radius: 4vw;
+  border-top-right-radius: 4vw;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+  margin-bottom: -1.75%;
+  }
+
+  .collaterals-card.full-height, .web-card.full-height {
+  height: 25vh;
+  }
+  #collaterals-right, #web-right {
+    order: -1; /* Move right elements to the top */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0% !important;
+  }
+
+  #collaterals-left, #web-left {
+    order: 1; /* Ensure left elements are below */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0% !important;
+  }
+
   #transforming{
     margin-top: 0%;
+    height: 21vh;
+    background-position: bottom;
   }
+
   .obsessed-title{
     font-size: 7.5vw;
+  }
+
+  #obsessed-title-1{
+    margin-top: 0px;
+  }
+
+  #obsessed-titles{
+    margin-top: 0px;
+    padding-top: 10%;
   }
   .obsessed-subtitle{
     font-size: 3.5vw;
   }
+  #transforming-titles {
+    background-color:var(--fucsia, #F99FF9);
+    margin-top: 0%;
+    padding-top: 10%;
+  }
 
   #transforming-button{
     font-size: 3.5vw;
-    width: 50%;
+    width: 65%;
     height: 7.5vw;    
+    color: var(--fucsia, #F99FF9);
+  }
+
+  #photography-half-bg, #social-half-bg, #web-half-bg, #collaterals-half-bg, #branding-half-bg{
+    display: none;
+  }
+
+  .send-info-title{
+    font-size: 7.5vw;
+    line-height: 20%;
+  }
+
+  #send-info-button{
+    font-size: 3.5vw;
+    width: 50%;
+    height: 7.5vw;
+    margin-top: 7.5%;
+  }
+  #send-info-email {
+    width: 70%;
+    height: 7.5vw;
+    margin-top: 7.5%;
+    font-size: 3.5vw;
+  }
+
+  .send-info-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+
+  .faq-container{
+    max-width: 100%;
+    padding: 0vw;
+  }
+  .faq-title {
+    font-size: 7.5vw;
+    padding-left: 10%;
+    margin-bottom: 2%;
+  }
+  .faq-questions{
+  }
+  .faq-answer, .faq-question {
+    font-size: 3.5vw;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .line {
+    border-top:0.50vw solid #000;
+    margin-top: 0%;
+    margin-bottom: 1.25%;
+  }
+
+  .faq-question::after {
+    padding-right: 10%;
   }
 }
