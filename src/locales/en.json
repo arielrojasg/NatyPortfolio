@@ -37,7 +37,7 @@
       "send_info_button": "MORE INFO"
     },
     "enquirenow": {
-      "booking_july": "BOOKING FOR JULY",
+      "booking_july": "BOOKING NOW",
       "your_story": "YOUR STORY IS WHAT MAKES THE DIFFERENCE",
       "authentic_brands": "We are inspired by authentic brands, and we want to help you bring yours to life. Reach out to me!",
       "fill_form": "Please fill out the form below so I can send you a personalized quote. I'll send the information via email, along with a link to schedule a call.",
@@ -65,7 +65,10 @@
       "social_media": "Social Media Management",
       "other": "Other",
       "budget": "What's your budget for this project? ($USD) *",
-      "budget_placeholder": "Your Budget in USD",
+      "budget-1": "Less than $500",
+      "budget-2": "Between $500 and $1000",
+      "budget-3": "More than $1000",
+      "budget_placeholder": "Select your Budget",
       "how_hear_about_me": "How did you hear about me? *",
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
@@ -81,7 +84,7 @@
       "join_forces_email": "nvillalobosc29@gmail.com"
     },
     "home": {
-      "booking_july": "BOOKING FOR JULY",
+      "booking_july": "BOOKING NOW",
       "transforming_brands": "TRANSFORMING",
       "brands_into": "BRANDS INTO",
       "unforgettable": "UNFORGETTABLE",
@@ -107,9 +110,9 @@
       "working_with_me": "WORKING WITH ME",
       "testimony_1": "I loved the entire process from start to finish, from the Zoom meeting to the final delivery of the project. You showed so much dedication to the project, researching the brand, what we do, and why we do it. Plus, every design you created for us was filled with creativity.",
       "testimony_1_name": "WENDY, MOKA",
-      "testimony_2": "Natalia is an excellent designer, creative, and extremely professional. She helped us build a brand from scratch exactly how we imagined it. I hope to work with Natalia again in the future.",
+      "testimony_2": "Natalia is a great designer, creative and professional. She helped us create our brand from scratch, just as we imagined it. I would love to work with her again.",
       "testimony_2_name": "ANDREA, LA IMPRENCIA",
-      "testimony_3": "I am very pleased to have had the opportunity to work with you. The quality of your work is incredible; you delivered a polished and professional design that exceeded our expectations. You were exceptionally attentive to detail. Regarding deadlines, you met the agreed dates and even completed tasks ahead of schedule. Communication has been smooth and effective; you respond to inquiries promptly and have kept us updated throughout the progress of the project.",
+      "testimony_3": "It was a pleasure working with you. Your quality of work and attention to detail resulted in a professional design that exceeded expectations. You delivered on time, and communication was excellent.",
       "testimony_3_name": "LORENA, LOREN'S"
     },
     "mywork": {
@@ -148,7 +151,7 @@
       "faq_question_1": "What is the one concept method?",
       "faq_answer_1": "The One Concept Method is an approach where I focus all my time and energy on creating a single, powerful design concept for your brand. This method ensures a clear direction, allowing us to perfect and refine it to best represent your brand's vision and values.",
       "faq_question_2": "If I already have a logo, can I hire a branding or social media package?",
-      "faq_answer_2": "Each project is developed with great passion, aiming to represent your brand's vision and values in the best possible way. For this reason, I ask clients who already have a logo to go through a rebranding process, allowing us to create a graphic identity tailored to your target audience.",
+      "faq_answer_2": "Each project is developed with passion, aiming to represent the vision and values of your brand in the best way possible. Therefore, I offer my clients a review of their existing elements and logo to assess if they are effective. If they work well, only the necessary changes or additions will be made to create a visual identity more aligned with your audience.",
       "faq_question_3": "How can I work with you on designing my brand?",
       "faq_answer_3": "You can contact me through the contact form on my website to discuss your branding needs and goals. Together, we will create a personalized design strategy.",
       "faq_question_4": "How long does the design process take?",

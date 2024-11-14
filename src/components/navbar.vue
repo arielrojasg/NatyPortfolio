@@ -35,6 +35,10 @@
           <li class="element">
             <a :class="{ active: currentPage === 'enquirenow' }" id="enquire-button" href="enquirenow.html">{{ $t('navbar.enquire_now') }}</a>
           </li>
+          <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector-nav">
+            <option value="en" :disabled="$i18n.locale === 'en'">EN</option>
+            <option value="es" :disabled="$i18n.locale === 'es'">ES</option>
+          </select>
         </ul>
       </div>
     </div>
@@ -66,6 +70,11 @@ export default {
       menuButton.addEventListener('click', this.toggleMenu);
     }
   },
+  updateLanguage(event) {
+      const selectedLanguage = event.target.value;
+      this.$i18n.locale = selectedLanguage; // Change language using vue-i18n
+      localStorage.setItem('selectedLanguage', selectedLanguage); // Save to localStorage
+    },
   },
 };
 </script>

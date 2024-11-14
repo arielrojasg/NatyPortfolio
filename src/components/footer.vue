@@ -34,6 +34,14 @@
           <li class="footer-element"><a href="enquirenow.html">{{ $t('footer.trabaja_conmigo') }}</a></li>
         </ul>
       </div>
+
+      <!-- New Footer Column for Language Selector -->
+      <div class="footer-column">
+        <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector">
+          <option value="en" :disabled="$i18n.locale === 'en'">EN</option>
+          <option value="es" :disabled="$i18n.locale === 'es'">ES</option>
+        </select>
+      </div>
     </div>
   </footer>
 </template>
@@ -45,6 +53,13 @@ export default {
     return {
       currentYear: new Date().getFullYear() // Dynamically get current year
     };
+  },
+  methods: {
+    updateLanguage(event) {
+      const selectedLanguage = event.target.value;
+      this.$i18n.locale = selectedLanguage; // Change language using vue-i18n
+      localStorage.setItem('selectedLanguage', selectedLanguage); // Save to localStorage
+    }
   }
 };
 </script>

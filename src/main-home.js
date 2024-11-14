@@ -3,9 +3,13 @@ import Navbar from './components/navbar.vue';
 import Home from './views/home.vue';
 import Footer from './components/footer.vue';
 import Instagram from './components/instagram.vue';
-import { i18n } from './main'; // Import the i18n instance from main.js
+import { i18n } from './main';
 
-// Create the app and use the i18n instance for language support
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'https://unpkg.com/transition-style';
+document.head.appendChild(link);
+
 const app = createApp(Navbar);
 app.use(i18n);
 app.mount('#navbar');

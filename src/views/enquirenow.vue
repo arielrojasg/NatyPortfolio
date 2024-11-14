@@ -105,8 +105,13 @@
 		</div>
   
 		<label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
-		<input type="text" id="budget" name="budget" :placeholder="$t('enquirenow.budget_placeholder')">
-  
+		<select id="budget" name="budget">
+			<option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
+			<option value="menos-500">{{ $t('enquirenow.budget-1') }}</option>
+			<option value="500-1000">{{ $t('enquirenow.budget-2') }}</option>
+			<option value="mas-1000">{{ $t('enquirenow.budget-3') }}</option>
+		</select>  
+
 		<label class="enquirenow_label">{{ $t('enquirenow.how_hear_about_me') }}</label>
 		<div class="form-group-checkbox">
 		  <label class="enquirenow_label" for="instagram">

@@ -34,7 +34,7 @@
   
     <div class="bio">
       <div class="image-container">
-        <a href="assets/bio.png">
+        <a href="#">
           <img src="assets/bio.png" alt="Bio Image">
         </a>
       </div>
@@ -68,7 +68,7 @@
           <h2>{{ $t('home.shop') }}</h2>
         </div>
         <div class="cloud" @click="goToPage('enquirenow.html')">
-          <h2>{{ $t('home.enquire_now') }}</h2>
+          <h2 v-html="$t('home.enquire_now')"></h2>
         </div>
       </div>
     </section>
@@ -111,16 +111,20 @@
         <h1 class="loved-title">{{ $t('home.why_they_loved') }}</h1>
         <h1 class="loved-title">{{ $t('home.working_with_me') }}</h1>
       </div>
-      <div id="testimonies">
-        <div id="testimony-1">
+      <div id="testimonies" class="testimonies-container">
+        <div id="testimony-1" class="testimony">
           <p>{{ $t('home.testimony_1') }}</p>
           <h3>{{ $t('home.testimony_1_name') }}</h3>
         </div>
-        <div id="testimony-2">
+        <div id="testimony-2" class="testimony">
           <p>{{ $t('home.testimony_2') }}</p>
           <h3>{{ $t('home.testimony_2_name') }}</h3>
         </div>
-        <div id="testimony-3">
+        <div id="testimony-3" class="testimony">
+          <p>{{ $t('home.testimony_3') }}</p>
+          <h3>{{ $t('home.testimony_3_name') }}</h3>
+        </div>
+        <div id="testimony-4" class="testimony">
           <p>{{ $t('home.testimony_3') }}</p>
           <h3>{{ $t('home.testimony_3_name') }}</h3>
         </div>
@@ -138,4 +142,3 @@
     }
   };
   </script>
-  

@@ -775,13 +775,17 @@ p {
   background-size: contain;
   background-position: center;
   width: 40%;
-  padding: 5%;
+  padding: 6%;
   box-sizing: border-box;
   text-align: center;
   line-break: auto;
   margin-left: 15%;
   margin-top: -10%;
   padding-top: 2.5%;
+}
+
+#testimony-3 p{
+  margin-top: 2vw;
 }
 
 #footer-image{
@@ -795,6 +799,26 @@ p {
   margin-left: 10%;
 }
 
+.language-selector{
+  color: var(--blanco, #1E1E1E);
+  font-family: Poppins;
+  font-size: 0.94vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.4%;
+  text-decoration: none;
+  background-color: #F99FF9;
+  margin-block-start: 1.33em;
+  margin-left: 60%;
+}
+
+.footer-columns .footer-column:nth-child(2) ul li:nth-child(3) {
+  width: 150%;
+}
+
+.language-selector-nav{
+  display: none;
+}
 @media screen and (max-width: 768px) {
 
   .element a{
@@ -946,6 +970,7 @@ p {
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     padding: 1em 0; /* Adds some padding for visual spacing */
+    z-index: 10;
   }
 
   .footer-socials {
@@ -992,4 +1017,16 @@ p {
     border-top: 0.75vw solid #000;
   }
   
+  .language-selector-nav{
+    display: block;
+    color: var(--fucsia, #F99FF9);
+    font-family: Poppins;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.4%;
+    text-decoration: none;
+    background-color: #1E1E1E;
+    margin-block-start: 1.33em;
+  }
 }

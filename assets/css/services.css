@@ -390,14 +390,14 @@ color:#A1B2FF
 }
 
 #social-half-bg{
-  background-image: url('../img/social2.png');
+  background-image: url('../img/socials-2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #social-full-bg{
-  background-image: url('../img/social.png');
+  background-image: url('../img/socials.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -690,7 +690,7 @@ margin-bottom:1%;
 }
 
 #web-half-bg{
-background-image: url('../img/web2.png');
+background-image: url('../img/web-2.png');
 background-size: cover;
 background-position: center; /* Centers the background image */
 background-repeat: no-repeat;

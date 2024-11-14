@@ -375,6 +375,20 @@ textarea {
     font-size: 0.97vw;
 }
 
+select option, #budget{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.39vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 147.4%;
+    flex-shrink: 0;
+}
+
+select{
+    margin-bottom: 1.39vw;
+}
+
 input[type="checkbox"] {
     margin-right: 0.69vw;
 }
@@ -388,7 +402,7 @@ input[type="checkbox"] {
     width: calc(50% - 0.69vw);
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
     outline: 2px solid #F99FF9; /* Pink outline */
     outline-offset: 0px; /* Optional: adds some space between the outline and the input */
 }
@@ -532,9 +546,10 @@ margin-left: 1%;
         font-size: 3.5vw;
     }
 
-   input[type="text"], input[type="email"], textarea {
-        font-size: 3.5vw;
+   input[type="text"], input[type="email"], select option, #budget, textarea {
+        font-size: 3.5vw !important;
         margin-bottom: 4vw;
+        font-family: Poppins;
     }
 
     .form-group-checkbox input[type="checkbox"] {
