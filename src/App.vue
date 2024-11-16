@@ -1,9 +1,7 @@
 <template>
     <div id="app">
-      <!-- Navbar component -->
       <Navbar />
       
-      <!-- Router view for the content of each page -->
       <router-view />
     </div>
   </template>
@@ -14,7 +12,7 @@
   export default {
     name: 'App',
     components: {
-      Navbar, // Register the Navbar component
+      Navbar,
     },
   };
   </script>  

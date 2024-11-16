@@ -5,15 +5,15 @@
         <ul class="navbar-nav">
           <li class="logo">
             <a href="index.html">
-              <img src="assets/img/Logo Nat.webp" alt="logo" width="60px">
+              <img src="@images/LogoNat.webp" alt="logo" width="60px">
             </a>
           </li>
         </ul>
       </div>
       <div class="navbar-right" :class="{ open: menuOpen }">
         <div class="navbar-hamburger" @click="toggleMenu">
-          <img v-if="!menuOpen" src="assets/hamburger.png" id="hamburger" alt="menu" width="10vw">
-          <img v-else src="assets/X.png" id="close" alt="close" width="10vw">
+          <img v-if="!menuOpen" src="@/hamburger.png" id="hamburger" alt="menu" width="10vw">
+          <img v-else src="@/X.png" id="close" alt="close" width="10vw">
         </div>
         <ul class="navbar-nav">
           <li class="element">

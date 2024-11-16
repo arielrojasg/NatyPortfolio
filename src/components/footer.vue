@@ -1,16 +1,16 @@
 <template>
   <footer class="footer">
     <div class="footer-img-column">
-      <img id="footer-image" src="../../assets/img/LogoFooter.webp" alt="Bio Image">
+      <img id="footer-image" src="@images/LogoFooter.webp" alt="Bio Image">
     </div>
     
     <div class="footer-socials">
       <div class="footer-column">
         <ul class="social-icons">
-          <li><a href="https://www.instagram.com/its_nvillalobos/"><img src="assets/instagram-icon.svg" alt="Instagram"></a></li>
-          <li><a href="https://www.behance.net/nataliavillalo2#"><img src="assets/behance-icon.svg" alt="Behance"></a></li>
-          <li><a href="https://www.linkedin.com/in/natalia-villalobos-0aa0a121a/"><img src="assets/linkedin-icon.svg" alt="LinkedIn"></a></li>
-          <li><a href="https://tiktok.com/@its_nvillalobos"><img src="assets/tiktok-icon.svg" alt="TikTok"></a></li>
+          <li><a href="https://www.instagram.com/its_nvillalobos/"><img src="@/instagram-icon.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.behance.net/nataliavillalo2#"><img src="@/behance-icon.svg" alt="Behance"></a></li>
+          <li><a href="https://www.linkedin.com/in/natalia-villalobos-0aa0a121a/"><img src="@/linkedin-icon.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://tiktok.com/@its_nvillalobos"><img src="@/tiktok-icon.svg" alt="TikTok"></a></li>
         </ul>
         <p class="copyright">&copy; {{ currentYear }} {{ $t('footer.copyright') }}</p>
       </div>
