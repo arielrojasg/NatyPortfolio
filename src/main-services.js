@@ -4,6 +4,11 @@ import Services from './views/services.vue';
 import Footer from './components/footer.vue';
 import { i18n } from './main'; // Import i18n from main.js
 
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'assets//css/services.css';
+document.head.appendChild(link);
+
 // Initialize Navbar with i18n
 const navbarApp = createApp(Navbar);
 navbarApp.use(i18n);

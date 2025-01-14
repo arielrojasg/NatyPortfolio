@@ -4,9 +4,9 @@
       <div class="navbar-left">
         <ul class="navbar-nav">
           <li class="logo">
-            <a href="index.html">
+            <a href="index">
               <img src="@images/LogoNat.webp" alt="logo" width="60px">
-            </a>
+            </a> 
           </li>
         </ul>
       </div>
@@ -17,25 +17,25 @@
         </div>
         <ul class="navbar-nav">
           <li class="element">
-            <a :class="{ active: currentPage === 'about' }" href="about.html">{{ $t('navbar.about') }}</a>
-          </li>
-          <div class="divider"></div>
-          <li class="element">
-            <a :class="{ active: currentPage === 'services' }" href="services.html">{{ $t('navbar.services') }}</a>
-          </li>
-          <div class="divider"></div>
-          <li class="element">
-            <a :class="{ active: currentPage === 'mywork' }" href="mywork.html">{{ $t('navbar.mywork') }}</a>
-          </li>
-          <div class="divider"></div>
-          <li class="element">
-            <a href="https://itsnvillalobos.gumroad.com/">{{ $t('navbar.shop') }}</a>
-          </li>
-          <div class="divider"></div>
-          <li class="element">
-            <a :class="{ active: currentPage === 'enquirenow' }" id="enquire-button" href="enquirenow.html">{{ $t('navbar.enquire_now') }}</a>
-          </li>
-          <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector-nav">
+          <router-link :class="{ active: currentPage === 'about' }" to="/about">{{ $t('navbar.about') }}</router-link> 
+        </li>
+        <div class="divider"></div>
+        <li class="element">
+          <router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('navbar.services') }}</router-link> 
+        </li>
+        <div class="divider"></div>
+        <li class="element">
+          <router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('navbar.mywork') }}</router-link> 
+        </li>
+        <div class="divider"></div>
+        <li class="element">
+          <a href="https://itsnvillalobos.gumroad.com/" target="_blank">{{ $t('navbar.shop') }}</a> 
+        </li>
+        <div class="divider"></div>
+        <li class="element">
+          <router-link :class="{ active: currentPage === 'enquirenow' }" id="enquire-button" to="/enquirenow">{{ $t('navbar.enquire_now') }}</router-link> 
+        </li>
+            <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector-nav">
             <option value="en" :disabled="$i18n.locale === 'en'">EN</option>
             <option value="es" :disabled="$i18n.locale === 'es'">ES</option>
           </select>

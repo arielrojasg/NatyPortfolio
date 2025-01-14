@@ -7,10 +7,10 @@ import EnquireNow from '../views/enquirenow.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/about.html', component: About },
-  { path: '/services.html', component: Services },
-  { path: '/mywork.html', component: MyWork },
-  { path: '/enquirenow.html', component: EnquireNow },
+  { path: '/about', component: About },
+  { path: '/services', component: Services },
+  { path: '/mywork', component: MyWork },
+  { path: '/enquirenow', component: EnquireNow },
 ];
 
 const router = createRouter({

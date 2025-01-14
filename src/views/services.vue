@@ -130,13 +130,14 @@
   </template>
   
   <script>
-  export default {
-	name: 'Services',
-	methods: {
-	  goToPage(url) {
-		window.location.href = url;
-	  }
-	}
-  };
+	import "../assets/css/services.css";
+	export default {
+		name: 'Services',
+		methods: {
+		goToPage(url) {
+			window.location.href = url;
+		}
+		}
+	};
   </script>
   

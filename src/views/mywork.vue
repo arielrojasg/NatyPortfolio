@@ -50,13 +50,14 @@
   </template>
   
   <script>
-  export default {
-	name: 'MyWork',
-	methods: {
-	  goToPage(url) {
-		window.location.href = url;
-	  }
-	}
-  };
+	import "../assets/css/mywork.css";
+	export default {
+		name: 'MyWork',
+		methods: {
+		goToPage(url) {
+			window.location.href = url;
+		}
+		}
+	};
   </script>
   

@@ -133,12 +133,13 @@
   </template>
   
   <script>
-  export default {
-    name: 'Home',
-    methods: {
-      goToPage(url) {
-        window.location.href = url;
+    import "../assets/css/home.css";
+    export default {
+      name: 'Home',
+      methods: {
+        goToPage(url) {
+          window.location.href = url;
+        }
       }
-    }
-  };
+    };
   </script>

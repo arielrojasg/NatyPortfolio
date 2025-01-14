@@ -40,12 +40,13 @@
 </template>
 
 <script>
-export default {
-  name: 'About',
-  methods: {
-    goToPage(url) {
-      window.location.href = url;
+  import "../assets/css/about.css";
+  export default {
+    name: 'About',
+    methods: {
+      goToPage(url) {
+        window.location.href = url;
+      }
     }
-  }
-};
+  };
 </script>

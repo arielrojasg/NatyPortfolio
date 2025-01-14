@@ -161,8 +161,9 @@
   </template>
   
   <script>
-  export default {
-	name: 'EnquireNow',
-  };
+	import "../assets/css/enquirenow.css";
+	export default {
+		name: 'EnquireNow',
+	};
   </script>
   
