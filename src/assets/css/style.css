@@ -514,7 +514,11 @@ p {
   text-align: left;
 }
 
-#home-body{
+#app{
+  background-color: #1E1E1E;
+}
+
+html{
   background-color: #1E1E1E;
 }
 

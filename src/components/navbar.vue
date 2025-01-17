@@ -4,7 +4,7 @@
       <div class="navbar-left">
         <ul class="navbar-nav">
           <li class="logo">
-            <a href="index">
+            <a href="/">
               <img src="@images/LogoNat.webp" alt="logo" width="60px">
             </a> 
           </li>

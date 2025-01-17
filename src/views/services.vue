@@ -73,12 +73,12 @@
 	  </div>
 	</section>
   
-	<section class="send-info-section">
-	  <h2 class="send-info-title">{{ $t('services.send_info_title_1') }}</h2>
-	  <h2 class="send-info-title">{{ $t('services.send_info_title_2') }}</h2>
-	  <div class="send-info-line">
-		<input type="email" id="send-info-email" name="email" :placeholder="$t('services.send_info_placeholder')">
-		<button id="send-info-button">{{ $t('services.send_info_button') }}</button>
+	<section class="send-info-section-sv">
+	  <h2 class="send-info-title-sv">{{ $t('services.send_info_title_1') }}</h2>
+	  <h2 class="send-info-title-sv">{{ $t('services.send_info_title_2') }}</h2>
+	  <div class="send-info-line-sv">
+		<input type="email" id="send-info-email-sv" name="email" :placeholder="$t('services.send_info_placeholder')">
+		<button id="send-info-button-sv">{{ $t('services.send_info_button') }}</button>
 	  </div>
 	</section>
   

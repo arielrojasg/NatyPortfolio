@@ -1,10 +1,10 @@
-#about-body{
+#app{
   background-color: #1E1E1E;
 }
 
 .about{
   position:relative;
-  background-image: url("/@/About.png");
+  background-image: url("../About.png");
   background-position-y: 100%;
   background-position-x: 50%;
   background-size: 100%;
@@ -61,7 +61,7 @@
 .work-together-section{
   position: relative;
   background: var(--negro, #FFFF); 
-  height: 30.00vw;
+  height: 30vw;
   justify-content: center;
   margin-top: -6%;
   text-align: center;
@@ -209,7 +209,7 @@
   padding-bottom: 2.5%;
 }
 .send-info-small-title{
-  color: var(--Negro, #FFFF);
+  color: var(--blanco, #FFFF);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
   font-size: 2.22vw;
@@ -395,10 +395,8 @@ background-color: #FFFF;
     flex-direction: column;
     align-items: center;
   }  
-  .work-together-section{
-    height: 55vw;
-  }
- .send-info-section{
+
+  .send-info-section{
     padding-top: 4%;
     padding-bottom: 4%;
   }

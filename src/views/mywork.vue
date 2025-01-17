@@ -39,7 +39,7 @@
 	  </div>
 	</section>
   
-	<section class="work-together-section">
+	<section class="work-together-section-mw">
 	  <div id="work-together-button-area">
 		<button class="work-together-button-1" @click="goToPage('https://www.behance.net/nataliavillalo2#')">{{ $t('mywork.view_on_behance') }}</button>
 	  </div>
