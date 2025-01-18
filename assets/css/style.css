@@ -52,7 +52,7 @@ body{
   color: #F99FF9;
 }
 
-li.active a {
+.router-link-active.router-link-exact-active {
   color: var(--rojo, #F99FF9);
   text-align: center;
   font-family: Poppins;
@@ -63,7 +63,7 @@ li.active a {
 }
 
 .navbar-nav:hover {
-  color: #FFFF; /* Pink color for the active link */
+  color: #FFFF;
 }
 
 .navbar-hamburger {

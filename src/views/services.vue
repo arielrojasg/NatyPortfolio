@@ -5,22 +5,20 @@
 		<h1 class="obsessed-title">{{ $t('services.transforming_title_2') }}</h1>
 		<p class="obsessed-subtitle">{{ $t('services.explore_services') }}</p>
 	  </div>
-	  <button id="transforming-button" @click="goToPage('enquirenow.html')">{{ $t('services.get_quote') }}</button>
+	  <button id="transforming-button" @click="goToPage('enquirenow')">{{ $t('services.get_quote') }}</button>
 	</section>
-  
 	<section class="branding-section">
-	  <div id="branding-left">
-		<div class="branding-card half-height">
-		  <h2 class="branding-title">{{ $t('services.branding_title') }}</h2>
-		  <p class="branding-description">{{ $t('services.branding_description') }}</p>
+		<div id="branding-left">
+			<div class="branding-card half-height">
+			<h2 class="branding-title">{{ $t('services.branding_title') }}</h2>
+			<p class="branding-description">{{ $t('services.branding_description') }}</p>
+			</div>
+			<div id="branding-half-bg" class="branding-card half-height"></div>
 		</div>
-		<div id="branding-half-bg" class="branding-card half-height"></div>
-	  </div>
-	  <div id="branding-right">
-		<div id="branding-full-bg" class="branding-card full-height"></div>
-	  </div>
+		<div id="branding-right">
+			<div id="branding-full-bg" class="branding-card full-height"></div>
+		</div>
 	</section>
-  
 	<section class="collaterals-section">
 	  <div id="collaterals-left">
 		<div id="collaterals-full-bg" class="collaterals-card full-height"></div>
@@ -33,7 +31,6 @@
 		<div id="collaterals-half-bg" class="collaterals-card half-height"></div>
 	  </div>
 	</section>
-  
 	<section class="social-section">
 	  <div id="social-left">
 		<div class="social-card half-height">
@@ -46,7 +43,6 @@
 		<div id="social-full-bg" class="social-card full-height"></div>
 	  </div>
 	</section>
-  
 	<section class="web-section">
 	  <div id="web-left">
 		<div id="web-full-bg" class="web-card full-height"></div>
@@ -59,7 +55,6 @@
 		<div id="web-half-bg" class="web-card half-height"></div>
 	  </div>
 	</section>
-  
 	<section class="photography-section">
 	  <div id="photography-left">
 		<div class="photography-card half-height">
@@ -72,16 +67,14 @@
 		<div id="photography-full-bg" class="photography-card full-height"></div>
 	  </div>
 	</section>
-  
 	<section class="send-info-section-sv">
-	  <h2 class="send-info-title-sv">{{ $t('services.send_info_title_1') }}</h2>
-	  <h2 class="send-info-title-sv">{{ $t('services.send_info_title_2') }}</h2>
-	  <div class="send-info-line-sv">
-		<input type="email" id="send-info-email-sv" name="email" :placeholder="$t('services.send_info_placeholder')">
-		<button id="send-info-button-sv">{{ $t('services.send_info_button') }}</button>
-	  </div>
+		<h2 class="send-info-title-sv">{{ $t('services.send_info_title_1') }}</h2>
+	  	<h2 class="send-info-title-sv">{{ $t('services.send_info_title_2') }}</h2>
+	  	<div class="send-info-line-sv">
+			<input type="email" id="send-info-email-sv" name="email" :placeholder="$t('services.send_info_placeholder')">
+			<button id="send-info-button-sv">{{ $t('services.send_info_button') }}</button>
+	  	</div>
 	</section>
-  
 	<section class="faq-section">
 	  <div class="faq-container">
 		<div class="faq-top">
@@ -139,5 +132,16 @@
 		}
 		}
 	};
+
+	// JavaScript to toggle the FAQ answers
+	document.addEventListener('DOMContentLoaded', function () {
+	const questions = document.querySelectorAll('.faq-question');
+	
+	questions.forEach(question => {
+		question.addEventListener('click', () => {
+		const answer = question.nextElementSibling;
+		answer.classList.toggle('active');
+		});
+	});
+	});
   </script>
-  

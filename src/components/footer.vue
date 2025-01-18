@@ -20,18 +20,18 @@
       <div class="footer-column">
         <h4 class="footer-title"><a href="/">{{ $t('footer.home') }}</a></h4>
         <ul>
-          <li class="footer-element"><a href="services.html">{{ $t('footer.services') }}</a></li>
+          <li class="footer-element"><a href="services">{{ $t('footer.services') }}</a></li>
           <li class="footer-element"><a href="https://itsnvillalobos.gumroad.com/">{{ $t('footer.shop') }}</a></li>
-          <li class="footer-element"><a href="mywork.html">{{ $t('footer.mywork') }}</a></li>
+          <li class="footer-element"><a href="mywork">{{ $t('footer.mywork') }}</a></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4 class="footer-title"><a href="enquirenow.html">{{ $t('footer.contact') }}</a></h4>
+        <h4 class="footer-title"><a href="enquirenow">{{ $t('footer.contact') }}</a></h4>
         <ul>
-          <li class="footer-element"><a href="about.html">{{ $t('footer.about') }}</a></li>
-          <li class="footer-element"><a href="enquirenow.html">{{ $t('footer.work_with_me') }}</a></li>
-          <li class="footer-element"><a href="enquirenow.html">{{ $t('footer.trabaja_conmigo') }}</a></li>
+          <li class="footer-element"><a href="about">{{ $t('footer.about') }}</a></li>
+          <li class="footer-element"><a href="enquirenow">{{ $t('footer.work_with_me') }}</a></li>
+          <li class="footer-element"><a href="enquirenow">{{ $t('footer.trabaja_conmigo') }}</a></li>
         </ul>
       </div>
 

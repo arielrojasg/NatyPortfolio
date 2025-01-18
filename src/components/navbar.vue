@@ -48,9 +48,13 @@
 <script>
 export default {
   name: 'Navbar',
+  computed: {
+    currentPage() {
+      return this.$route.path; // Dynamically gets the current route
+    },
+  },
   data() {
     return {
-      currentPage: window.location.pathname.split("/").pop().split(".")[0],
       menuOpen: false,
     };
   },

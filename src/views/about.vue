@@ -27,7 +27,7 @@
   <section class="work-together-section">
     <h2 class="work-together-title">{{ $t('about.work_together_title') }}</h2>
     <p class="work-together-text">{{ $t('about.work_together_text_1') }} {{ $t('about.work_together_text_2') }}</p>
-    <button class="work-together-button" @click="goToPage('enquirenow.html')">{{ $t('about.work_together_button') }}</button>
+    <button class="work-together-button" @click="goToPage('enquirenow')">{{ $t('about.work_together_button') }}</button>
   </section>
   <section class="send-info-section">
     <h2 class="send-info-title">{{ $t('about.send_info_title_1') }} </h2>

@@ -89,38 +89,12 @@
     max-width: 21.21vw; 
 }
 
-/*social starts */
-.social-section{
-    background: var(--negro, #1E1E1E);
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
-
-.social-title{
-    color: var(--celeste, #AEBCFB);
-    text-align: center;
-    font-family: "roc-grotesk-condensed", sans-serif;;
-    font-size: 5.21vw;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 147.4%; /* 7.68vw */
-    text-transform: uppercase;
-}
-.social-section .columns{
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 3%;
-    justify-content: center; /* Horizontally center the columns */
-    align-items: center; /* Vertically center the columns */
-}
-
 #photo-section{
     margin-top: 2.5%;
 }
 
 #photo {
-    background-image: url("/@images/enquirenowbg.jpg");
+    background-image: url("../img/enquirenowbg.jpg");
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */

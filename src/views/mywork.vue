@@ -40,12 +40,12 @@
 	</section>
   
 	<section class="work-together-section-mw">
-	  <div id="work-together-button-area">
-		<button class="work-together-button-1" @click="goToPage('https://www.behance.net/nataliavillalo2#')">{{ $t('mywork.view_on_behance') }}</button>
+	  <div id="work-together-button-area-mw">
+		<button class="work-together-button-1-mw" @click="goToPage('https://www.behance.net/nataliavillalo2#')">{{ $t('mywork.view_on_behance') }}</button>
 	  </div>
-	  <h2 class="work-together-title">{{ $t('mywork.want_to_work_together') }}</h2>
-	  <p class="work-together-text">{{ $t('mywork.ready_to_start_project_1') }} {{ $t('mywork.ready_to_start_project_2') }}</p>
-	  <button class="work-together-button" @click="goToPage('enquirenow.html')">{{ $t('mywork.get_started') }}</button>
+	  <h2 class="work-together-title-mw">{{ $t('mywork.want_to_work_together') }}</h2>
+	  <p class="work-together-text-mw">{{ $t('mywork.ready_to_start_project_1') }} {{ $t('mywork.ready_to_start_project_2') }}</p>
+	  <button class="work-together-button-mw" @click="goToPage('enquirenow')">{{ $t('mywork.get_started') }}</button>
 	</section>
   </template>
   

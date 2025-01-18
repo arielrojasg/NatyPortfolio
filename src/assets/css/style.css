@@ -52,7 +52,7 @@ body{
   color: #F99FF9;
 }
 
-li.active a {
+.router-link-active {
   color: var(--rojo, #F99FF9);
   text-align: center;
   font-family: Poppins;

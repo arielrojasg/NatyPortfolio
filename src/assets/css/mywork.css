@@ -318,9 +318,9 @@ color:#A1B2FF
   text-align: center;
   z-index: 1;
   padding-bottom: 10%;
-  height: 60vw;
+  height: 30vw;
 }
-.work-together-title{
+.work-together-title-mw{
   color: var(--negro, #1E1E1E);
   text-align: center;
   font-family: "roc-grotesk-condensed", sans-serif;
@@ -333,7 +333,7 @@ color:#A1B2FF
   text-transform: uppercase;
 }
 
-.work-together-text{
+.work-together-text-mw{
   text-align: center;
   color: var(--negro, #1E1E1E);
   text-align: center;
@@ -348,7 +348,7 @@ color:#A1B2FF
   line-height: 150%;
 }
 
-.work-together-button {
+.work-together-button-mw {
   margin-top: 2%;
   border-radius: 12.50vw;
   border-color: transparent;
@@ -366,12 +366,12 @@ color:#A1B2FF
   padding: 0.69vw;
 }
 
-.work-together-button:hover{
+.work-together-button-mw:hover{
   background: var(--negro, #1E1E1E);
   color: var(--blanco, #FFFF);
 }
 
-.work-together-button-1 {
+.work-together-button-1-mw {
   margin-top:1.5%;
   margin-bottom:1.5%;
   border-radius: 12.50vw;
@@ -390,12 +390,12 @@ color:#A1B2FF
   padding: 0.69vw;
 }
 
-.work-together-button-1:hover{
+.work-together-button-1-mw:hover{
   background: var(--blanco, #FFF);
   color: var(--negro, #1E1E1E);
 }
 
-#work-together-button-area{
+#work-together-button-area-mw{
   padding-top: 0%;
   background-color: #1E1E1E;
   justify-content: center; /* Center the button horizontally (optional if needed) */
@@ -453,12 +453,12 @@ color:#A1B2FF
     padding: 1.5%;
   }
 
-  .work-together-button, .work-together-button-1 {
+  .work-together-button-mw, .work-together-button-1-mw {
     font-size: 3.5vw;
     width: 50%;
     height: 7.5vw;
   }
-  .work-together-title {
+  .work-together-title-mw {
     font-size: 7.5vw;
     padding-top: 4vw;
     margin: auto;
@@ -466,7 +466,7 @@ color:#A1B2FF
     width: 60%;
     line-height: 110%;
   }
-  .work-together-text {
+  .work-together-text-mw {
     font-size: 3.5vw;
     width: 70%;
     margin-left: auto;
@@ -477,7 +477,7 @@ color:#A1B2FF
     margin-bottom: 0%;
   }
 
-  #work-together-button-area{
+  #work-together-button-area-mw{
     padding-top: 2%;
     padding-bottom: 2%;
   }
