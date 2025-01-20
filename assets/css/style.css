@@ -662,7 +662,7 @@ html{
   display: inline-block;
   stroke-width: 0.07vw;
   stroke: #000;
-  width: 50%;
+  width: 45%;
   height: 0.00vw;
   flex-shrink: 0;
   border-top: 0.14vw solid #000; /* You can adjust the color and thickness as needed */

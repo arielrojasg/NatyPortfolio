@@ -7,6 +7,14 @@
     display: none;
 }
 
+#clouds .cloud:last-child h2 {
+    white-space: normal;
+    text-align: center;
+    max-width: 80%; /* Adjust this value as needed */
+    margin: 0 auto;
+    line-height: 1.5; /* Increase this value to add more space between lines */
+}    
+
 
 @media screen and (max-width: 768px) {
     .bio {
@@ -59,9 +67,6 @@
         font-size: 3.5vw;
     }
     
-    .services-section{
-        margin-top: 0% !important;
-    }
 
     .obsessed-subtitle{
         background-color: var(--fucsia, #F99FF9);
@@ -114,12 +119,6 @@
         line-height: 1.5; /* Increase this value to add more space between lines */
     }    
 
-    .line {
-        width: 100%;
-        border-top:0.50vw solid #000;
-        margin-top: 0%;
-        margin-bottom: 1.25%;    
-    }
 
     .loved{
         margin-top: -8%;

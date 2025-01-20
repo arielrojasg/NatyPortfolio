@@ -37,6 +37,7 @@
       <button id="send-info-button">{{ $t('about.send_info_button') }}</button>
     </div>
   </section>
+  <section id="blank"></section>
 </template>
 
 <script>

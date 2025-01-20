@@ -130,6 +130,7 @@
         </div>
       </div>
     </section>
+    <section id="blank"></section>
   </template>
   
   <script>

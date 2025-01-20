@@ -149,17 +149,6 @@ max-width: 90%;
 display: block;
 }
 
-.line {
-stroke-width: 0.07vw;
-stroke: #000;
-width: 100%;
-height: 0.00vw;
-flex-shrink: 0;
-border-top: 0.07vw solid #000;
-margin-bottom: 0.4%;
-}
-
-
 #transforming{
   background-image: url('../img/Nube\ grande.svg');
   background-size: auto;
@@ -703,6 +692,18 @@ background-position: center; /* Centers the background image */
 background-repeat: no-repeat;
 }
 
+.line-q {
+  display: inherit;
+  stroke-width: 0.07vw;
+  stroke: #000;
+  width: 100%;
+  height: 0.00vw;
+  flex-shrink: 0;
+  border-top: 0.14vw solid #000; /* You can adjust the color and thickness as needed */
+
+}
+
+
 @media screen and (max-width: 768px) {
   .social-section, .photography-section, .branding-section {
     flex-direction: column; /* Stack sections vertically */
@@ -908,10 +909,11 @@ background-repeat: no-repeat;
     padding-right: 10%;
   }
 
-  .line {
+  .line-q {
     border-top:0.50vw solid #000;
     margin-top: 0%;
     margin-bottom: 1.25%;
+    max-width: 100%;
   }
 
   .faq-question::after {

@@ -667,6 +667,7 @@ html{
   flex-shrink: 0;
   border-top: 0.14vw solid #000; /* You can adjust the color and thickness as needed */
 }
+
 .services-container {
   display: block;
   align-items: center; 

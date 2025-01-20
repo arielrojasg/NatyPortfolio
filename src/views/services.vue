@@ -81,42 +81,42 @@
 		  <h1 class="faq-title">{{ $t('services.faq_title') }}</h1>
 		</div>
 		<div class="faq-questions">
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_1') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_1') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_2') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_2') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_3') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_3') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_4') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_4') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_5') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_5') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_6') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_6') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		  <div class="faq">
 			<div class="faq-question">{{ $t('services.faq_question_7') }}</div>
 			<div class="faq-answer">{{ $t('services.faq_answer_7') }}</div>
 		  </div>
-		  <div class="line"></div>
+		  <div class="line-q"></div>
 		</div>
 	  </div>
 	</section>
