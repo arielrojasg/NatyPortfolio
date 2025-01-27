@@ -25,7 +25,7 @@
   font-size: 5.20vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 0%;
+  line-height: 15%;
   text-transform: uppercase;
 }
 
@@ -97,6 +97,7 @@
 
 
 .portfolio1-section {
+
   background-color: #FFFF; /* Light purple background */
   font-family: "roc-grotesk-condensed", sans-serif;
   color: #FFFFFF;
@@ -341,7 +342,7 @@ color:#A1B2FF
   font-size: 1.11vw;
   font-style: normal;
   font-weight: 400;
-  width: 40%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   white-space: normal;
@@ -403,6 +404,10 @@ color:#A1B2FF
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio1-section{
+    margin-top: -0.5%;
+  }
+
   .portfolio1-card.half-height {
     height: 50vw;
     margin: 0.67vw;
@@ -441,7 +446,8 @@ color:#A1B2FF
 
 
   .celebrating-section{
-    margin-top: 0%;
+    margin-top: 18vw;
+    
   }
   .discover-title {
     font-size: 3.5vw;
@@ -451,6 +457,10 @@ color:#A1B2FF
     white-space: normal;
     line-height: 130%;
     padding: 1.5%;
+  }
+
+  .work-together-section-mw{
+    height: auto;
   }
 
   .work-together-button-mw, .work-together-button-1-mw {

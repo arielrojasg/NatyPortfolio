@@ -76,6 +76,10 @@ body{
   margin-left: 0.69vw; 
 }
 
+.navbar-left img{
+  width: 4.2vw;
+}
+
 .navbar {
   background-color: transparent; 
   border-radius: 6.94vw;
@@ -227,7 +231,7 @@ body{
 .scrolling-text {
   width: 100%;
   background: var(--fucsia, #F99FF9);
-  margin-top: 2.5%;
+  margin-top: 1.5%;
   overflow: hidden;
 }
 
@@ -844,6 +848,7 @@ html{
     width: 100%;
     z-index: 1000;
     height: 5.4vh;
+    margin-top: 1.85%;
   }
 
   .logo {
@@ -854,6 +859,7 @@ html{
     top: 0; /* Set to zero to avoid shifting */
   }
 
+
   .navbar-right.open + .navbar-left {
     position: relative;
     z-index: 1;
@@ -861,6 +867,7 @@ html{
 
   .navbar-left img {
     width: 10vw; 
+    margin-left: 15vw;
   }
 
   .navbar-right .navbar-nav li {
@@ -875,6 +882,7 @@ html{
     font-size: 6vw;
     font-weight: 500;
     color: #1E1E1E;
+    line-height: normal;
   }
 
   #enquire-button {
@@ -892,26 +900,24 @@ html{
     font-size: 5vw;
   }
 
-  #navbar{
-    position: sticky;
-    top: 0; /* Adjusts the offset from the top, can be any value like '10px' */
-    z-index: 1000; /* Ensures the navbar stays above other elements */
-    background-color: #1E1E1E;
-    padding-top: 1%;
-    padding-bottom: 3%;
-  }
-
   .navbar{
     border: none;
-    height: 12vw;
-    position: sticky;
-    top: 0; /* Adjusts the offset from the top, can be any value like '10px' */
-    z-index: 1000; /* Ensures the navbar stays above other elements */
+    height: 18vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-radius: 0vw;
+    background-color: #1E1E1E;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0px;
   }
 
   .navbar-nav li {
     margin: 0 -4vw;
-    margin-top: 3%;
+    margin-top: 2.2vh;
   }
 
   .navbar-right ul {
@@ -932,12 +938,16 @@ html{
   #hamburger {
     width: 10vw;
     height: auto;
+    margin-right: 10vw;
+    margin-top:15%
   }
   
   #close {
     width: 8vw;
     height: auto;
-    padding-right: 1.5vw;
+    padding-right: 11vw;
+    margin-top:5%
+
   }
 
   .navbar-right{
@@ -955,7 +965,7 @@ html{
     align-items: center;
     background-color: rgba(249, 159, 249, 0.96); 
     position: fixed;
-    top: 18.2vw;
+    top: 18vw;
     left: 0;
     height: 100vh;
    }
@@ -1032,5 +1042,8 @@ html{
     text-decoration: none;
     background-color: #1E1E1E;
     margin-block-start: 1.33em;
+  }
+  .scrolling-text{
+    margin-top: 18vw;
   }
 }
