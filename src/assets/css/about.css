@@ -352,11 +352,11 @@ background-color: #FFFF;
   }
   .work-together-section{
     height: auto;
-    padding-bottom: 3vw;
+    padding-bottom: 10vw;
   }
   .work-together-title {
     font-size: 7.5vw;
-    padding-top: 4vw;
+    padding-top: 10vw;
     margin: auto;
     text-align: center;
     width: 60%;
@@ -386,7 +386,7 @@ background-color: #FFFF;
     font-size: 3.5vw;
     width: 50%;
     height: 7.5vw;
-    margin-top: 7.5%;
+    margin-top: 2%;
   }
   #send-info-email {
     width: 70%;

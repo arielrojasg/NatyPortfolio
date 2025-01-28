@@ -68,7 +68,6 @@
 
     .obsessed-subtitle{
         background-color: var(--fucsia, #F99FF9);
-        margin-top: 0%;
     }
 
     #obsessed-titles{
@@ -79,7 +78,7 @@
 
     .obsessed{
         margin-top: 0%;
-        height: 50vh;
+        height: 48vh;
         background-position-x: center;
         background-position-y: 10vh;
         clip-path: none;

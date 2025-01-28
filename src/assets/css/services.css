@@ -734,6 +734,7 @@ background-repeat: no-repeat;
     font-size: 7.5vw;
     padding-left: 6vw;
     padding-right: 6vw;
+    
   }
 
   .social-description, .photography-description, .branding-description{
@@ -741,6 +742,7 @@ background-repeat: no-repeat;
     line-height: 5.5vw;
     padding-left: 6vw;
     padding-right: 6vw;
+    margin-top: -10%;
   }
 
   #social-full-bg,#photography-full-bg, #branding-full-bg{
@@ -757,6 +759,7 @@ background-repeat: no-repeat;
     border-bottom-left-radius: 0vw;
     border-bottom-right-radius: 0vw;
     margin-bottom: -1.75%;
+    height: auto;
   }
 
   .photography-card.full-height, .social-card.full-height, .branding-card.full-height {
@@ -782,18 +785,19 @@ background-repeat: no-repeat;
   }
 
   .collaterals-title, .web-title {
-  padding-bottom: 2vw;
-  padding-top: 3vw;
-  font-size: 7.5vw;
-  padding-left: 6vw;
-  padding-right: 6vw;
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+    font-size: 7.5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 
   .collaterals-description, .web-description {
-  font-size: 3.5vw;
-  line-height: 5.5vw;
-  padding-left: 6vw;
-  padding-right: 6vw;
+    font-size: 3.5vw;
+    line-height: 5.5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    margin-top: -10%;
   }
 
   #collaterals-full-bg, #web-full-bg {
@@ -804,11 +808,12 @@ background-repeat: no-repeat;
   }
 
   .collaterals-card.half-height, .web-card.half-height {
-  border-top-left-radius: 4vw;
-  border-top-right-radius: 4vw;
-  border-bottom-left-radius: 0vw;
-  border-bottom-right-radius: 0vw;
-  margin-bottom: -1.75%;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 0vw;
+    border-bottom-right-radius: 0vw;
+    margin-bottom: -1.75%;
+    height: auto;
   }
 
   .collaterals-card.full-height, .web-card.full-height {
@@ -872,6 +877,11 @@ background-repeat: no-repeat;
     display: none;
   }
 
+  .send-info-section-sv{
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
   .send-info-title-sv{
     font-size: 7.5vw;
     line-height: 20%;
@@ -881,7 +891,7 @@ background-repeat: no-repeat;
     font-size: 3.5vw;
     width: 50%;
     height: 7.5vw;
-    margin-top: 7.5%;
+    margin-top: 2%;
   }
   #send-info-email-sv {
     width: 70%;
@@ -894,6 +904,7 @@ background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0%;
   }  
 
   .faq-container{

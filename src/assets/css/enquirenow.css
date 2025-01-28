@@ -484,6 +484,7 @@ margin-left: 1%;
     .form-group-checkbox input[type="checkbox"] {
         width: 5vw;
         height: 5vw;
+        flex-shrink: 0;
     }
     
     input[type="text"], input[type="email"] {
