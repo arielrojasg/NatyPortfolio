@@ -5,7 +5,7 @@
 		<h1 class="obsessed-title">{{ $t('services.transforming_title_2') }}</h1>
 		<p class="obsessed-subtitle">{{ $t('services.explore_services') }}</p>
 	  </div>
-	  <button id="transforming-button" @click="goToPage('enquirenow')">{{ $t('services.get_quote') }}</button>
+	  <button id="transforming-button"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('services.get_quote') }}</router-link></button>
 	</section>
 	<section class="branding-section">
 		<div id="branding-left">
@@ -123,25 +123,18 @@
   </template>
   
   <script>
-	import "../assets/css/services.css";
-	export default {
-		name: 'Services',
-		methods: {
-		goToPage(url) {
-			window.location.href = url;
-		}
-		}
-	};
-
-	// JavaScript to toggle the FAQ answers
-	document.addEventListener('DOMContentLoaded', function () {
-	const questions = document.querySelectorAll('.faq-question');
-	
-	questions.forEach(question => {
-		question.addEventListener('click', () => {
-		const answer = question.nextElementSibling;
-		answer.classList.toggle('active');
+  import "../assets/css/services.css";
+  export default {
+	name: 'Services',
+	mounted() {
+		const questions = document.querySelectorAll('.faq-question');
+		questions.forEach(question => {
+			question.addEventListener('click', () => {
+			const answer = question.nextElementSibling;
+			answer.classList.toggle('active');
+			});
 		});
-	});
-	});
+	}
+  };
   </script>
+  

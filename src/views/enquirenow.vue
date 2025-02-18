@@ -46,7 +46,7 @@
 	  </div>
 	</section>
   
-	<section id="enquirenow_form">
+	<!-- <section id="enquirenow_form">
 	  <form>
 		<label class="enquirenow_label" for="firstName">{{ $t('enquirenow.name') }}</label>
 		<div class="form-group">
@@ -145,8 +145,70 @@
 		  <button type="submit" id="enquirenowbutton">{{ $t('enquirenow.send_info_button') }}</button>
 		</div>
 	  </form>
-	</section>
-  
+	</section> -->
+	<section id="enquirenow_form">
+    <form @submit.prevent="sendEmail">
+      <label class="enquirenow_label" for="firstName">{{ $t('enquirenow.name') }}</label>
+      <div class="form-group">
+        <input type="text" id="firstName" v-model="formData.firstName" required :placeholder="$t('enquirenow.first_name_placeholder')">
+        <input type="text" id="lastName" v-model="formData.lastName" required :placeholder="$t('enquirenow.last_name_placeholder')">
+      </div>
+
+      <label class="enquirenow_label" for="email">{{ $t('enquirenow.email') }}</label>
+      <input type="email" id="email" v-model="formData.email" required :placeholder="$t('enquirenow.email_placeholder')">
+
+      <label class="enquirenow_label" for="businessName">{{ $t('enquirenow.business_name') }}</label>
+      <input type="text" id="businessName" v-model="formData.businessName" :placeholder="$t('enquirenow.business_name_placeholder')">
+
+      <label class="enquirenow_label" for="contact">{{ $t('enquirenow.alternate_contact') }}</label>
+      <input type="text" id="contact" v-model="formData.contact" :placeholder="$t('enquirenow.alternate_contact_placeholder')">
+
+      <label class="enquirenow_label" for="location">{{ $t('enquirenow.location') }}</label>
+      <input type="text" id="location" v-model="formData.location" :placeholder="$t('enquirenow.location_placeholder')">
+
+      <label class="enquirenow_label" for="website">{{ $t('enquirenow.website') }}</label>
+      <input type="text" id="website" v-model="formData.website" :placeholder="$t('enquirenow.website_placeholder')">
+
+      <label class="enquirenow_label" for="aboutYou">{{ $t('enquirenow.about_you') }}</label>
+      <textarea id="aboutYou" v-model="formData.aboutYou" rows="4" :placeholder="$t('enquirenow.about_you_placeholder')"></textarea>
+
+      <label class="enquirenow_label">{{ $t('enquirenow.service_looking_for') }}</label>
+      <div class="form-group-checkbox">
+        <label v-for="(service, index) in services" :key="index" class="enquirenow_label">
+          <input type="checkbox" v-model="formData.services" :value="service">
+          {{ $t(`enquirenow.${service}`) }}
+        </label>
+      </div>
+
+      <label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
+      <select id="budget" v-model="formData.budget">
+        <option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
+        <option value="menos-500">{{ $t('enquirenow.budget-1') }}</option>
+        <option value="500-1000">{{ $t('enquirenow.budget-2') }}</option>
+        <option value="mas-1000">{{ $t('enquirenow.budget-3') }}</option>
+      </select>
+
+      <label class="enquirenow_label">{{ $t('enquirenow.how_hear_about_me') }}</label>
+      <div class="form-group-checkbox">
+        <label v-for="(source, index) in sources" :key="index" class="enquirenow_label">
+          <input type="checkbox" v-model="formData.sources" :value="source">
+          {{ $t(`enquirenow.${source}`) }}
+        </label>
+      </div>
+
+      <label class="enquirenow_label" for="additionalInfo">{{ $t('enquirenow.additional_info') }}</label>
+      <textarea id="additionalInfo" v-model="formData.additionalInfo" rows="4" :placeholder="$t('enquirenow.additional_info_placeholder')"></textarea>
+
+      <p class="note-text">{{ $t('enquirenow.note_text') }}</p>
+
+      <div class="button-container">
+        <button type="submit" id="enquirenowbutton" :disabled="loading">
+          {{ loading ? $t('enquirenow.sending') : $t('enquirenow.send_info_button') }}
+        </button>
+      </div>
+    </form>
+  </section>
+
 	<section class="join-forces-section">
 	  <div class="join-forces-left">
 		<h2 class="join-forces-title">{{ $t('enquirenow.join_forces_title') }}</h2>
@@ -158,12 +220,59 @@
 	</section>
   
 	<section id="blank"></section>
-  </template>
-  
-  <script>
+</template>
+<script>
 	import "../assets/css/enquirenow.css";
+	
 	export default {
-		name: 'EnquireNow',
+	  name: "EnquireNow",
+	  data() {
+		return {
+		  formData: {
+			firstName: "",
+			lastName: "",
+			email: "",
+			businessName: "",
+			contact: "",
+			location: "",
+			website: "",
+			aboutYou: "",
+			services: [],
+			budget: "",
+			sources: [],
+			additionalInfo: "",
+		  },
+		  loading: false,
+		  services: ["branding", "collaterals", "packaging", "web_design", "photography", "social_media", "other"],
+		  sources: ["instagram", "linkedin", "tiktok", "behance", "referral"]
+		};
+	  },
+	  methods: {
+		async sendEmail() {
+		  this.loading = true;
+	
+		  try {
+			const response = await fetch("https://naty-portfolio.vercel.app/api/send-email", {
+			  method: "POST",
+			  headers: { "Content-Type": "application/json" },
+			  body: JSON.stringify(this.formData)
+			});
+	
+			const result = await response.json();
+			if (result.success) {
+			  alert("Email sent successfully!");
+			} else {
+			  alert("Failed to send email.");
+			}
+		  } catch (error) {
+			console.error("Error:", error);
+			alert("An error occurred while sending the email.");
+		  } finally {
+			this.loading = false;
+		  }
+		}
+	  }
 	};
-  </script>
+</script>
+	
   

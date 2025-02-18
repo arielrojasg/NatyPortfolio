@@ -41,11 +41,11 @@
   
 	<section class="work-together-section-mw">
 	  <div id="work-together-button-area-mw">
-		<button class="work-together-button-1-mw" @click="goToPage('https://www.behance.net/nataliavillalo2#')">{{ $t('mywork.view_on_behance') }}</button>
+		<button class="work-together-button-1-mw"><a href="https://www.behance.net/nataliavillalo2#" target="_blank">{{ $t('mywork.view_on_behance') }}</a></button>
 	  </div>
 	  <h2 class="work-together-title-mw">{{ $t('mywork.want_to_work_together') }}</h2>
 	  <p class="work-together-text-mw">{{ $t('mywork.ready_to_start_project_1') }} {{ $t('mywork.ready_to_start_project_2') }}</p>
-	  <button class="work-together-button-mw" @click="goToPage('enquirenow')">{{ $t('mywork.get_started') }}</button>
+	  <button class="work-together-button-mw"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('mywork.get_started') }}</router-link></button>
 	</section>
   </template>
   

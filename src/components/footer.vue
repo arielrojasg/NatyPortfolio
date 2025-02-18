@@ -20,18 +20,18 @@
       <div class="footer-column">
         <h4 class="footer-title"><a href="/">{{ $t('footer.home') }}</a></h4>
         <ul>
-          <li class="footer-element"><a href="services">{{ $t('footer.services') }}</a></li>
-          <li class="footer-element"><a href="https://itsnvillalobos.gumroad.com/">{{ $t('footer.shop') }}</a></li>
-          <li class="footer-element"><a href="mywork">{{ $t('footer.mywork') }}</a></li>
+          <li class="footer-element"><router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('footer.services') }}</router-link> </li>
+          <li class="footer-element"><a href="https://itsnvillalobos.gumroad.com/" target="_blank">{{ $t('footer.shop') }}</a></li>
+          <li class="footer-element"><router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('footer.mywork') }}</router-link></li>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4 class="footer-title"><a href="enquirenow">{{ $t('footer.contact') }}</a></h4>
+        <h4 class="footer-title"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('footer.contact') }}</router-link></h4>
         <ul>
-          <li class="footer-element"><a href="about">{{ $t('footer.about') }}</a></li>
-          <li class="footer-element"><a href="enquirenow">{{ $t('footer.work_with_me') }}</a></li>
-          <li class="footer-element"><a href="enquirenow">{{ $t('footer.trabaja_conmigo') }}</a></li>
+          <li class="footer-element"><router-link :class="{ active: currentPage === 'about' }" to="/about">{{ $t('footer.about') }}</router-link> </li>
+          <li class="footer-element"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('footer.work_with_me') }}</router-link></li>
+          <li class="footer-element"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('footer.trabaja_conmigo') }}</router-link></li>
         </ul>
       </div>
 

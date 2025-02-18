@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
-import Navbar from './components/Navbar.vue';
+import Navbar from './components/navbar.vue';
 import Home from './views/home.vue';
-import Footer from './components/Footer.vue';
-import Instagram from './components/Instagram.vue';
+import Footer from './components/footer.vue';
+import Instagram from './components/instagram.vue';
 import { i18n } from './main';
 
 const link = document.createElement('link');

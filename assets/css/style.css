@@ -22,19 +22,6 @@
   src: url('../fonts/Poppins-Light.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Oswald';
-  font-weight: bold;
-  src: url('../fonts/Oswald-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Oswald';
-  font-weight: 500;
-  src: url('../fonts/Oswald-Medium.ttf') format('truetype');
-}
-
-
 body{
   margin:0%
 }
@@ -52,14 +39,16 @@ body{
   color: #F99FF9;
 }
 
-.router-link-active.router-link-exact-active {
-  color: var(--rojo, #F99FF9);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 1.39vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal; 
+@media (min-width: 768px) {
+  .element .router-link-active.router-link-exact-active {
+    color: var(--rojo, #F99FF9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.39vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+  }
 }
 
 .navbar-nav:hover {
@@ -618,6 +607,17 @@ html{
   padding: 0!important;    
 }
 
+.cloud h2 a, button a{
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  text-align: inherit;
+  text-decoration: none;
+}
+
 .cloud:hover {
   color: #F99FF9;
   background-size: 80%;
@@ -1046,4 +1046,16 @@ html{
   .scrolling-text{
     margin-top: 18vw;
   }
+
+  .cloud h2 a, button a{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    text-align: inherit;
+    text-decoration: none;
+  }
+  
 }

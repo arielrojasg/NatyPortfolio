@@ -21,11 +21,11 @@
         </li>
         <div class="divider"></div>
         <li class="element">
-          <router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('navbar.services') }}</router-link> 
+          <router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('navbar.services') }}</router-link>
         </li>
         <div class="divider"></div>
         <li class="element">
-          <router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('navbar.mywork') }}</router-link> 
+          <router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('navbar.mywork') }}</router-link>
         </li>
         <div class="divider"></div>
         <li class="element">

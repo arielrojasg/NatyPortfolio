@@ -44,7 +44,7 @@
         <h1 class="bio-title-fucsia">{{ $t('home.unforgettable') }}</h1>
         <h1 class="bio-title-fucsia">{{ $t('home.experiences') }}</h1>
         <p class="text-box">{{ $t('home.text_box') }}</p>
-        <button class="button" @click="goToPage('enquirenow')">{{ $t('home.lets_get_started') }}</button>
+        <button class="button"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('home.lets_get_started') }}</router-link></button>
       </div>
     </div>
   
@@ -55,20 +55,20 @@
         <p class="obsessed-subtitle">{{ $t('home.obsessed_subtitle') }}</p>
       </div>
       <div id="clouds">
-        <div class="cloud" @click="goToPage('about')">
-          <h2>{{ $t('home.about') }}</h2>
+        <div class="cloud">
+          <h2><router-link :class="{ active: currentPage === 'about' }" to="/about">{{ $t('home.about') }}</router-link></h2>
         </div>
-        <div class="cloud" @click="goToPage('services')">
-          <h2>{{ $t('home.services') }}</h2>
+        <div class="cloud">
+          <h2><router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('home.services') }}</router-link></h2>
         </div>
-        <div class="cloud" @click="goToPage('mywork')">
-          <h2>{{ $t('home.my_work') }}</h2>
+        <div class="cloud">
+          <h2><router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('home.my_work') }}</router-link></h2>
         </div>
-        <div class="cloud" @click="goToPage('https://itsnvillalobos.gumroad.com/')">
-          <h2>{{ $t('home.shop') }}</h2>
+        <div class="cloud">
+          <h2><a href="https://itsnvillalobos.gumroad.com/" target="_blank">{{ $t('home.shop') }}</a> </h2>
         </div>
-        <div class="cloud" @click="goToPage('enquirenow')">
-          <h2 v-html="$t('home.enquire_now')"></h2>
+        <div class="cloud">
+          <h2><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow" v-html="$t('home.enquire_now')"></router-link> </h2>
         </div>
       </div>
     </section>
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div id="services-button-container">
-        <button class="services-button" @click="goToPage('enquirenow')">{{ $t('home.lets_work_together') }}</button>
+        <button class="services-button"><router-link :class="{ active: currentPage === 'enquirenow' }" to="/enquirenow">{{ $t('home.lets_work_together') }}</router-link></button>
       </div>
     </section>
   
