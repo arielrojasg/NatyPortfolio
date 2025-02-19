@@ -147,7 +147,7 @@
 	  </form>
 	</section> -->
 	<section id="enquirenow_form">
-    <form @submit.prevent="sendEmail">
+    <form @submit.prevent="handleSubmit">
       <label class="enquirenow_label" for="firstName">{{ $t('enquirenow.name') }}</label>
       <div class="form-group">
         <input type="text" id="firstName" v-model="formData.firstName" required :placeholder="$t('enquirenow.first_name_placeholder')">
@@ -158,19 +158,19 @@
       <input type="email" id="email" v-model="formData.email" required :placeholder="$t('enquirenow.email_placeholder')">
 
       <label class="enquirenow_label" for="businessName">{{ $t('enquirenow.business_name') }}</label>
-      <input type="text" id="businessName" v-model="formData.businessName" :placeholder="$t('enquirenow.business_name_placeholder')">
+      <input type="text" id="businessName" v-model="formData.businessName" required :placeholder="$t('enquirenow.business_name_placeholder')">
 
       <label class="enquirenow_label" for="contact">{{ $t('enquirenow.alternate_contact') }}</label>
-      <input type="text" id="contact" v-model="formData.contact" :placeholder="$t('enquirenow.alternate_contact_placeholder')">
+      <input type="text" id="contact" v-model="formData.contact" required :placeholder="$t('enquirenow.alternate_contact_placeholder')">
 
       <label class="enquirenow_label" for="location">{{ $t('enquirenow.location') }}</label>
-      <input type="text" id="location" v-model="formData.location" :placeholder="$t('enquirenow.location_placeholder')">
+      <input type="text" id="location" v-model="formData.location" required :placeholder="$t('enquirenow.location_placeholder')">
 
       <label class="enquirenow_label" for="website">{{ $t('enquirenow.website') }}</label>
       <input type="text" id="website" v-model="formData.website" :placeholder="$t('enquirenow.website_placeholder')">
 
       <label class="enquirenow_label" for="aboutYou">{{ $t('enquirenow.about_you') }}</label>
-      <textarea id="aboutYou" v-model="formData.aboutYou" rows="4" :placeholder="$t('enquirenow.about_you_placeholder')"></textarea>
+      <textarea id="aboutYou" v-model="formData.aboutYou" rows="4" required :placeholder="$t('enquirenow.about_you_placeholder')"></textarea>
 
       <label class="enquirenow_label">{{ $t('enquirenow.service_looking_for') }}</label>
       <div class="form-group-checkbox">
@@ -181,7 +181,7 @@
       </div>
 
       <label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
-      <select id="budget" v-model="formData.budget">
+      <select id="budget" required v-model="formData.budget">
         <option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
         <option value="menos-500">{{ $t('enquirenow.budget-1') }}</option>
         <option value="500-1000">{{ $t('enquirenow.budget-2') }}</option>
@@ -248,6 +248,15 @@
 		};
 	  },
 	  methods: {
+		handleSubmit() {
+			// Check if at least one service is selected
+			if (this.formData.services.length === 0 ||  this.formData.sources.length === 0 ) {
+				return;
+			} else {
+				this.sendEmail();
+			}
+			
+		},
 		async sendEmail() {
 		  this.loading = true;
 	

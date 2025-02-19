@@ -4,7 +4,7 @@ import axios from "axios";
 dotenv.config();
 
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": "https://itsnvillalobos.com/",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
@@ -17,33 +17,6 @@ function generateEmailTemplate(data) {
       <meta charset="UTF-8" />
       <title>New Enquiry</title>
       <style>
-        /* Import fonts (note: some email clients may ignore @font-face) */
-        @font-face {
-          font-family: 'Poppins';
-          font-weight: normal;
-          src: url('https://naty-portfolio.vercel.app/fonts/Poppins-Light.ttf') format('truetype');
-        }
-        @font-face {
-          font-family: 'Poppins';
-          font-weight: bold;
-          src: url('https://naty-portfolio.vercel.app/fonts/Poppins-Bold.ttf') format('truetype');
-        }
-        @font-face {
-          font-family: 'Poppins';
-          font-weight: 500;
-          src: url('https://naty-portfolio.vercel.app/fonts/Poppins-Medium.ttf') format('truetype');
-        }
-        @font-face {
-          font-family: 'Poppins';
-          font-weight: 300;
-          src: url('https://naty-portfolio.vercel.app/fonts/Poppins-Light.ttf') format('truetype');
-        }
-        @font-face {
-          font-family: 'roc-grotesk-condensed';
-          font-weight: 500;
-          src: url('https://naty-portfolio.vercel.app/fonts/Roc-Grotesk-Condensed-Bold.ttf') format('truetype');
-        }
-        /* General styling */
         body {
           margin: 0;
           padding: 0;
@@ -180,9 +153,18 @@ export default async function handler(req, res) {
       const response = await axios.post(
         "https://api.brevo.com/v3/smtp/email",
         {
-          sender: { name: "Natalia Villalobos", email: "hello@itsnvillalobos.com" },
-          to: [{ email: "arielrojasg18@gmail.com", name: "Prueba" }],
-          subject: "New Enquiry",
+          sender: { name: "Natalia Villalobos Designer", email: "hello@itsnvillalobos.com" },
+          // Send email to the client who filled the form
+          to: [{
+            email: req.body.email,
+            name: `${req.body.firstName} ${req.body.lastName}`
+          }],
+          // BCC your email so you get a hidden copy
+          bcc: [{
+            email: "nvillalobosc29@gmail.com",
+            name: "Natalia Villalobos"
+          }],
+          subject: "Gracias por llenar mi formulario de cotización 🩷",
           htmlContent: htmlContent,
         },
         {
