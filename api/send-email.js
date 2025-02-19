@@ -4,7 +4,7 @@ import axios from "axios";
 dotenv.config();
 
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "https://itsnvillalobos.com/",
+  "Access-Control-Allow-Origin": "https://itsnvillalobos.com",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
