@@ -143,21 +143,4 @@
         }
       }
     };
-    document.addEventListener('DOMContentLoaded', function () {
-  const targets = document.querySelectorAll('.cloud');
-
-  function handleScroll() {
-    targets.forEach(target => {
-      const rect = target.getBoundingClientRect();
-      const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-      if (inView && !target.classList.contains('animate')) {
-        target.classList.add('animate');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', handleScroll);
-  handleScroll();
-});
   </script>
