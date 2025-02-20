@@ -183,9 +183,9 @@
       <label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
       <select id="budget" required v-model="formData.budget">
         <option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
-        <option value="menos-500">{{ $t('enquirenow.budget-1') }}</option>
-        <option value="500-1000">{{ $t('enquirenow.budget-2') }}</option>
-        <option value="mas-1000">{{ $t('enquirenow.budget-3') }}</option>
+        <option value="Menos de 500">{{ $t('enquirenow.budget-1') }}</option>
+        <option value="$500-$1000">{{ $t('enquirenow.budget-2') }}</option>
+        <option value="Más de 1000">{{ $t('enquirenow.budget-3') }}</option>
       </select>
 
       <label class="enquirenow_label">{{ $t('enquirenow.how_hear_about_me') }}</label>
@@ -202,8 +202,8 @@
       <p class="note-text">{{ $t('enquirenow.note_text') }}</p>
 
       <div class="button-container">
-        <button type="submit" id="enquirenowbutton" :disabled="loading">
-          {{ loading ? $t('enquirenow.sending') : $t('enquirenow.send_info_button') }}
+        <button type="submit" id="enquirenowbutton" :disabled="sent">
+          {{ sent ? $t('enquirenow.sent') : $t('enquirenow.send_info_button') }}
         </button>
       </div>
     </form>
@@ -242,9 +242,9 @@
 			sources: [],
 			additionalInfo: "",
 		  },
-		  loading: false,
+		  sent: false,
 		  services: ["branding", "collaterals", "packaging", "web_design", "photography", "social_media", "other"],
-		  sources: ["instagram", "linkedin", "tiktok", "behance", "referral"]
+		  sources: ["Instagram", "LinkedIn", "Tiktok", "Behance", "Referral"]
 		};
 	  },
 	  methods: {
@@ -257,9 +257,7 @@
 			}
 			
 		},
-		async sendEmail() {
-		  this.loading = true;
-	
+		async sendEmail() {	
 		  try {
 			const response = await fetch("https://naty-portfolio.vercel.app/api/send-email", {
 			  method: "POST",
@@ -269,15 +267,15 @@
 	
 			const result = await response.json();
 			if (result.success) {
-			  alert("Email sent successfully!");
+			  this.sent = true;
+			  console.log("Email sent successfully!");
 			} else {
-			  alert("Failed to send email.");
+			  console.log("Failed to send email.");
 			}
 		  } catch (error) {
 			console.error("Error:", error);
 			alert("An error occurred while sending the email.");
 		  } finally {
-			this.loading = false;
 		  }
 		}
 	  }

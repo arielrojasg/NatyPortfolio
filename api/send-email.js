@@ -11,16 +11,17 @@ const corsHeaders = {
 
 function generateEmailTemplate(data) {
   return `
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <meta charset="UTF-8" />
       <title>New Enquiry</title>
       <style>
+
         body {
           margin: 0;
           padding: 0;
-          font-family: 'Poppins', Arial, sans-serif;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
           color: #1E1E1E;
         }
         .container {
@@ -35,19 +36,21 @@ function generateEmailTemplate(data) {
           max-width: 70%;
           margin: 10% auto 0 auto;
         }
-        h1 {
-          color: #1E1E1E;
-          text-align: center;
-          font-family: 'roc-grotesk-condensed', sans-serif;
-          font-size: 5.5vw;
-          text-transform: uppercase;
-          background-color: #F99FF9;
+        #title {
           padding-top: 1.5%;
-          margin: 1% 15%;
+          max-width: 25%;
+        }
+
+        #title img{
+          max-width: 400%;
+        }
+
+        a{
+          color:#F99FF9;
         }
         label, p, ul {
           color: #1E1E1E;
-          font-size: 3vw;
+          font-size: 2vw;
           font-weight: 300;
           line-height: 147.4%;
           margin-bottom: 0.5em;
@@ -58,6 +61,7 @@ function generateEmailTemplate(data) {
           border-radius: 0.38vw;
           padding: 0.9vw;
           margin-bottom: 1em;
+          border-color: #F99FF9;
         }
         ul {
           list-style: none;
@@ -66,7 +70,7 @@ function generateEmailTemplate(data) {
         ul li::before {
           content: "\\2713";
           color: #1E1E1E;
-          font-size: 4.8vw;
+          font-size: 4vw;
           display: inline-block;
           width: 4.2vw;
           margin-right: 0.2vw;
@@ -76,7 +80,7 @@ function generateEmailTemplate(data) {
           font-weight: 500;
         }
         .footer-note {
-          font-size: 2vw;
+          font-size: 1vw;
           color: #888;
           margin-top: 20px;
           text-align: center;
@@ -85,9 +89,7 @@ function generateEmailTemplate(data) {
     </head>
     <body>
       <div class="container">
-        <p style="text-align: center; padding-top: 20%;">Gracias por rellenar</p>
-        <h1>MI FORM DE CONTACTO</h1>
-        <p style="text-align: center;">Esto es lo que se recibió:</p>
+        <div id="title"><img src="https://github.com/arielrojasg/NatyPortfolio/blob/master/src/assets/img/etitle.png?raw=true"></div>
 
         <label>Nombre*</label>
         <p class="textInput">${data.firstName}</p>
@@ -133,7 +135,7 @@ function generateEmailTemplate(data) {
       </div>
     </body>
   </html>
-  `;
+    `;
 }
 
 
