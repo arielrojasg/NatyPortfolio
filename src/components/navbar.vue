@@ -17,23 +17,23 @@
         </div>
         <ul class="navbar-nav">
           <li class="element">
-          <router-link :class="{ active: currentPage === 'about' }" to="/about">{{ $t('navbar.about') }}</router-link> 
+          <router-link :class="{ active: currentPage === 'about' }" @click="closeMenu" to="/about">{{ $t('navbar.about') }}</router-link> 
         </li>
         <div class="divider"></div>
         <li class="element">
-          <router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('navbar.services') }}</router-link>
+          <router-link :class="{ active: currentPage === 'services' }" @click="closeMenu" to="/services">{{ $t('navbar.services') }}</router-link>
         </li>
         <div class="divider"></div>
         <li class="element">
-          <router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('navbar.mywork') }}</router-link>
+          <router-link :class="{ active: currentPage === 'mywork' }" @click="closeMenu" to="/mywork">{{ $t('navbar.mywork') }}</router-link>
         </li>
         <div class="divider"></div>
         <li class="element">
-          <a href="https://itsnvillalobos.gumroad.com/" target="_blank">{{ $t('navbar.shop') }}</a> 
+          <a href="https://itsnvillalobos.gumroad.com/" @click="closeMenu" target="_blank">{{ $t('navbar.shop') }}</a> 
         </li>
         <div class="divider"></div>
         <li class="element">
-          <router-link :class="{ active: currentPage === 'enquirenow' }" id="enquire-button" to="/enquirenow">{{ $t('navbar.enquire_now') }}</router-link> 
+          <router-link :class="{ active: currentPage === 'enquirenow' }" @click="closeMenu" id="enquire-button" to="/enquirenow">{{ $t('navbar.enquire_now') }}</router-link> 
         </li>
             <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector-nav">
             <option value="en" :disabled="$i18n.locale === 'en'">EN</option>
@@ -66,6 +66,11 @@ export default {
       } else {
         document.body.classList.remove('lock-scroll');
       }
+    },
+    closeMenu() {
+      // This method is called on every link click to close the menu
+      this.menuOpen = false;
+      document.body.classList.remove('lock-scroll');
     },
     mounted() {
     // If you need to attach any DOM-specific logic, it should be placed here

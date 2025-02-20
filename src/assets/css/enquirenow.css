@@ -137,6 +137,11 @@
     color: var(--negro, #1E1E1E);
 }
 
+#enquirenowbutton:disabled{
+    background: var(--fucsia, #F99FF9);
+    color: var(--negro, #1E1E1E);
+}
+
 #enquirenowbutton {
     margin-top: 2%;
     border-radius: 12.50vw;

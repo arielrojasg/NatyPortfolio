@@ -244,7 +244,7 @@
 		  },
 		  sent: false,
 		  services: ["branding", "collaterals", "packaging", "web_design", "photography", "social_media", "other"],
-		  sources: ["Instagram", "LinkedIn", "Tiktok", "Behance", "Referral"]
+		  sources: ["instagram", "linkedin", "tiktok", "behance", "referral"]
 		};
 	  },
 	  methods: {
