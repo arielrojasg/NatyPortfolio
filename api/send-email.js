@@ -38,11 +38,11 @@ function generateEmailTemplate(data) {
         }
         #title {
           padding-top: 1.5%;
-          max-width: 25%;
+          max-width: 200px;
         }
 
         #title img{
-          max-width: 400%;
+          max-width: 240%;
         }
 
         a{
@@ -50,7 +50,7 @@ function generateEmailTemplate(data) {
         }
         label, p, ul {
           color: #1E1E1E;
-          font-size: 2vw;
+          font-size: 16px;
           font-weight: 300;
           line-height: 147.4%;
           margin-bottom: 0.5em;
@@ -67,10 +67,10 @@ function generateEmailTemplate(data) {
           list-style: none;
           padding-left: 0;
         }
-        ul li::before {
-          content: "\\2713";
+          
+        span {
           color: #1E1E1E;
-          font-size: 4vw;
+          font-size:16px;
           display: inline-block;
           width: 4.2vw;
           margin-right: 0.2vw;
@@ -80,7 +80,7 @@ function generateEmailTemplate(data) {
           font-weight: 500;
         }
         .footer-note {
-          font-size: 1vw;
+          font-size: 8px;
           color: #888;
           margin-top: 20px;
           text-align: center;
@@ -117,7 +117,7 @@ function generateEmailTemplate(data) {
 
         <label>¿Qué servicio estás buscando?*</label>
         <ul>
-          ${Array.isArray(data.services) ? data.services.map(s => `<li>${s}</li>`).join("") : ""}
+          ${Array.isArray(data.services) ? data.services.map(s => `<li><span style="display: inline-block; width: 20px; height: 20px; background-color: #F99FF9; border-radius: 3px; font-weight: 500; color: #1E1E1E; text-align: center; line-height: 20px;">✓</span> ${s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())}</li>`).join("") : ""}
         </ul>
 
         <label>¿Cuál es tu presupuesto para este proyecto? ($USD)*</label>
@@ -125,7 +125,7 @@ function generateEmailTemplate(data) {
 
         <label>¿Dónde escuchaste de mí?*</label>
         <ul>
-          ${Array.isArray(data.sources) ? data.sources.map(s => `<li>${s}</li>`).join("") : ""}
+          ${Array.isArray(data.sources) ? data.sources.map(s => `<li><span style="display: inline-block; width: 20px; height: 20px; background-color: #F99FF9; border-radius: 3px; font-weight: 500; color: #1E1E1E; text-align: center; line-height: 20px;">✓</span> ${s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())}</li>`).join("") : ""}
         </ul>
 
         <label>¿Por qué te gustaría trabajar conmigo?</label>

@@ -175,7 +175,7 @@
       <label class="enquirenow_label">{{ $t('enquirenow.service_looking_for') }}</label>
       <div class="form-group-checkbox">
         <label v-for="(service, index) in services" :key="index" class="enquirenow_label">
-          <input type="checkbox" v-model="formData.services" :value="service">
+          <input type="checkbox" v-model="formData.services" :value="formData.services">
           {{ $t(`enquirenow.${service}`) }}
         </label>
       </div>
@@ -183,9 +183,9 @@
       <label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
       <select id="budget" required v-model="formData.budget">
         <option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
-        <option value="Menos de 500">{{ $t('enquirenow.budget-1') }}</option>
-        <option value="$500-$1000">{{ $t('enquirenow.budget-2') }}</option>
-        <option value="Más de 1000">{{ $t('enquirenow.budget-3') }}</option>
+        <option value="Menos de $600">{{ $t('enquirenow.budget-1') }}</option>
+        <option value="$600-$1000">{{ $t('enquirenow.budget-2') }}</option>
+        <option value="Más de $1000">{{ $t('enquirenow.budget-3') }}</option>
       </select>
 
       <label class="enquirenow_label">{{ $t('enquirenow.how_hear_about_me') }}</label>
