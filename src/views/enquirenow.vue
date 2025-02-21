@@ -175,7 +175,7 @@
       <label class="enquirenow_label">{{ $t('enquirenow.service_looking_for') }}</label>
       <div class="form-group-checkbox">
         <label v-for="(service, index) in services" :key="index" class="enquirenow_label">
-          <input type="checkbox" v-model="formData.services" :value="formData.services">
+          <input type="checkbox" v-model="formData.services" :value="$t(`enquirenow.${service}`)">
           {{ $t(`enquirenow.${service}`) }}
         </label>
       </div>
