@@ -279,14 +279,14 @@ color:#A1B2FF
 }
 
 #branding-half-bg{
-  background-image: url('../img/branding2.png');
+  background-image: url('../img/branding2.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
 
 #branding-full-bg{
-  background-image: url('../img/branding.png');
+  background-image: url('../img/branding.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
@@ -379,14 +379,14 @@ color:#A1B2FF
 }
 
 #social-half-bg{
-  background-image: url('../img/socials-2.png');
+  background-image: url('../img/socials2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #social-full-bg{
-  background-image: url('../img/socials.png');
+  background-image: url('../img/socials.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -480,14 +480,14 @@ color:#A1B2FF
 }
 
 #photography-half-bg{
-  background-image: url('../img/photography2.png');
+  background-image: url('../img/photography2.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #photography-full-bg{
-  background-image: url('../img/photography.png');
+  background-image: url('../img/photography.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -580,14 +580,14 @@ margin-bottom: 1%;
 }
 
 #collaterals-half-bg{
-background-image: url('../img/collaterals2.png');
+background-image: url('../img/collaterals2.webp');
 background-size: cover;
 background-position: center; /* Centers the background image */
 background-repeat: no-repeat;
 }
 
 #collaterals-full-bg{
-background-image: url('../img/collaterals.png');
+background-image: url('../img/collaterals.webp');
 background-size: cover;
 background-position: center; /* Centers the background image */
 background-repeat: no-repeat;
@@ -679,14 +679,14 @@ margin-bottom:1%;
 }
 
 #web-half-bg{
-background-image: url('../img/web-2.png');
+background-image: url('../img/web2.webp');
 background-size: cover;
 background-position: center; /* Centers the background image */
 background-repeat: no-repeat;
 }
 
 #web-full-bg{
-background-image: url('../img/web.png');
+background-image: url('../img/web.webp');
 background-size: cover;
 background-position: center; /* Centers the background image */
 background-repeat: no-repeat;

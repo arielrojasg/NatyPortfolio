@@ -94,7 +94,7 @@
 }
 
 #photo {
-    background-image: url("../img/enquirenowbg.jpg");
+    background-image: url("../img/enquirenowbg.webp");
     background-size: cover; /* Ensures the image covers the entire div */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */

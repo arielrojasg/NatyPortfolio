@@ -35,7 +35,7 @@
     <div class="bio">
       <div class="image-container">
         <a href="#">
-          <img src="@/bio.png" alt="Bio Image">
+          <img src="@/bio.webp" alt="Bio Image">
         </a>
       </div>
       <div class="content-container">

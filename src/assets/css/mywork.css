@@ -186,21 +186,21 @@ color:#A1B2FF
 }
 
 #portfolio1-half-bg{
-  background-image: url('../img/Portfolio03.png');
+  background-image: url('../img/Portfolio03.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
 
 #portfolio1-half-bg-up{
-  background-image: url('../img/Portfolio02.png');
+  background-image: url('../img/Portfolio02.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
 
 #portfolio1-full-bg{
-  background-image: url('../img/Portfolio01.png');
+  background-image: url('../img/Portfolio01.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
@@ -291,20 +291,20 @@ color:#A1B2FF
 }
 
 #portfolio2-half-bg{
-  background-image: url('../img/Portfolio05.png');
+  background-image: url('../img/Portfolio05.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }  
 #portfolio2-half-bg-up{
-  background-image: url('../img/Portfolio04.png');
+  background-image: url('../img/Portfolio04.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
 }
 
 #portfolio2-full-bg{
-  background-image: url('../img/Portfolio06.png');
+  background-image: url('../img/Portfolio06.webp');
   background-size: cover;
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;

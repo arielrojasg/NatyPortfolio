@@ -12,8 +12,8 @@
       </div>
       <div class="navbar-right" :class="{ open: menuOpen }">
         <div class="navbar-hamburger" @click="toggleMenu">
-          <img v-if="!menuOpen" src="@/hamburger.png" id="hamburger" alt="menu" width="10vw">
-          <img v-else src="@/X.png" id="close" alt="close" width="10vw">
+          <img v-if="!menuOpen" src="@/hamburger.svg" id="hamburger" alt="menu" width="10vw">
+          <img v-else src="@/X.svg" id="close" alt="close" width="10vw">
         </div>
         <ul class="navbar-nav">
           <li class="element">
