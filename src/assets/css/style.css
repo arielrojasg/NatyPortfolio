@@ -591,9 +591,8 @@ html{
   }
 }
 
-/* This class will be added via JavaScript to trigger the animation */
 .cloud.animate {
-  animation: slideUp 0.5s ease-out forwards; /* Apply the slide-up animation */
+  animation: slideUp 0.5s ease-out forwards;
 }
 
 .cloud h2 {

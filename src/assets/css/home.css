@@ -78,11 +78,11 @@
 
     .obsessed{
         margin-top: 0%;
-        height: 55vh;
         background-position-x: center;
         background-position-y: 10vh;
         clip-path: none;
         margin-bottom: 3%;
+        padding-bottom: 35%;
     }
 
     #clouds {

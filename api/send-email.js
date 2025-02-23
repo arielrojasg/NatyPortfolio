@@ -68,17 +68,6 @@ function generateEmailTemplate(data) {
           padding-left: 0;
         }
           
-        span {
-          color: #1E1E1E;
-          font-size:16px;
-          display: inline-block;
-          width: 4.2vw;
-          margin-right: 0.2vw;
-          vertical-align: middle;
-          background-color: #F99FF9;
-          border-radius: 0.3vw;
-          font-weight: 500;
-        }
         .footer-note {
           font-size: 8px;
           color: #888;

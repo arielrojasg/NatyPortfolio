@@ -144,20 +144,28 @@
       }
     };
     document.addEventListener('DOMContentLoaded', function () {
-  const targets = document.querySelectorAll('.cloud');
+      const targets = document.querySelectorAll('.cloud');
 
-  function handleScroll() {
-    targets.forEach(target => {
-      const rect = target.getBoundingClientRect();
-      const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-      if (inView && !target.classList.contains('animate')) {
+      function handleScroll() {
+  let allAnimated = true;
+  targets.forEach(target => {
+    const rect = target.getBoundingClientRect();
+    const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
+    
+    if (!target.classList.contains('animate')) {
+      allAnimated = false;
+      if (inView) {
         target.classList.add('animate');
       }
-    });
+    }
+  });
+  if (allAnimated) {
+    window.removeEventListener('scroll', handleScroll);
   }
+}
 
-  window.addEventListener('scroll', handleScroll);
-  handleScroll();
-});
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+
+    });
   </script>

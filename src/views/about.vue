@@ -33,8 +33,7 @@
     <h2 class="send-info-title">{{ $t('about.send_info_title_1') }} </h2>
     <h2 class="send-info-title">{{ $t('about.send_info_title_2') }}</h2>
     <div class="send-info-line">
-      <input type="email" id="send-info-email" name="email" :placeholder="$t('about.send_info_placeholder')">
-      <button id="send-info-button">{{ $t('about.send_info_button') }}</button>
+      <button id="send-info-button"><a href="https://drive.google.com/file/d/1ck73iHQvNt7i8gJuluZjnn5kW0x5RTud/view?usp=drive_link" target="_blank">{{ $t('about.send_info_button') }}</a></button>
     </div>
   </section>
   <section id="blank"></section>
