@@ -12,7 +12,7 @@
 		<a href="https://www.behance.net/gallery/205211545/Eye-Need-Them-Branding-Packaging" target="_blank">
 		  <div id="portfolio1-half-bg-up" class="portfolio1-card half-height"></div>
 		</a>
-		<a href="https://www.behance.net/gallery/205211545/Eye-Need-Them-Branding-Packaging" target="_blank">
+		<a href="https://www.behance.net/gallery/220341857/No-Pain-No-Grain-Branding" target="_blank">
 		  <div id="portfolio1-half-bg" class="portfolio1-card half-height"></div>
 		</a>
 	  </div>
@@ -25,7 +25,7 @@
   
 	<section class="portfolio2-section">
 	  <div id="portfolio2-left">
-		<a href="https://www.behance.net/gallery/205211545/Eye-Need-Them-Branding-Packaging" target="_blank">
+		<a href="https://www.behance.net/gallery/220341503/Urbanika-Visual-Identity" target="_blank">
 		  <div id="portfolio2-full-bg" class="portfolio2-card full-height"></div>
 		</a>
 	  </div>
