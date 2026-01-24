@@ -135,6 +135,7 @@
   
   <script>
     import "../assets/css/home.css";
+    import { onMounted } from 'vue';
     export default {
       name: 'Home',
       methods: {
@@ -143,6 +144,7 @@
         }
       }
     };
+    onMounted(() => {
     document.addEventListener('DOMContentLoaded', function () {
       const targets = document.querySelectorAll('.cloud');
 
@@ -167,5 +169,5 @@
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
-    });
+    })});
   </script>

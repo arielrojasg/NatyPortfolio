@@ -1,31 +1,38 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import { createI18n } from 'vue-i18n';
-import en from './locales/en.json';
-import es from './locales/es.json';
-import router from './router';
+import { ViteSSG } from 'vite-ssg'
+import App from './App.vue'
+import { routes } from './router'
+import { createI18n } from 'vue-i18n'
 
-// Detect browser language function with localStorage check
+import en from './locales/en.json'
+import es from './locales/es.json'
+
 const detectBrowserLanguage = () => {
-  const savedLanguage = localStorage.getItem('selectedLanguage');
-  if (savedLanguage) {
-    return savedLanguage;
-  }
-  const browserLang = navigator.language || navigator.userLanguage;
-  return browserLang.startsWith('es') ? 'es' : 'en';
-};
+  if (typeof window === 'undefined') return 'en'
 
-// Create i18n instance
+  const savedLanguage = localStorage.getItem('selectedLanguage')
+  if (savedLanguage) return savedLanguage
+
+  const browserLang = navigator.language || navigator.userLanguage
+  return browserLang.startsWith('es') ? 'es' : 'en'
+}
+
 export const i18n = createI18n({
-  locale: detectBrowserLanguage(),
+  legacy: false,
+  locale: 'en',
   fallbackLocale: 'en',
   messages: {
-    en,
-    es,
-  },
-});
+    en,es
+  }
+})
 
-const app = createApp(App);
-app.use(i18n);
-app.use(router);
-app.mount('#app');
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  ({ app, isClient, router }) => {
+    if (isClient) {
+      i18n.global.locale.value = detectBrowserLanguage()
+    }
+
+    app.use(i18n)
+  }
+)

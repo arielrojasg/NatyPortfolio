@@ -3,6 +3,7 @@ import Navbar from './components/navbar.vue';
 import Services from './views/services.vue';
 import Footer from './components/footer.vue';
 import { i18n } from './main'; // Import i18n from main.js
+import { onMounted } from 'vue'
 
 const link = document.createElement('link');
 link.rel = 'stylesheet';
@@ -25,6 +26,7 @@ footerApp.use(i18n);
 footerApp.mount('#footer');
 
 // JavaScript to toggle the FAQ answers
+onMounted(() => {
 document.addEventListener('DOMContentLoaded', function () {
   const questions = document.querySelectorAll('.faq-question');
   
@@ -34,4 +36,4 @@ document.addEventListener('DOMContentLoaded', function () {
       answer.classList.toggle('active');
     });
   });
-});
+})});
