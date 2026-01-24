@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite-ssg build",
+    "postbuild": "node src/scripts/fix-gh-pages.js",
     "preview": "vite preview",
-    "deploy": "cd dist && cp index.html && cd .. && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist --no-history"
   },
   "dependencies": {
     "axios": "^1.7.9",

@@ -27,8 +27,11 @@ export const i18n = createI18n({
 
 export const createApp = ViteSSG(
   App,
-  { routes },
-  ({ app, isClient, router }) => {
+  {
+    routes,
+    includedRoutes: (paths) => paths
+  },
+  ({ app, isClient }) => {
     if (isClient) {
       i18n.global.locale.value = detectBrowserLanguage()
     }
