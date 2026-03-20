@@ -89,11 +89,11 @@ function generateEmailTemplate(data) {
         <label>Correo electrónico*</label>
         <p class="textInput">${data.email}</p>
 
+        <label>Teléfono*</label>
+        <p class="textInput">${data.contact}</p>
+
         <label>Nombre del negocio*</label>
         <p class="textInput">${data.businessName}</p>
-
-        <label>Método de contacto alternativo*</label>
-        <p class="textInput">${data.contact}</p>
 
         <label>¿De qué país eres?*</label>
         <p class="textInput">${data.location}</p>
@@ -101,8 +101,11 @@ function generateEmailTemplate(data) {
         <label>Link a tu sitio web o red social (si aplica)</label>
         <p class="textInput">${data.website || "N/A"}</p>
 
-        <label>Háblame sobre ti y tu negocio, por favor sé detallado en tu respuesta*</label>
+        <label>Describe tu negocio: ¿En qué área se mueve tu proyecto? ¿Qué estás ofreciendo hoy (producto o servicio)? ¿Qué querés lograr con eso?*</label>
         <p class="textInput">${data.aboutYou}</p>
+
+        <label>¿Por qué te gustaría trabajar con nosotras?*</label>
+        <p class="textInput">${data.additionalInfo || "No additional info provided."}</p>
 
         <label>¿Qué servicio estás buscando?*</label>
         <ul>
@@ -116,9 +119,6 @@ function generateEmailTemplate(data) {
         <ul>
           ${Array.isArray(data.sources) ? data.sources.map(s => `<li><span style="display: inline-block; width: 20px; height: 20px; background-color: #F99FF9; border-radius: 3px; font-weight: 500; color: #1E1E1E; text-align: center; line-height: 20px;">✓</span> ${s.replace(/_/g, " ").replace(/^./, c => c.toUpperCase())}</li>`).join("") : ""}
         </ul>
-
-        <label>¿Por qué te gustaría trabajar conmigo?</label>
-        <p class="textInput">${data.additionalInfo || "No additional info provided."}</p>
 
         <p class="footer-note">This email was automatically generated.</p>
       </div>

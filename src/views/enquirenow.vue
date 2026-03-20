@@ -65,7 +65,7 @@
 			</label>
 
 			<VueTelInput v-model="formData.contact" defaultCountry="CR" :onlyCountries="allowedCountries"
-				:inputOptions="{ nationalMode: true, SearchBox: true }"
+				:inputOptions="{ nationalMode: false, SearchBox: true }"
 				:dropdownOptions="{ showDialCodeInSelection: true, showFlags: true }"
 				:placeholder="$t('enquirenow.alternate_contact_placeholder')" />
 
