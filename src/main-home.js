@@ -19,6 +19,10 @@ const homeApp = createApp(Home);
 homeApp.use(i18n);
 homeApp.mount('#content');
 
+const instagramApp = createApp(Instagram);
+instagramApp.use(i18n);
+instagramApp.mount('#instagram');
+
 const footerApp = createApp(Footer);
 footerApp.use(i18n);
 footerApp.mount('#footer');

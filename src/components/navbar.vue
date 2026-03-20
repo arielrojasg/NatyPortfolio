@@ -8,6 +8,12 @@
               <img src="@images/LogoNat.webp" alt="logo" width="60px">
             </a> 
           </li>
+          <ul class="social-icons-nav">
+            <li><a href="https://www.instagram.com/its_nvillalobos/"><img src="@/instagram-icon.svg" alt="Instagram"></a></li>
+            <li><a href="https://www.behance.net/nataliavillalo2#"><img src="@/behance-icon.svg" alt="Behance"></a></li>
+            <li><a href="https://www.linkedin.com/in/natalia-villalobos-0aa0a121a/"><img src="@/linkedin-icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://tiktok.com/@its_nvillalobos"><img src="@/tiktok-icon.svg" alt="TikTok"></a></li>
+         </ul>
         </ul>
       </div>
       <div class="navbar-right" :class="{ open: menuOpen }">
@@ -32,7 +38,7 @@
           <a href="https://itsnvillalobos.gumroad.com/" @click="closeMenu" target="_blank">{{ $t('navbar.shop') }}</a> 
         </li>
         <div class="divider"></div>
-        <li class="element">
+        <li class="element" id="enquirebutton">
           <router-link :class="{ active: currentPage === 'enquirenow' }" @click="closeMenu" id="enquire-button" to="/enquirenow">{{ $t('navbar.enquire_now') }}</router-link> 
         </li>
             <select v-model="$i18n.locale" @change="updateLanguage($event)" class="language-selector-nav">

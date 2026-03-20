@@ -14,7 +14,8 @@
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "vue": "^3.2.41",
-    "vue-i18n": "^10.0.4"
+    "vue-i18n": "^10.0.4",
+    "vue-tel-input": "^9.7.1"
   },
   "devDependencies": {
     "@unhead/vue": "^2.1.2",

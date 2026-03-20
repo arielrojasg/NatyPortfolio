@@ -1,4 +1,4 @@
-#enquirenow-body{
+#enquirenow-body {
     background-color: #1E1E1E;
 }
 
@@ -17,11 +17,14 @@
 }
 
 .brand-impact-title {
-    font-family: "roc-grotesk-condensed", sans-serif;;
-    font-size: 5.56vw; /* Adjust as needed */
+    font-family: "roc-grotesk-condensed", sans-serif;
+    ;
+    font-size: 5.56vw;
+    /* Adjust as needed */
     font-weight: 600;
     text-transform: uppercase;
-    color: #F99FF9; /* Pinkish color for the title */
+    color: #F99FF9;
+    /* Pinkish color for the title */
     line-height: 1;
 }
 
@@ -47,73 +50,84 @@
 
 .brand-impact-line {
     border: none;
-    border-top: 0.07vw solid #FFFFFF; /* White line between the two sections */
+    border-top: 0.07vw solid #FFFFFF;
+    /* White line between the two sections */
     width: 100%;
     margin: 1.39vw 0;
-    color:#FFFFFF
+    color: #FFFFFF
 }
 
 
 
-.branding-step{
+.branding-step {
     border-radius: 2.71vw;
-    background-color: var(--fucsia, #F99FF9); 
+    background-color: var(--fucsia, #F99FF9);
     flex-shrink: 0;
-    flex:0;
+    flex: 0;
     padding: 2%;
     margin: 1%;
-    
+
 }
 
-.branding-step .column-title{
+.branding-step .column-title {
     color: var(--negro, #1E1E1E);
     text-align: center;
-    font-family: "roc-grotesk-condensed", sans-serif;;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    ;
     font-size: 2.22vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 147.4%; /* 3.28vw */
+    line-height: 147.4%;
+    /* 3.28vw */
     text-transform: uppercase;
     width: 100%;
     flex-shrink: 0;
 }
 
-.branding-step .column-text{
+.branding-step .column-text {
     color: var(--negro, #1E1E1E);
     text-align: center;
     font-family: Poppins;
     font-size: 0.97vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 147.4%; /* 1.64vw */
-    max-width: 21.21vw; 
+    line-height: 147.4%;
+    /* 1.64vw */
+    max-width: 21.21vw;
 }
 
-#photo-section{
+#photo-section {
     margin-top: 2.5%;
 }
 
 #photo {
     background-image: url("../img/enquirenowbg.webp");
-    background-size: cover; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    width: 100%; /* Makes the div take up the full width of its container */
-    height: 80vh; /* Sets the height of the div to the full viewport height */
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    width: 100%;
+    /* Makes the div take up the full width of its container */
+    height: 80vh;
+    /* Sets the height of the div to the full viewport height */
 }
-.social-step{
+
+.social-step {
     border-radius: 2.71vw;
     background: var(--blanco, #FFF);
     flex-shrink: 0;
-    flex:0;
+    flex: 0;
     padding: 2%;
     margin: 1%;
 }
 
-.social-step .column-title{
+.social-step .column-title {
     color: var(--negro, #1E1E1E);
     text-align: center;
-    font-family: "roc-grotesk-condensed", sans-serif;;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    ;
     font-size: 2.22vw;
     font-style: normal;
     font-weight: 500;
@@ -121,15 +135,16 @@
     width: 100%;
 }
 
-.social-step .column-text{
+.social-step .column-text {
     color: var(--negro, #1E1E1E);
     text-align: center;
     font-family: Poppins;
     font-size: 0.97vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 147.4%; /* 1.64vw */
-    max-width: 21.21vw; 
+    line-height: 147.4%;
+    /* 1.64vw */
+    max-width: 21.21vw;
 }
 
 #enquirenowbutton:hover {
@@ -137,7 +152,7 @@
     color: var(--negro, #1E1E1E);
 }
 
-#enquirenowbutton:disabled{
+#enquirenowbutton:disabled {
     background: var(--fucsia, #F99FF9);
     color: var(--negro, #1E1E1E);
 }
@@ -160,7 +175,7 @@
     padding: 0.69vw;
 }
 
-.send-info-line{
+.send-info-line {
     text-align: center;
     margin-bottom: 3%;
 }
@@ -169,35 +184,38 @@
     width: 100%;
     background: var(--fucsia, #F99FF9);
     overflow: hidden;
-}  
-  
-  .text-container-enquire {
+}
+
+.text-container-enquire {
     display: inline-block;
     white-space: nowrap;
     animation: RightToLeft 10s infinite linear;
     overflow: hidden;
     color: var(--blanco, #FFF);
     text-align: center;
-    font-family: "roc-grotesk-condensed", sans-serif;;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    ;
     font-size: 1.39vw;
     font-style: normal;
     font-weight: 500;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     transform: scale(2);
     transition: all 10s ease;
-  
-  }
-  
-  .scrolling-content-enquire {
+
+}
+
+.scrolling-content-enquire {
     display: inline-block;
-    padding-right: 1.11vw; 
-  }
-  .separator-enquire {
-    padding: 0 0.56vw; /* Adjust the spacing around the separator */
+    padding-right: 1.11vw;
+}
+
+.separator-enquire {
+    padding: 0 0.56vw;
+    /* Adjust the spacing around the separator */
     color: var(--blanco, #FFF);
-  }
-  
-  .join-forces-section {
+}
+
+.join-forces-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,10 +231,12 @@
 
 .join-forces-title {
     font-family: "roc-grotesk-condensed", sans-serif;
-    font-size: 5.56vw; /* Adjust as needed */
+    font-size: 5.56vw;
+    /* Adjust as needed */
     font-weight: 600;
     text-transform: uppercase;
-    color: #F99FF9; /* Pinkish color for the title */
+    color: #F99FF9;
+    /* Pinkish color for the title */
     line-height: 1;
 }
 
@@ -240,9 +260,10 @@
     line-height: 1.5;
 }
 
-  .enquirenow_title{
+.enquirenow_title {
     color: #EC4724;
-    font-family: "roc-grotesk-condensed", sans-serif;;
+    font-family: "roc-grotesk-condensed", sans-serif;
+    ;
     font-size: 5.21vw;
     font-style: normal;
     font-weight: 700;
@@ -251,54 +272,59 @@
     width: 42.82vw;
     height: 5.35vw;
     flex-shrink: 0;
-  }
+}
 
-  .enquirenow_text{
+.enquirenow_text {
     color: #000;
     font-family: Poppins;
     font-size: 1.11vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 147.4%; /* 1.64vw */
+    line-height: 147.4%;
+    /* 1.64vw */
     width: 57.92vw;
     flex-shrink: 0;
-  }
+}
 
-  .nvillalobos{
+.nvillalobos {
     color: #000;
     font-family: Poppins;
     font-size: 1.11vw;
     font-style: normal;
     font-weight: 700;
     line-height: 147.4%;
-  }
-  .enquirenow_link{
+}
+
+.enquirenow_link {
     color: #000;
     font-family: Poppins;
     font-size: 1.11vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 147.4%; /* 1.64vw */
+    line-height: 147.4%;
+    /* 1.64vw */
     text-transform: uppercase;
-  }
-  .enquirenow_label{
+}
+
+.enquirenow_label {
     color: #000;
     font-family: Poppins;
     font-size: 1.39vw;
     font-style: normal;
     font-weight: 300;
-    line-height: 147.4%; /* 2.05vw */
+    line-height: 147.4%;
+    /* 2.05vw */
     flex-shrink: 0;
-  }
+}
 
-  #enquirenow_form{
+#enquirenow_form {
     background-color: #FFF;
     display: grid;
     place-items: center;
     padding-top: 2.5%;
-  }
+}
 
-  body {
+body {
     font-family: Arial, sans-serif;
 }
 
@@ -316,6 +342,7 @@ form {
 
 input[type="text"],
 input[type="email"],
+.vue-tel-input,
 textarea {
     width: calc(100% - 1.39vw);
     padding: 0.56vw 0.69vw;
@@ -326,7 +353,17 @@ textarea {
     font-size: 0.97vw;
 }
 
-select option, #budget{
+.vue-tel-input {
+    padding: 0.2vw 0.69vw;
+}
+
+.vti__phone {
+    font-family: Poppins;
+    font-size: 0.97vw;
+}
+
+select option,
+#budget {
     color: #000;
     font-family: Poppins;
     font-size: 1.39vw;
@@ -336,7 +373,7 @@ select option, #budget{
     flex-shrink: 0;
 }
 
-select{
+select {
     margin-bottom: 1.39vw;
 }
 
@@ -353,9 +390,13 @@ input[type="checkbox"] {
     width: calc(50% - 0.69vw);
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
-    outline: 2px solid #F99FF9; /* Pink outline */
-    outline-offset: 0px; /* Optional: adds some space between the outline and the input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+.vue-tel-input:focus-within {
+    outline: 2px solid #F99FF9;
+    outline-offset: 0px;
 }
 
 
@@ -390,13 +431,15 @@ input[type="checkbox"] {
 }
 
 .form-group-checkbox input[type="checkbox"] {
-    width: 1.67vw; /* Adjust width */
-    height: 1.67vw; /* Adjust height */
+    width: 1.67vw;
+    /* Adjust width */
+    height: 1.67vw;
+    /* Adjust height */
     margin-right: 1%;
 }
 
-#lastName{
-margin-left: 1%;
+#lastName {
+    margin-left: 1%;
 }
 
 .button-container {
@@ -404,74 +447,103 @@ margin-left: 1%;
     justify-content: center;
 }
 
-  #blank{
+#blank {
     padding: 0.5% !important;
     background-color: #FFFF;
-  }
-
-  .note-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.33vw; /* Adjust size as needed */
-    font-weight: 600; /* Makes the text bold */
-    text-transform: uppercase;
-    color: #000000; /* Black text */
-    line-height: 1.4; /* Adjust line height if needed */
-    margin: 1.39vw 0; /* Optional margin for spacing */
 }
 
+.note-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.33vw;
+    /* Adjust size as needed */
+    font-weight: 600;
+    /* Makes the text bold */
+    text-transform: uppercase;
+    color: #000000;
+    /* Black text */
+    line-height: 1.4;
+    /* Adjust line height if needed */
+    margin: 1.39vw 0;
+    /* Optional margin for spacing */
+}
+
+#other {
+  display: none;
+}
+
+.form-group-checkbox:has(input[value="Otro"]:checked) + #other, .form-group-checkbox:has(input[value="Other"]:checked) + #other {
+  display: block;
+}
 @media screen and (max-width: 768px) {
-    #photo{
+    .vti__dropdown, .vti__input.vti__phone{
+        font-size: 3.5vw;
+    }
+
+    #photo {
         height: 70vw;
     }
 
-    #photo-section{
+    #photo-section {
         margin-top: 18vw;
     }
 
-    .join-forces-title, .brand-impact-title{
+    .join-forces-title,
+    .brand-impact-title {
         font-size: 7vw;
         margin: 0 auto;
         padding-top: 5%;
     }
 
-    .join-forces-text, .join-forces-email, .brand-impact-text, .brand-impact-description{
+    .join-forces-text,
+    .join-forces-email,
+    .brand-impact-text,
+    .brand-impact-description {
         font-size: 3.5vw;
         margin: 0 auto;
-        margin-top:3%
+        margin-top: 3%
     }
 
-    .join-forces-section, .brand-impact-section {
+    .join-forces-section,
+    .brand-impact-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-      
+    }
+
     .brand-impact-left,
     .brand-impact-right {
-        width: 85%; /* Make each section take the full width */
-        text-align: center; /* Center-align text if needed */
+        width: 85%;
+        /* Make each section take the full width */
+        text-align: center;
+        /* Center-align text if needed */
     }
 
-    .join-forces-left, .join-forces-right {
-        width: 105%; /* Make each section take the full width */
-        text-align: center; /* Center-align text if needed */
+    .join-forces-left,
+    .join-forces-right {
+        width: 105%;
+        /* Make each section take the full width */
+        text-align: center;
+        /* Center-align text if needed */
     }
 
-    .join-forces-left, .brand-impact-left{
+    .join-forces-left,
+    .brand-impact-left {
         margin-top: 5%;
     }
-    .join-forces-right, .brand-impact-right{
+
+    .join-forces-right,
+    .brand-impact-right {
         margin-bottom: 9%;
     }
 
     .brand-impact-line {
-      margin: 0 auto;
-      margin-top: 3%;
-      margin-bottom:3%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
-      
 
-    form{
+
+    form {
         width: 80vw;
         max-width: 80vw;
     }
@@ -480,7 +552,11 @@ margin-left: 1%;
         font-size: 3.5vw;
     }
 
-   input[type="text"], input[type="email"], select option, #budget, textarea {
+    input[type="text"],
+    input[type="email"],
+    select option,
+    #budget,
+    textarea {
         font-size: 3.5vw !important;
         margin-bottom: 4vw;
         font-family: Poppins;
@@ -491,8 +567,9 @@ margin-left: 1%;
         height: 5vw;
         flex-shrink: 0;
     }
-    
-    input[type="text"], input[type="email"] {
+
+    input[type="text"],
+    input[type="email"] {
         height: 7vw;
     }
 
@@ -500,12 +577,13 @@ margin-left: 1%;
         font-size: 2.9vw;
     }
 
-    #enquirenow_form{
+    #enquirenow_form {
         padding-bottom: 10%;
     }
-    #enquirenowbutton{
+
+    #enquirenowbutton {
         font-size: 3.5vw;
         width: 50%;
-        height: 7.5vw;    
+        height: 7.5vw;
     }
 }
