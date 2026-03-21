@@ -62,11 +62,11 @@
       </div>
       <div class="cloud">
         <h2><router-link :class="{ active: currentPage === 'services' }" to="/services">{{ $t('home.services')
-        }}</router-link></h2>
+            }}</router-link></h2>
       </div>
       <div class="cloud">
         <h2><router-link :class="{ active: currentPage === 'mywork' }" to="/mywork">{{ $t('home.my_work')
-        }}</router-link></h2>
+            }}</router-link></h2>
       </div>
       <div class="cloud">
         <h2><a href="https://itsnvillalobos.gumroad.com/" target="_blank">{{ $t('home.shop') }}</a> </h2>
@@ -213,11 +213,11 @@ export default {
   computed: {
     testimonies() {
       const base = [
-        { id: 1, image: '/src/assets/testimony1.webp' },
-        { id: 2, image: '/src/assets/testimony2.webp' },
-        { id: 3, image: '/src/assets/testimony3.webp' },
-        { id: 4, image: '/src/assets/testimony4.webp' },
-        { id: 5, image: '/src/assets/testimony5.webp' }
+        { id: 1, image: new URL('@/testimony1.webp', import.meta.url).href },
+        { id: 2, image: new URL('@/testimony2.webp', import.meta.url).href },
+        { id: 3, image: new URL('@/testimony3.webp', import.meta.url).href },
+        { id: 4, image: new URL('@/testimony4.webp', import.meta.url).href },
+        { id: 5, image: new URL('@/testimony5.webp', import.meta.url).href }
       ]
 
       return base.map(item => ({
@@ -335,7 +335,6 @@ export default {
       const AUTO_SCROLL_DELAY = 4000;
       let autoScroll = null;
       let current = 0;
-      let images = [];
 
       // Extract base name (branding, social, etc.)
       const originalSrc = img.getAttribute('src');
@@ -346,36 +345,15 @@ export default {
       const baseName = match[1]; // branding
       const startIndex = parseInt(match[2], 10);
 
-      // Dynamically detect how many images exist
-      const loadImages = async () => {
-        let index = 1;
 
-        while (true) {
-          try {
-            const path = new URL(
-              `../assets/${baseName}${index}.webp`,
-              import.meta.url
-            ).href;
-
-            await new Promise((resolve, reject) => {
-              const testImg = new Image();
-              testImg.src = path;
-              testImg.onload = resolve;
-              testImg.onerror = reject;
-            });
-
-            images.push(path);
-            index++;
-          } catch {
-            break;
-          }
-        }
-
-        if (images.length === 0) return;
-
-        current = startIndex - 1;
-        img.src = images[current];
-      };
+      const images = [
+        new URL('@/projects1.webp', import.meta.url).href,
+        new URL('@/projects2.webp', import.meta.url).href,
+        new URL('@/projects3.webp', import.meta.url).href,
+        new URL('@/projects4.webp', import.meta.url).href,
+        new URL('@/projects5.webp', import.meta.url).href,
+        new URL('@/projects6.webp', import.meta.url).href
+      ];
 
       const updateImage = () => {
         img.classList.add('is-fading');
@@ -415,11 +393,11 @@ export default {
         resetAutoScroll();
       });
 
-      loadImages().then(() => {
-        if (images.length > 1) {
-          startAutoScroll();
-        }
-      });
+      img.src = images[current];
+
+      if (images.length > 1) {
+        startAutoScroll();
+      }
     });
 
   }

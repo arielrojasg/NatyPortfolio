@@ -64,8 +64,8 @@
 				{{ $t('enquirenow.alternate_contact') }}
 			</label>
 
-			<VueTelInput v-model="formData.contact" @onInput="handlePhone" defaultCountry="CR"
-				:onlyCountries="allowedCountries" :inputOptions="{ nationalMode: false, SearchBox: true }"
+			<VueTelInput v-model="formData.contact" defaultCountry="CR" :onlyCountries="allowedCountries"
+				:inputOptions="{ nationalMode: false, SearchBox: true }"
 				:dropdownOptions="{ showDialCodeInSelection: true, showFlags: true }"
 				:placeholder="$t('enquirenow.alternate_contact_placeholder')" />
 
@@ -159,6 +159,7 @@ export default {
 				email: "",
 				businessName: "",
 				contact: "",
+				contactFull:"",
 				location: "",
 				website: "",
 				aboutYou: "",
@@ -188,9 +189,6 @@ export default {
 		};
 	},
 	methods: {
-		const handlePhone = (_, phoneObject) => {
-			this.formData.contact = phoneObject.number
-		},
 		handleSubmit() {
 			// Check if at least one service is selected
 			if (this.formData.services.length === 0 || this.formData.sources.length === 0) {

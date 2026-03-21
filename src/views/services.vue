@@ -40,7 +40,7 @@
 		</div>
 		<div id="clouds">
 			<div class="cloud">
-				<h2><a @click="scrollToSection('branding')">{{ $t('services.branding_title')}}</a>
+				<h2><a @click="scrollToSection('branding')">{{ $t('services.branding_title') }}</a>
 				</h2>
 			</div>
 			<div class="cloud">
@@ -318,31 +318,14 @@ export default {
 			const startIndex = parseInt(match[2], 10);
 
 			// Dynamically detect how many images exist
-			const loadImages = async () => {
-				let index = 1;
+			const loadImages = () => {
+				const MAX_IMAGES = 6;
 
-				while (true) {
-					try {
-						const path = new URL(
-							`../assets/${baseName}${index}.webp`,
-							import.meta.url
-						).href;
+				for (let index = 1; index <= MAX_IMAGES; index++) {
+					const path = new URL(`../assets/${baseName}${index}.webp`, import.meta.url).href;
 
-						await new Promise((resolve, reject) => {
-							const testImg = new Image();
-							testImg.src = path;
-							testImg.onload = resolve;
-							testImg.onerror = reject;
-						});
-
-						images.push(path);
-						index++;
-					} catch {
-						break;
-					}
+					images.push(path);
 				}
-
-				if (images.length === 0) return;
 
 				current = startIndex - 1;
 				img.src = images[current];
@@ -386,11 +369,11 @@ export default {
 				resetAutoScroll();
 			});
 
-			loadImages().then(() => {
-				if (images.length > 1) {
-					startAutoScroll();
-				}
-			});
+			loadImages();
+
+			if (images.length > 1) {
+				startAutoScroll();
+			}
 		});
 	}
 };
