@@ -328,7 +328,7 @@ export default {
 				const MAX_IMAGES = 6;
 
 				for (let index = 1; index <= MAX_IMAGES; index++) {
-					const key = `../assets/${baseName}${index}.webp`;
+					const key = `src/assets/${baseName}${index}.webp`;
 
 					if (imagesMap[key]) {
 						images.push(imagesMap[key]);
