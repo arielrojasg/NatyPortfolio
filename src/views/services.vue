@@ -274,11 +274,6 @@
 <script>
 import "../assets/css/services.css";
 
-const imagesMap = import.meta.glob('../assets/*.webp', {
-	eager: true,
-	import: 'default'
-});
-
 export default {
 	name: 'Services',
 	methods: {
@@ -328,11 +323,8 @@ export default {
 				const MAX_IMAGES = 6;
 
 				for (let index = 1; index <= MAX_IMAGES; index++) {
-					const key = `src/assets/${baseName}${index}.webp`;
-
-					if (imagesMap[key]) {
-						images.push(imagesMap[key]);
-					}
+					const path = `/${baseName}${index}.webp`;
+					images.push(path);
 				}
 
 				current = startIndex - 1;
