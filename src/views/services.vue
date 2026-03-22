@@ -297,86 +297,87 @@ export default {
 		const serviceSections = document.querySelectorAll(
 			'.services-feature-slider .services-feature-media'
 		);
+		this.$nextTick(() => {
+			serviceSections.forEach(section => {
+				const img = section.querySelector('img');
+				const prevBtn = section.querySelector('.services-testimonies-arrow-left');
+				const nextBtn = section.querySelector('.services-testimonies-arrow-right');
 
-		serviceSections.forEach(section => {
-			const img = section.querySelector('img');
-			const prevBtn = section.querySelector('.services-testimonies-arrow-left');
-			const nextBtn = section.querySelector('.services-testimonies-arrow-right');
+				if (!img) return;
 
-			if (!img) return;
+				const AUTO_SCROLL_DELAY = 4000;
+				let autoScroll = null;
+				let current = 0;
+				let images = [];
 
-			const AUTO_SCROLL_DELAY = 4000;
-			let autoScroll = null;
-			let current = 0;
-			let images = [];
+				// Extract base name (branding, social, etc.)
+				const originalSrc = img.getAttribute('src');
+				const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
 
-			// Extract base name (branding, social, etc.)
-			const originalSrc = img.getAttribute('src');
-			const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
+				if (!match) return;
 
-			if (!match) return;
+				const baseName = match[1]; // branding
+				const startIndex = parseInt(match[2], 10);
+				console.log('originalSrc:', originalSrc);
+				console.log('match:', match);
 
-			const baseName = match[1]; // branding
-			const startIndex = parseInt(match[2], 10);
-			console.log('originalSrc:', originalSrc);
-			console.log('match:', match);
+				// Dynamically detect how many images exist
+				const loadImages = () => {
+					const MAX_IMAGES = 6;
 
-			// Dynamically detect how many images exist
-			const loadImages = () => {
-				const MAX_IMAGES = 6;
+					for (let index = 1; index <= MAX_IMAGES; index++) {
+						const path = `${baseName}${index}.webp`;
+						images.push(path);
+					}
 
-				for (let index = 1; index <= MAX_IMAGES; index++) {
-					const path = `${baseName}${index}.webp`;
-					images.push(path);
-				}
-
-				current = startIndex - 1;
-				img.src = images[current];
-			};
-
-			const updateImage = () => {
-				img.classList.add('is-fading');
-
-				setTimeout(() => {
+					current = startIndex - 1;
 					img.src = images[current];
-					img.classList.remove('is-fading');
-				}, 200);
-			};
+				};
 
-			const next = () => {
-				current = (current + 1) % images.length;
-				updateImage();
-			};
+				const updateImage = () => {
+					img.classList.add('is-fading');
 
-			const prev = () => {
-				current = (current - 1 + images.length) % images.length;
-				updateImage();
-			};
+					setTimeout(() => {
+						img.src = images[current];
+						img.classList.remove('is-fading');
+					}, 200);
+				};
 
-			const startAutoScroll = () => {
-				autoScroll = setInterval(next, AUTO_SCROLL_DELAY);
-			};
+				const next = () => {
+					current = (current + 1) % images.length;
+					updateImage();
+				};
 
-			const resetAutoScroll = () => {
-				clearInterval(autoScroll);
-				startAutoScroll();
-			};
+				const prev = () => {
+					current = (current - 1 + images.length) % images.length;
+					updateImage();
+				};
 
-			nextBtn?.addEventListener('click', () => {
-				next();
-				resetAutoScroll();
+				const startAutoScroll = () => {
+					autoScroll = setInterval(next, AUTO_SCROLL_DELAY);
+				};
+
+				const resetAutoScroll = () => {
+					clearInterval(autoScroll);
+					startAutoScroll();
+				};
+
+				nextBtn?.addEventListener('click', () => {
+					next();
+					resetAutoScroll();
+				});
+
+				prevBtn?.addEventListener('click', () => {
+					prev();
+					resetAutoScroll();
+				});
+
+				loadImages();
+
+				if (images.length > 1) {
+					startAutoScroll();
+				}
 			});
-
-			prevBtn?.addEventListener('click', () => {
-				prev();
-				resetAutoScroll();
-			});
-
-			loadImages();
-
-			if (images.length > 1) {
-				startAutoScroll();
-			}
 		});
 	}
 };
