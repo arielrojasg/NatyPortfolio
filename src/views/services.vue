@@ -312,18 +312,24 @@ export default {
 
 			// Extract base name (branding, social, etc.)
 			const originalSrc = img.getAttribute('src');
-			const match = originalSrc.match(/^(.*?)(\d+)(\.webp)$/);
+			const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
+
 			if (!match) return;
 
-			const prefix = match[1]; // everything before the number, e.g. https://cdn.example.com/images/branding
-			const ext = match[3];    // .webp
+			const baseName = match[1]; // branding
 			const startIndex = parseInt(match[2], 10);
+			console.log('originalSrc:', originalSrc);
+			console.log('match:', match);
 
+			// Dynamically detect how many images exist
 			const loadImages = () => {
 				const MAX_IMAGES = 6;
+
 				for (let index = 1; index <= MAX_IMAGES; index++) {
-					images.push(`${prefix}${index}${ext}`);
+					const path = `${baseName}${index}.webp`;
+					images.push(path);
 				}
+
 				current = startIndex - 1;
 				img.src = images[current];
 			};
