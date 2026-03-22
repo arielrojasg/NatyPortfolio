@@ -292,6 +292,7 @@ export default {
 				answer.classList.toggle('active');
 			});
 		});
+
 		// SERVICES IMAGE SLIDERS
 		const serviceSections = document.querySelectorAll(
 			'.services-feature-slider .services-feature-media'
@@ -311,22 +312,18 @@ export default {
 
 			// Extract base name (branding, social, etc.)
 			const originalSrc = img.getAttribute('src');
-			const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
-
+			const match = originalSrc.match(/^(.*?)(\d+)(\.webp)$/);
 			if (!match) return;
 
-			const baseName = match[1]; // branding
+			const prefix = match[1]; // everything before the number, e.g. https://cdn.example.com/images/branding
+			const ext = match[3];    // .webp
 			const startIndex = parseInt(match[2], 10);
 
-			// Dynamically detect how many images exist
 			const loadImages = () => {
 				const MAX_IMAGES = 6;
-
 				for (let index = 1; index <= MAX_IMAGES; index++) {
-					const path = `/${baseName}${index}.webp`;
-					images.push(path);
+					images.push(`${prefix}${index}${ext}`);
 				}
-
 				current = startIndex - 1;
 				img.src = images[current];
 			};

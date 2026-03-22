@@ -399,10 +399,6 @@ export default {
         startAutoScroll();
       }
     });
-
   }
-
-
-
 };
 </script>
