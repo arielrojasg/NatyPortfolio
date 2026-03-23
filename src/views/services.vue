@@ -294,56 +294,56 @@ export default {
 		});
 
 		// SERVICES IMAGE SLIDERS
-		const serviceSections = document.querySelectorAll(
+		const serviceSliders = document.querySelectorAll(
 			'.services-feature-media'
 		);
 
 		const images1 = [
-			new URL('@/branding1.webp', import.meta.url).href,
-			new URL('@/branding2.webp', import.meta.url).href,
-			new URL('@/branding3.webp', import.meta.url).href,
-			new URL('@/branding4.webp', import.meta.url).href,
-			new URL('@/branding5.webp', import.meta.url).href,
-			new URL('@/branding6.webp', import.meta.url).href
+			'/branding1.webp',
+			'/branding2.webp',
+			'/branding3.webp',
+			'/branding4.webp',
+			'/branding5.webp',
+			'/branding6.webp'
 		];
 
 		const images2 = [
-			new URL('@/stationery1.webp', import.meta.url).href,
-			new URL('@/stationery2.webp', import.meta.url).href,
-			new URL('@/stationery3.webp', import.meta.url).href,
-			new URL('@/stationery4.webp', import.meta.url).href,
-			new URL('@/stationery5.webp', import.meta.url).href,
-			new URL('@/stationery6.webp', import.meta.url).href
+			'/stationery1.webp',
+			'/stationery2.webp',
+			'/stationery3.webp',
+			'/stationery4.webp',
+			'/stationery5.webp',
+			'/stationery6.webp'
 		];
 
 		const images3 = [
-			new URL('@/social1.webp', import.meta.url).href,
-			new URL('@/social2.webp', import.meta.url).href,
-			new URL('@/social3.webp', import.meta.url).href,
-			new URL('@/social4.webp', import.meta.url).href,
-			new URL('@/social5.webp', import.meta.url).href,
-			new URL('@/social6.webp', import.meta.url).href
+			'/social1.webp',
+			'/social2.webp',
+			'/social3.webp',
+			'/social4.webp',
+			'/social5.webp',
+			'/social6.webp'
 		];
 
 		const images4 = [
-			new URL('@/web1.webp', import.meta.url).href,
-			new URL('@/web2.webp', import.meta.url).href,
-			new URL('@/web3.webp', import.meta.url).href,
-			new URL('@/web4.webp', import.meta.url).href,
-			new URL('@/web5.webp', import.meta.url).href,
-			new URL('@/web6.webp', import.meta.url).href
+			'/web1.webp',
+			'/web2.webp',
+			'/web3.webp',
+			'/web4.webp',
+			'/web5.webp',
+			'/web6.webp'
 		];
 
 		const images5 = [
-			new URL('@/foto1.webp', import.meta.url).href,
-			new URL('@/foto2.webp', import.meta.url).href,
-			new URL('@/foto3.webp', import.meta.url).href,
-			new URL('@/foto4.webp', import.meta.url).href,
-			new URL('@/foto5.webp', import.meta.url).href,
-			new URL('@/foto6.webp', import.meta.url).href
+			'/foto1.webp',
+			'/foto2.webp',
+			'/foto3.webp',
+			'/foto4.webp',
+			'/foto5.webp',
+			'/foto6.webp'
 		];
 
-		serviceSections.forEach((section, index) => {
+		serviceSliders.forEach((section, index) => {
 			const prevBtn2 = section.querySelector('.services-testimonies-arrow-left');
 			const nextBtn2 = section.querySelector('.services-testimonies-arrow-right');
 			const img = section.querySelector('img');
