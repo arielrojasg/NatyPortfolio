@@ -290,6 +290,7 @@ export default {
 			question.addEventListener('click', () => {
 				const answer = question.nextElementSibling;
 				answer.classList.toggle('active');
+				console.log('prueba faq');
 			});
 		});
 
@@ -355,15 +356,6 @@ export default {
 
 			const imageMap = [images1, images2, images3, images4, images5];
 			let images = imageMap[index];
-
-			// Extract base name (branding, social, etc.)
-			const originalSrc = img.getAttribute('src');
-			const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
-
-			if (!match) return;
-
-			const baseName = match[1]; // branding
-			const startIndex = parseInt(match[2], 10);
 
 			const updateImage = () => {
 				img.classList.add('is-fading');
