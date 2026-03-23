@@ -1315,8 +1315,9 @@ button a {
     width: 100%;
     z-index: 1000;
     height: 5.4vh;
-    margin-top: 1.85%;
   }
+
+
 
   .logo {
     flex-shrink: 0;
@@ -1414,7 +1415,7 @@ button a {
     width: 8vw;
     height: auto;
     padding-right: 11vw;
-    margin-top: 5%
+    margin-top: 20%
   }
 
   .navbar-right {

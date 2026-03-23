@@ -295,90 +295,121 @@ export default {
 
 		// SERVICES IMAGE SLIDERS
 		const serviceSections = document.querySelectorAll(
-			'.services-feature-slider .services-feature-media'
+			'.services-feature-media'
 		);
-		this.$nextTick(() => {
-			serviceSections.forEach(section => {
-				const img = section.querySelector('img');
-				const prevBtn = section.querySelector('.services-testimonies-arrow-left');
-				const nextBtn = section.querySelector('.services-testimonies-arrow-right');
 
-				if (!img) return;
+		const images1 = [
+			new URL('@/branding1.webp', import.meta.url).href,
+			new URL('@/branding2.webp', import.meta.url).href,
+			new URL('@/branding3.webp', import.meta.url).href,
+			new URL('@/branding4.webp', import.meta.url).href,
+			new URL('@/branding5.webp', import.meta.url).href,
+			new URL('@/branding6.webp', import.meta.url).href
+		];
 
-				const AUTO_SCROLL_DELAY = 4000;
-				let autoScroll = null;
-				let current = 0;
-				let images = [];
+		const images2 = [
+			new URL('@/stationery1.webp', import.meta.url).href,
+			new URL('@/stationery2.webp', import.meta.url).href,
+			new URL('@/stationery3.webp', import.meta.url).href,
+			new URL('@/stationery4.webp', import.meta.url).href,
+			new URL('@/stationery5.webp', import.meta.url).href,
+			new URL('@/stationery6.webp', import.meta.url).href
+		];
 
-				// Extract base name (branding, social, etc.)
-				const originalSrc = img.getAttribute('src');
-				const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
+		const images3 = [
+			new URL('@/social1.webp', import.meta.url).href,
+			new URL('@/social2.webp', import.meta.url).href,
+			new URL('@/social3.webp', import.meta.url).href,
+			new URL('@/social4.webp', import.meta.url).href,
+			new URL('@/social5.webp', import.meta.url).href,
+			new URL('@/social6.webp', import.meta.url).href
+		];
 
-				if (!match) return;
+		const images4 = [
+			new URL('@/web1.webp', import.meta.url).href,
+			new URL('@/web2.webp', import.meta.url).href,
+			new URL('@/web3.webp', import.meta.url).href,
+			new URL('@/web4.webp', import.meta.url).href,
+			new URL('@/web5.webp', import.meta.url).href,
+			new URL('@/web6.webp', import.meta.url).href
+		];
 
-				const baseName = match[1]; // branding
-				const startIndex = parseInt(match[2], 10);
-				console.log('originalSrc:', originalSrc);
-				console.log('match:', match);
+		const images5 = [
+			new URL('@/foto1.webp', import.meta.url).href,
+			new URL('@/foto2.webp', import.meta.url).href,
+			new URL('@/foto3.webp', import.meta.url).href,
+			new URL('@/foto4.webp', import.meta.url).href,
+			new URL('@/foto5.webp', import.meta.url).href,
+			new URL('@/foto6.webp', import.meta.url).href
+		];
 
-				// Dynamically detect how many images exist
-				const loadImages = () => {
-					const MAX_IMAGES = 6;
+		serviceSections.forEach((section, index) => {
+			const prevBtn2 = section.querySelector('.services-testimonies-arrow-left');
+			const nextBtn2 = section.querySelector('.services-testimonies-arrow-right');
+			const img = section.querySelector('img');
+			if (!img) return;
 
-					for (let index = 1; index <= MAX_IMAGES; index++) {
-						const path = `${baseName}${index}.webp`;
-						images.push(path);
-					}
+			const AUTO_SCROLL_DELAY = 4000;
+			let autoScroll = null;
+			let current = 0;
 
-					current = startIndex - 1;
+			const imageMap = [images1, images2, images3, images4, images5];
+			let images = imageMap[index];
+
+			// Extract base name (branding, social, etc.)
+			const originalSrc = img.getAttribute('src');
+			const match = originalSrc.match(/\/([^\/]+?)(\d+)\.webp$/);
+
+			if (!match) return;
+
+			const baseName = match[1]; // branding
+			const startIndex = parseInt(match[2], 10);
+
+			const updateImage = () => {
+				img.classList.add('is-fading');
+
+				setTimeout(() => {
 					img.src = images[current];
-				};
+					img.classList.remove('is-fading');
+				}, 200);
+			};
 
-				const updateImage = () => {
-					img.classList.add('is-fading');
+			const next = () => {
+				current = (current + 1) % images.length;
+				updateImage();
+			};
 
-					setTimeout(() => {
-						img.src = images[current];
-						img.classList.remove('is-fading');
-					}, 200);
-				};
+			const prev = () => {
+				current = (current - 1 + images.length) % images.length;
+				updateImage();
+			};
 
-				const next = () => {
-					current = (current + 1) % images.length;
-					updateImage();
-				};
+			const startAutoScroll = () => {
+				autoScroll = setInterval(next, AUTO_SCROLL_DELAY);
+			};
 
-				const prev = () => {
-					current = (current - 1 + images.length) % images.length;
-					updateImage();
-				};
+			const resetAutoScroll = () => {
+				clearInterval(autoScroll);
+				startAutoScroll();
+			};
 
-				const startAutoScroll = () => {
-					autoScroll = setInterval(next, AUTO_SCROLL_DELAY);
-				};
-
-				const resetAutoScroll = () => {
-					clearInterval(autoScroll);
-					startAutoScroll();
-				};
-
-				nextBtn?.addEventListener('click', () => {
-					next();
-					resetAutoScroll();
-				});
-
-				prevBtn?.addEventListener('click', () => {
-					prev();
-					resetAutoScroll();
-				});
-
-				loadImages();
-
-				if (images.length > 1) {
-					startAutoScroll();
-				}
+			nextBtn2.addEventListener('click', () => {
+				next();
+				resetAutoScroll();
 			});
+
+			prevBtn2.addEventListener('click', () => {
+				prev();
+				resetAutoScroll();
+			});
+
+			img.src = images[current];
+
+			if (images.length > 1) {
+				startAutoScroll();
+			}
 		});
+
 	}
 };
 </script>
