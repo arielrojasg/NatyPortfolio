@@ -90,7 +90,7 @@ function generateEmailTemplate(data) {
         <p class="textInput">${data.email}</p>
 
         <label>Teléfono*</label>
-        <p class="textInput">${data.contact}</p>
+        <p class="textInput">${data.contactFull}</p>
 
         <label>Nombre del negocio*</label>
         <p class="textInput">${data.businessName}</p>
@@ -137,7 +137,7 @@ export default async function handler(req, res) {
 
   if (req.method === "POST") {
     try {
-      const { firstName, lastName, email, businessName, contact, location, website, aboutYou, services, budget, sources, additionalInfo } = req.body;
+      const { firstName, lastName, email, businessName, contact,contactFull, location, website, aboutYou, services, budget, sources, additionalInfo } = req.body;
 
       const htmlContent = generateEmailTemplate(req.body);
 

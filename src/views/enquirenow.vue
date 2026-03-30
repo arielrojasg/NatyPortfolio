@@ -67,7 +67,7 @@
 			<VueTelInput v-model="formData.contact" defaultCountry="CR" :onlyCountries="allowedCountries"
 				:inputOptions="{ nationalMode: false, SearchBox: true }"
 				:dropdownOptions="{ showDialCodeInSelection: true, showFlags: true }"
-				:placeholder="$t('enquirenow.alternate_contact_placeholder')" />
+				:placeholder="$t('enquirenow.alternate_contact_placeholder')" @on-input="handlePhoneInput" />
 
 			<label class="enquirenow_label" for="businessName">{{ $t('enquirenow.business_name') }}</label>
 			<input type="text" id="businessName" v-model="formData.businessName" required
@@ -159,7 +159,7 @@ export default {
 				email: "",
 				businessName: "",
 				contact: "",
-				contactFull:"",
+				contactFull: "",
 				location: "",
 				website: "",
 				aboutYou: "",
@@ -189,8 +189,14 @@ export default {
 		};
 	},
 	methods: {
+		handlePhoneInput(formattedNumber, phoneObject) {
+			if (phoneObject?.valid) {
+				this.formData.contactFull = phoneObject.number;
+			} else {
+				this.formData.contactFull = formattedNumber;
+			}
+		},
 		handleSubmit() {
-			// Check if at least one service is selected
 			if (this.formData.services.length === 0 || this.formData.sources.length === 0) {
 				return;
 			} else {
@@ -205,6 +211,7 @@ export default {
 			this.formData.email = "";
 			this.formData.businessName = "";
 			this.formData.contact = "";
+			this.formData.contactFull = "";
 			this.formData.location = "";
 			this.formData.website = "";
 			this.formData.aboutYou = "";
