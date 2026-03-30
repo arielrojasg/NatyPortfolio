@@ -67,7 +67,8 @@
 			<VueTelInput v-model="formData.contact" defaultCountry="CR" :onlyCountries="allowedCountries"
 				:inputOptions="{ nationalMode: false, SearchBox: true }"
 				:dropdownOptions="{ showDialCodeInSelection: true, showFlags: true }"
-				:placeholder="$t('enquirenow.alternate_contact_placeholder')" @on-input="handlePhoneInput" />
+				:placeholder="$t('enquirenow.alternate_contact_placeholder')" @on-input="handlePhoneInput"
+				@country-changed="handleCountryChanged" />
 
 			<label class="enquirenow_label" for="businessName">{{ $t('enquirenow.business_name') }}</label>
 			<input type="text" id="businessName" v-model="formData.businessName" required
@@ -160,6 +161,7 @@ export default {
 				businessName: "",
 				contact: "",
 				contactFull: "",
+				selectedDialCode: "+506",
 				location: "",
 				website: "",
 				aboutYou: "",
@@ -189,11 +191,19 @@ export default {
 		};
 	},
 	methods: {
+		handleCountryChanged(countryObject) {
+			this.selectedDialCode = "+" + countryObject.dialCode;
+			// Rebuild contactFull with the new dial code + current number
+			const numberOnly = this.formData.contact.replace(/^\+?\d+\s*/, "");
+			this.formData.contactFull = this.selectedDialCode + numberOnly;
+		},
+
 		handlePhoneInput(formattedNumber, phoneObject) {
 			if (phoneObject?.valid) {
 				this.formData.contactFull = phoneObject.number;
 			} else {
-				this.formData.contactFull = formattedNumber;
+				const numberOnly = this.formData.contact.replace(/[^\d]/g, "");
+				this.formData.contactFull = this.selectedDialCode + numberOnly;
 			}
 		},
 		handleSubmit() {
