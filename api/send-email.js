@@ -127,6 +127,85 @@ function generateEmailTemplate(data) {
     `;
 }
 
+function generateEmailResponse(data) {
+  return `
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <title>New Enquiry</title>
+      <style>
+
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: #1E1E1E;
+        }
+        .container {
+          height: 330vw;
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          background-position: top;
+          padding-left: 10%;
+          padding-right: 10%;
+          border-radius: 5px;
+          text-align: left;
+          max-width: 70%;
+          margin: 10% auto 0 auto;
+        }
+        #title {
+          padding-top: 1.5%;
+          max-width: 200px;
+        }
+
+        #title img{
+          max-width: 240%;
+        }
+
+        a{
+          color:#F99FF9;
+        }
+        label, p, ul {
+          color: #1E1E1E;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 147.4%;
+          margin-bottom: 0.5em;
+        }
+        .textInput {
+          width: calc(100% - 1.39vw);
+          border: 0.18vw solid #ccc;
+          border-radius: 0.38vw;
+          padding: 0.9vw;
+          margin-bottom: 1em;
+          border-color: #F99FF9;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+          
+        .footer-note {
+          font-size: 8px;
+          color: #888;
+          margin-top: 20px;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <p>¡Hola ${data.firstName}! ✨ </p>
+      <p>¡Gracias por contactarme a través del formulario! Fue un verdadero placer leer sobre tu negocio, ¡creo que somos un buen match!</p>
+      <p>Me encantaría poder conversar más a fondo sobre cómo podemos colaborar juntas. ¿Estarías disponible para agendar una reunión? Te dejo el enlace a mi <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a> para que agendes en el día y hora que más te sirva :)</p>
+      <p>¡Espero con ansias hablar contigo pronto!</p>
+      <p>Saludos cordiales,</p>
+      <p>Natalia</p>
+    </body>
+  </html>
+    `;
+}
+
 
 export default async function handler(req, res) {
   if (req.method === "OPTIONS") {
@@ -137,38 +216,40 @@ export default async function handler(req, res) {
 
   if (req.method === "POST") {
     try {
-      const { firstName, lastName, email, businessName, contact,contactFull, location, website, aboutYou, services, budget, sources, additionalInfo } = req.body;
-
+      const { firstName, lastName, email, businessName, contact, contactFull, location, website, aboutYou, services, budget, sources, additionalInfo } = req.body;
       const htmlContent = generateEmailTemplate(req.body);
+      const htmlResponse = generateEmailResponse(req.body);
 
-      const response = await axios.post(
-        "https://api.brevo.com/v3/smtp/email",
-        {
-          sender: { name: "Natalia Villalobos Designer", email: "hello@itsnvillalobos.com" },
-          // Send email to the client who filled the form
-          to: [{
-            email: req.body.email,
-            name: `${req.body.firstName} ${req.body.lastName}`
-          }],
-          // BCC your email so you get a hidden copy
-          bcc: [{
-            email: "nvillalobosc29@gmail.com",
-            name: "Natalia Villalobos"
-          }],
-          subject: "Gracias por llenar mi formulario de cotización 🩷",
-          htmlContent: htmlContent,
+      const emailConfig = {
+        sender: { name: "Natalia Villalobos Designer", email: "hello@itsnvillalobos.com" },
+        to: [{
+          email: req.body.email,
+          name: `${req.body.firstName} ${req.body.lastName}`
+        }],
+        bcc: [{
+          email: "nvillalobosc29@gmail.com",
+          name: "Natalia Villalobos"
+        }],
+        subject: "Gracias por llenar mi formulario de cotización 🩷",
+      };
+
+      const axiosConfig = {
+        headers: {
+          "Content-Type": "application/json",
+          "accept": "application/json",
+          "api-key": process.env.BREVO_API_KEY,
         },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            "accept": "application/json",
-            "api-key": process.env.BREVO_API_KEY,
-          },
-        }
-      );
+      };
+
+      const scheduledAt = new Date(Date.now() + 5 * 60 * 1000).toISOString();
+
+      const [response1, response2] = await Promise.all([
+        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlContent }, axiosConfig),
+        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlResponse, scheduledAt }, axiosConfig),
+      ]);
 
       res.writeHead(200, { "Content-Type": "application/json", ...corsHeaders });
-      res.end(JSON.stringify({ success: true, message: "Email sent successfully", response: response.data }));
+      res.end(JSON.stringify({ success: true, message: "Email sent, follow-up scheduled in 5 minutes", response: [response1.data, response2.data] }));
     } catch (error) {
       console.error("Error sending email:", error.response?.data || error.message);
       res.writeHead(500, { "Content-Type": "application/json", ...corsHeaders });
