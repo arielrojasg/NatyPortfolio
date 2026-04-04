@@ -141,8 +141,14 @@ function generateEmailResponse(data) {
       <p>Me encantaría poder conversar más a fondo sobre cómo podemos colaborar juntas/os. ¿Estarías disponible para agendar una reunión? Te dejo el enlace a mi <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a> para que agendes en el día y hora que más te sirva :)</p>
       <p>¡Espero con ansias hablar contigo pronto!</p>
       <p>Saludos cordiales,</p>
-      <p>Natalia</p>
-      <img src="../assets/email.png"/>
+
+      <p>
+        Natalia Villalobos<br>
+        Diseñadora Gráfica<br>
+        <a href="tel:+50689912977">+506 8991 2977</a><br>
+        <a href="mailto:nvillalobosc29@gmail.com">nvillalobosc29@gmail.com</a><br>
+      </p>
+
     </body>
   </html>
     `;
