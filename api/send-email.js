@@ -197,7 +197,7 @@ function generateEmailResponse(data) {
     <body>
       <p>¡Hola ${data.firstName}! ✨ </p>
       <p>¡Gracias por contactarme a través del formulario! Fue un verdadero placer leer sobre tu negocio, ¡creo que somos un buen match!</p>
-      <p>Me encantaría poder conversar más a fondo sobre cómo podemos colaborar juntas. ¿Estarías disponible para agendar una reunión? Te dejo el enlace a mi <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a> para que agendes en el día y hora que más te sirva :)</p>
+      <p>Me encantaría poder conversar más a fondo sobre cómo podemos colaborar juntas/os. ¿Estarías disponible para agendar una reunión? Te dejo el enlace a mi <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a> para que agendes en el día y hora que más te sirva :)</p>
       <p>¡Espero con ansias hablar contigo pronto!</p>
       <p>Saludos cordiales,</p>
       <p>Natalia</p>
@@ -241,11 +241,11 @@ export default async function handler(req, res) {
         },
       };
 
-      const scheduledAt = new Date(Date.now() + 5 * 60 * 1000).toISOString();
+      const scheduledAt = new Date(Date.now() + 2 * 60 * 1000).toISOString();
 
       const [response1, response2] = await Promise.all([
         axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlContent }, axiosConfig),
-        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlResponse, scheduledAt }, axiosConfig),
+        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlResponse, scheduledAt, replyTo: { email: "nvillalobosc29@gmail.com", name: "Natalia Villalobos" } }, axiosConfig),
       ]);
 
       res.writeHead(200, { "Content-Type": "application/json", ...corsHeaders });
