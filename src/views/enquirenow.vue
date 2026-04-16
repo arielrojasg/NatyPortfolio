@@ -173,7 +173,7 @@ export default {
 			},
 			sent: false,
 			services: ["branding", "packaging", "social_media", "web_design", "photography", "other"],
-			sources: ["instagram", "linkedin", "tiktok", "behance", "referral"],
+			sources: ["instagram", "linkedin", "tiktok", "google", "referral"],
 			allowedCountries: [
 				// Americas
 				"US", "CA", "MX", "CR", "PA", "GT", "HN", "SV", "NI", "BZ",
