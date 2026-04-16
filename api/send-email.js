@@ -133,14 +133,14 @@ function generateEmailResponse(data) {
   <html>
     <head>
       <meta charset="UTF-8" />
-      <title>Gracias por llenar mi formulario</title>
+      <title>Evaluación inicial de tu marca</title>
     </head>
     <body>
       <p>¡Hola ${data.firstName}! ✨ </p>
-      <p>¡Gracias por contactarme a través del formulario! Fue un verdadero placer leer sobre tu negocio, ¡creo que somos un buen match!</p>
-      <p>Me encantaría poder conversar más a fondo sobre cómo podemos colaborar juntas/os. ¿Estarías disponible para agendar una reunión? Te dejo el enlace a mi <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a> para que agendes en el día y hora que más te sirva :)</p>
-      <p>¡Espero con ansias hablar contigo pronto!</p>
-      <p>Saludos cordiales,</p>
+      <p>Gracias por tomarte el tiempo de contarme sobre tu marca, me encantó leer lo que estás construyendo.</p>
+      <p>Me gustaría agendar una llamada para entender mejor tu proyecto y ver si somos el fit correcto para trabajar juntas/os. En este espacio también te voy a guiar sobre la mejor forma de abordar tu marca de manera estratégica 💌.</p>
+      <p>Podés agendar en el día y hora que mejor te funcione aquí: <a href="https://calendly.com/nvillalobosc29/30min">Calendly</a></p>
+      <p>Nos vemos pronto 🌸</p>
 
       <p>
         Natalia Villalobos<br>
@@ -191,7 +191,7 @@ export default async function handler(req, res) {
           email: "nvillalobosc29@gmail.com",
           name: "Natalia Villalobos"
         }],
-        subject: "Respuesta a formulario de cotización",
+        subject: "Evaluación inicial de tu marca",
       };
 
       const axiosConfig = {

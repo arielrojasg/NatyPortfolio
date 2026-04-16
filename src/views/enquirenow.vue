@@ -106,10 +106,10 @@
 			<label class="enquirenow_label" for="budget">{{ $t('enquirenow.budget') }}</label>
 			<select id="budget" required v-model="formData.budget">
 				<option value="" disabled selected>{{ $t('enquirenow.budget_placeholder') }}</option>
-				<option value="Menos de $800">{{ $t('enquirenow.budget-1') }}</option>
-				<option value="$800-$1500">{{ $t('enquirenow.budget-2') }}</option>
-				<option value="$1500-$2500">{{ $t('enquirenow.budget-3') }}</option>
-				<option value="Más de $2500">{{ $t('enquirenow.budget-4') }}</option>
+				<option value="Hasta $1000">{{ $t('enquirenow.budget-1') }}</option>
+				<option value="$1000-$2500">{{ $t('enquirenow.budget-2') }}</option>
+				<option value="$2500-$4000">{{ $t('enquirenow.budget-3') }}</option>
+				<option value="+$4000">{{ $t('enquirenow.budget-4') }}</option>
 			</select>
 
 			<label class="enquirenow_label">{{ $t('enquirenow.how_hear_about_me') }}</label>
