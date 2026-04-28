@@ -145,7 +145,7 @@ function generateEmailResponse(data) {
       <p>
         Natalia Villalobos<br>
         Diseñadora Gráfica<br>
-        <a href="tel:+50689912977">+506 8991 2977</a><br>
+        <a href="tel:+50683300707">+506 8330 0707</a><br>
         <a href="mailto:nvillalobosc29@gmail.com">nvillalobosc29@gmail.com</a><br>
       </p>
 
