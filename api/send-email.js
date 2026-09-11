@@ -166,7 +166,7 @@ export default async function handler(req, res) {
     try {
       const { firstName, lastName, email, businessName, contact, contactFull, location, website, aboutYou, services, budget, sources, additionalInfo } = req.body;
       const htmlContent = generateEmailTemplate(req.body);
-      //const htmlResponse = generateEmailResponse(req.body);
+      const htmlResponse = generateEmailResponse(req.body);
 
       const emailConfig = {
         sender: { name: "Natalia Villalobos Designer", email: "hello@itsnvillalobos.com" },
@@ -204,13 +204,10 @@ export default async function handler(req, res) {
 
       const scheduledAt = new Date(Date.now() + 2 * 60 * 1000).toISOString();
 
-      // const [response1, response2] = await Promise.all([
-      //   axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlContent }, axiosConfig),
-      //   axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfigResponse, htmlContent: htmlResponse, scheduledAt, replyTo: { email: "nvillalobosc29@gmail.com", name: "Natalia Villalobos" } }, axiosConfig),
-      // ]);
-
-      const response1 = await axios.post("https://api.brevo.com/v3/smtp/email",{ ...emailConfig, htmlContent: htmlContent },axiosConfig
-);
+      const [response1, response2] = await Promise.all([
+        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfig, htmlContent: htmlContent }, axiosConfig),
+        axios.post("https://api.brevo.com/v3/smtp/email", { ...emailConfigResponse, htmlContent: htmlResponse, scheduledAt, replyTo: { email: "nvillalobosc29@gmail.com", name: "Natalia Villalobos" } }, axiosConfig),
+      ]);
 
       res.writeHead(200, { "Content-Type": "application/json", ...corsHeaders });
       res.end(JSON.stringify({ success: true, message: "Email sent, follow-up scheduled in 2 minutes", response: [response1.data, response2.data] }));
